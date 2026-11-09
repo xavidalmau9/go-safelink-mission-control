@@ -1,21 +1,21 @@
 {
  "meta": {
-  "title": "GO Advertising · SafeLink Mission Control",
+  "title": "GO Advertising \u00b7 SafeLink Mission Control",
   "brand": "GO Advertising",
   "product": "SafeLink",
   "accountId": "734-978-8944",
   "loginEmail": "xavidalmau9@gmail.com",
   "liveSince": "2026-11-06",
   "timezone": "America/New_York",
-  "updatedAt": "2026-11-09T10:20:00-05:00",
+  "updatedAt": "2026-11-09T11:10:00-05:00",
   "dataWindow": {
    "from": "2026-11-04",
    "to": "2026-11-09",
-   "label": "Nov 4–9, 2026 · all-time totals; daily series from Nov 8",
+   "label": "Nov 4\u20139, 2026 \u00b7 all-time totals; daily series from Nov 8",
    "granularity": "daily"
   },
   "identityVerificationDue": "2026-12-09",
-  "notes": "No Google Ads conversion tracking (conversions always 0). Enrollments come from SafeLink reports. Daily trend charts start from this snapshot until a daily series is pasted. State map structure ready — statePerformance empty."
+  "notes": "No Google Ads conversion tracking (conversions always 0). Enrollments come from SafeLink reports. Daily trend charts start from this snapshot until a daily series is pasted. State/region and city spend not available in the Google Ads UI views checked (matched locations shows only United States); statePerformance stays empty. Identity verification due 2026-12-09."
  },
  "budgets": {
   "dailyTotalUsd": 100,
@@ -80,24 +80,24 @@
  ],
  "overview": {
   "awaitingData": false,
-  "spendUsd": 370.51,
-  "clicks": 317,
-  "impressions": 8447,
-  "ctrPct": 3.75,
-  "avgCpcUsd": 1.17,
+  "spendUsd": 383.98,
+  "clicks": 334,
+  "impressions": 9121,
+  "ctrPct": 3.66,
+  "avgCpcUsd": 1.15,
   "enrollments": null,
   "costPerEnrollmentUsd": null,
   "conversions": 0,
-  "windowLabel": "Nov 4–9, 2026 snapshot"
+  "windowLabel": "Nov 4\u20139, 2026 snapshot"
  },
  "bySegment": {
   "ca_search": {
    "awaitingData": false,
-   "spendUsd": 135.53,
-   "clicks": 41,
-   "impressions": 205,
-   "ctrPct": 20.0,
-   "avgCpcUsd": 3.31,
+   "spendUsd": 140.83,
+   "clicks": 43,
+   "impressions": 208,
+   "ctrPct": 20.67,
+   "avgCpcUsd": 3.28,
    "enrollments": null,
    "costPerEnrollmentUsd": null,
    "conversions": 0,
@@ -113,27 +113,28 @@
     },
     {
      "date": "2026-11-09",
-     "impressions": 9,
-     "clicks": 1,
-     "ctrPct": 11.11,
-     "avgCpcUsd": 3.39,
-     "spendUsd": 3.39
+     "impressions": 12,
+     "clicks": 3,
+     "ctrPct": 25.0,
+     "avgCpcUsd": 2.9,
+     "spendUsd": 8.69,
+     "partial": true
     }
    ],
    "adGroupPerformance": [
     {
      "name": "Apply",
-     "impressions": 69,
-     "clicks": 16,
-     "ctrPct": 23.19,
+     "impressions": 70,
+     "clicks": 18,
+     "ctrPct": 25.71,
      "avgCpcUsd": 3.46,
-     "spendUsd": 55.42
+     "spendUsd": 62.24
     },
     {
      "name": "SNAP",
-     "impressions": 75,
+     "impressions": 77,
      "clicks": 14,
-     "ctrPct": 18.67,
+     "ctrPct": 18.18,
      "avgCpcUsd": 3.67,
      "spendUsd": 51.43
     },
@@ -147,41 +148,25 @@
     },
     {
      "name": "Near me",
-     "impressions": 3,
-     "clicks": 1,
-     "ctrPct": null,
-     "avgCpcUsd": 1.94,
-     "spendUsd": null
+     "impressions": 4,
+     "clicks": 2,
+     "ctrPct": 50.0,
+     "avgCpcUsd": 1.91,
+     "spendUsd": 3.81
     },
     {
      "name": "Assurance Wireless",
      "impressions": 9,
      "clicks": 1,
-     "ctrPct": null,
+     "ctrPct": 11.11,
      "avgCpcUsd": 2.36,
-     "spendUsd": null
-    },
-    {
-     "name": "Medicaid/SSI",
-     "impressions": 1,
-     "clicks": 0,
-     "ctrPct": 0,
-     "avgCpcUsd": null,
-     "spendUsd": 0
-    },
-    {
-     "name": "Seniors",
-     "impressions": 1,
-     "clicks": 0,
-     "ctrPct": 0,
-     "avgCpcUsd": null,
-     "spendUsd": 0
+     "spendUsd": 2.36
     },
     {
      "name": "Low income",
-     "impressions": 6,
+     "impressions": 8,
      "clicks": 0,
-     "ctrPct": 0,
+     "ctrPct": 0.0,
      "avgCpcUsd": null,
      "spendUsd": 0
     },
@@ -189,19 +174,35 @@
      "name": "Free govt phone",
      "impressions": 3,
      "clicks": 0,
-     "ctrPct": 0,
+     "ctrPct": 0.0,
+     "avgCpcUsd": null,
+     "spendUsd": 0
+    },
+    {
+     "name": "Medicaid/SSI",
+     "impressions": 1,
+     "clicks": 0,
+     "ctrPct": 0.0,
+     "avgCpcUsd": null,
+     "spendUsd": 0
+    },
+    {
+     "name": "Seniors",
+     "impressions": 1,
+     "clicks": 0,
+     "ctrPct": 0.0,
      "avgCpcUsd": null,
      "spendUsd": 0
     },
     {
      "name": "Competitor terms",
-     "impressions": null,
-     "clicks": null,
+     "impressions": 0,
+     "clicks": 0,
      "ctrPct": null,
      "avgCpcUsd": 1.0,
-     "spendUsd": null,
+     "spendUsd": 0,
      "maxCpcUsd": 1.0,
-     "notes": "Created 2026-11-09 · phrase competitor keywords · ads from approved Apply · awaiting performance data"
+     "notes": "Pending - all ads under review; 0 impressions"
     }
    ],
    "searchTerms": {
@@ -212,13 +213,13 @@
    "devices": [
     {
      "device": "Mobile",
-     "clicks": 36,
-     "spendUsd": 119.3
+     "clicks": 37,
+     "spendUsd": 122.73
     },
     {
      "device": "Computer",
-     "clicks": 4,
-     "spendUsd": 12.76
+     "clicks": 5,
+     "spendUsd": 14.63
     },
     {
      "device": "Tablet",
@@ -230,10 +231,10 @@
   },
   "ca_display": {
    "awaitingData": false,
-   "spendUsd": 98.95,
-   "clicks": 233,
-   "impressions": 8051,
-   "ctrPct": 2.89,
+   "spendUsd": 103.15,
+   "clicks": 246,
+   "impressions": 8715,
+   "ctrPct": 2.82,
    "avgCpcUsd": 0.42,
    "enrollments": null,
    "costPerEnrollmentUsd": null,
@@ -250,21 +251,22 @@
     },
     {
      "date": "2026-11-09",
-     "impressions": 1520,
-     "clicks": 34,
-     "ctrPct": 2.24,
-     "avgCpcUsd": 0.27,
-     "spendUsd": 9.04
+     "impressions": 2184,
+     "clicks": 47,
+     "ctrPct": 2.15,
+     "avgCpcUsd": 0.28,
+     "spendUsd": 13.24,
+     "partial": true
     }
    ],
    "adGroupPerformance": [
     {
      "name": "CA Banners",
-     "impressions": 7547,
-     "clicks": 224,
-     "ctrPct": 2.97,
-     "avgCpcUsd": 0.43,
-     "spendUsd": 96.53
+     "impressions": 8715,
+     "clicks": 246,
+     "ctrPct": 2.82,
+     "avgCpcUsd": 0.42,
+     "spendUsd": 103.15
     }
    ],
    "searchTerms": {
@@ -273,8 +275,8 @@
    },
    "negativesAdded": [],
    "placements": {
-    "total": 213,
-    "notes": "Mostly game and utility apps",
+    "total": 212,
+    "notes": "Mostly game and utility apps plus junk sites; app category excluded Nov 9",
     "topByCost": [
      {
       "name": "Solitaire iOS",
@@ -313,21 +315,21 @@
       "spendUsd": 1.05
      },
      {
-      "name": "Neon Maze",
-      "spendUsd": 1.02
+      "name": "QR & Barcode Scanner",
+      "spendUsd": 1.0
      }
     ]
    },
    "devices": [
     {
      "device": "Mobile",
-     "clicks": 189,
-     "spendUsd": 81.65
+     "clicks": 201,
+     "spendUsd": 85.67
     },
     {
      "device": "Tablet",
-     "clicks": 38,
-     "spendUsd": 15.85
+     "clicks": 39,
+     "spendUsd": 16.03
     },
     {
      "device": "Computer",
@@ -339,11 +341,11 @@
   },
   "nationwide": {
    "awaitingData": false,
-   "spendUsd": 136.03,
-   "clicks": 43,
-   "impressions": 191,
-   "ctrPct": 22.51,
-   "avgCpcUsd": 3.16,
+   "spendUsd": 140.0,
+   "clicks": 45,
+   "impressions": 198,
+   "ctrPct": 22.73,
+   "avgCpcUsd": 3.11,
    "enrollments": null,
    "costPerEnrollmentUsd": null,
    "conversions": 0,
@@ -359,67 +361,76 @@
     },
     {
      "date": "2026-11-09",
-     "impressions": 16,
-     "clicks": 1,
-     "ctrPct": 6.25,
-     "avgCpcUsd": 3.45,
-     "spendUsd": 3.45
+     "impressions": 23,
+     "clicks": 3,
+     "ctrPct": 13.04,
+     "avgCpcUsd": 2.47,
+     "spendUsd": 7.42,
+     "partial": true
     }
    ],
    "adGroupPerformance": [
     {
      "name": "SNAP",
-     "impressions": 64,
-     "clicks": 15,
-     "ctrPct": 23.44,
+     "impressions": 65,
+     "clicks": 16,
+     "ctrPct": 24.62,
      "avgCpcUsd": 3.48,
-     "spendUsd": 52.24
+     "spendUsd": 55.69
     },
     {
      "name": "Apply",
-     "impressions": 61,
-     "clicks": 15,
-     "ctrPct": 24.59,
-     "avgCpcUsd": 3.32,
-     "spendUsd": 49.74
+     "impressions": 65,
+     "clicks": 16,
+     "ctrPct": 24.62,
+     "avgCpcUsd": 3.23,
+     "spendUsd": 51.73
     },
     {
-     "name": "Lifeline",
-     "impressions": 18,
+     "name": "Lifeline program",
+     "impressions": 19,
      "clicks": 7,
-     "ctrPct": 38.89,
+     "ctrPct": 36.84,
      "avgCpcUsd": 2.56,
      "spendUsd": 17.91
     },
     {
      "name": "Near me",
-     "impressions": 7,
-     "clicks": 2,
-     "ctrPct": null,
-     "avgCpcUsd": null,
-     "spendUsd": 4.98
+     "impressions": 9,
+     "clicks": 3,
+     "ctrPct": 33.33,
+     "avgCpcUsd": 2.32,
+     "spendUsd": 6.96
     },
     {
-     "name": "Assurance",
-     "impressions": 19,
+     "name": "Assurance Wireless",
+     "impressions": 20,
      "clicks": 2,
-     "ctrPct": null,
-     "avgCpcUsd": null,
+     "ctrPct": 10.0,
+     "avgCpcUsd": 2.66,
      "spendUsd": 5.32
     },
     {
      "name": "Free govt service",
      "impressions": 16,
      "clicks": 1,
-     "ctrPct": null,
-     "avgCpcUsd": null,
+     "ctrPct": 6.25,
+     "avgCpcUsd": 2.39,
      "spendUsd": 2.39
     },
     {
-     "name": "Medicaid",
+     "name": "Low income",
+     "impressions": 2,
+     "clicks": 0,
+     "ctrPct": 0.0,
+     "avgCpcUsd": null,
+     "spendUsd": 0
+    },
+    {
+     "name": "Medicaid/SSI",
      "impressions": 1,
      "clicks": 0,
-     "ctrPct": 0,
+     "ctrPct": 0.0,
      "avgCpcUsd": null,
      "spendUsd": 0
     },
@@ -427,27 +438,19 @@
      "name": "Seniors",
      "impressions": 1,
      "clicks": 0,
-     "ctrPct": 0,
-     "avgCpcUsd": null,
-     "spendUsd": 0
-    },
-    {
-     "name": "Low income",
-     "impressions": 1,
-     "clicks": 0,
-     "ctrPct": 0,
+     "ctrPct": 0.0,
      "avgCpcUsd": null,
      "spendUsd": 0
     },
     {
      "name": "Competitor terms",
-     "impressions": null,
-     "clicks": null,
+     "impressions": 0,
+     "clicks": 0,
      "ctrPct": null,
      "avgCpcUsd": 1.0,
-     "spendUsd": null,
+     "spendUsd": 0,
      "maxCpcUsd": 1.0,
-     "notes": "Created 2026-11-09 · phrase competitor keywords · ads from approved Apply · awaiting performance data"
+     "notes": "Pending - all ads under review; 0 impressions"
     }
    ],
    "searchTerms": {
@@ -458,8 +461,8 @@
    "devices": [
     {
      "device": "Mobile",
-     "clicks": 33,
-     "spendUsd": 103.76
+     "clicks": 36,
+     "spendUsd": 109.69
     },
     {
      "device": "Computer",
@@ -478,7 +481,6 @@
  "dailyAds": [
   {
    "date": "2026-11-08",
-   "partial": false,
    "impressions": 2395,
    "clicks": 92,
    "ctrPct": 3.84,
@@ -487,46 +489,50 @@
   },
   {
    "date": "2026-11-09",
-   "partial": true,
-   "impressions": 1545,
-   "clicks": 36,
-   "ctrPct": 2.33,
-   "avgCpcUsd": 0.44,
-   "spendUsd": 15.88
+   "impressions": 2219,
+   "clicks": 53,
+   "ctrPct": 2.39,
+   "avgCpcUsd": 0.55,
+   "spendUsd": 29.35,
+   "partial": true
   }
  ],
  "keywords": [
   {
+   "keyword": "lifeline application",
+   "match": "Phrase",
+   "segmentId": "ca_search",
+   "impressions": 35,
+   "clicks": 12,
+   "spendUsd": 41.0,
+   "ctrPct": 34.29,
+   "avgCpcUsd": 3.42
+  },
+  {
    "keyword": "free public assistance phones",
    "match": "Phrase",
    "segmentId": "nationwide",
+   "impressions": 39,
    "clicks": 11,
    "spendUsd": 38.57,
    "ctrPct": 28.21,
    "avgCpcUsd": 3.51
   },
   {
-   "keyword": "lifeline application",
-   "match": "Phrase",
-   "segmentId": "ca_search",
-   "clicks": 11,
-   "spendUsd": 37.57,
-   "ctrPct": 32.35,
-   "avgCpcUsd": 3.42
-  },
-  {
    "keyword": "lifeline free phone application",
    "match": "Phrase",
    "segmentId": "nationwide",
-   "clicks": 5,
-   "spendUsd": 17.55,
-   "ctrPct": 26.32,
-   "avgCpcUsd": 3.51
+   "impressions": 21,
+   "clicks": 6,
+   "spendUsd": 19.54,
+   "ctrPct": 28.57,
+   "avgCpcUsd": 3.26
   },
   {
    "keyword": "free public assistance phones",
    "match": "Phrase",
    "segmentId": "ca_search",
+   "impressions": 46,
    "clicks": 5,
    "spendUsd": 17.02,
    "ctrPct": 10.87,
@@ -536,111 +542,111 @@
    "keyword": "free welfare cell phones",
    "match": "Phrase",
    "segmentId": "ca_search",
+   "impressions": 10,
    "clicks": 4,
    "spendUsd": 15.82,
-   "ctrPct": 44.44,
+   "ctrPct": 40.0,
    "avgCpcUsd": 3.96
   },
   {
    "keyword": "lifeline program",
    "match": "Exact",
    "segmentId": "ca_search",
+   "impressions": 13,
    "clicks": 6,
    "spendUsd": 15.61,
    "ctrPct": 46.15,
-   "avgCpcUsd": 2.6,
-   "note": "Below first page bid $3.23"
+   "avgCpcUsd": 2.6
   },
   {
    "keyword": "apply for a free cell phone",
    "match": "Exact",
    "segmentId": "nationwide",
+   "impressions": 16,
    "clicks": 4,
    "spendUsd": 13.72,
-   "ctrPct": 26.67,
+   "ctrPct": 25.0,
    "avgCpcUsd": 3.43
   },
   {
    "keyword": "ebt phone free",
    "match": "Phrase",
    "segmentId": "ca_search",
+   "impressions": 6,
    "clicks": 3,
    "spendUsd": 10.89,
-   "ctrPct": 60.0,
+   "ctrPct": 50.0,
    "avgCpcUsd": 3.63
   },
   {
    "keyword": "lifeline program",
    "match": "Exact",
    "segmentId": "nationwide",
+   "impressions": 7,
    "clicks": 4,
    "spendUsd": 9.09,
    "ctrPct": 57.14,
-   "avgCpcUsd": 2.27,
-   "note": "Below first page bid"
+   "avgCpcUsd": 2.27
   },
   {
    "keyword": "food stamp cell phone",
    "match": "Phrase",
    "segmentId": "ca_search",
+   "impressions": 11,
    "clicks": 2,
    "spendUsd": 7.7,
-   "ctrPct": null,
-   "avgCpcUsd": null
+   "ctrPct": 18.18,
+   "avgCpcUsd": 3.85
   },
   {
    "keyword": "apply for government phone",
    "match": "Exact",
    "segmentId": "ca_search",
+   "impressions": 4,
    "clicks": 2,
    "spendUsd": 7.55,
-   "ctrPct": null,
-   "avgCpcUsd": null
+   "ctrPct": 50.0,
+   "avgCpcUsd": 3.77
   },
   {
    "keyword": "lifeline free phone application",
    "match": "Phrase",
    "segmentId": "ca_search",
+   "impressions": 9,
    "clicks": 2,
    "spendUsd": 6.8,
-   "ctrPct": null,
-   "avgCpcUsd": null
+   "ctrPct": 22.22,
+   "avgCpcUsd": 3.4
   },
   {
    "keyword": "apply for free phone service",
    "match": "Exact",
    "segmentId": "nationwide",
+   "impressions": 3,
    "clicks": 2,
    "spendUsd": 6.76,
-   "ctrPct": null,
-   "avgCpcUsd": null
+   "ctrPct": 66.67,
+   "avgCpcUsd": 3.38
   },
   {
    "keyword": "gov lifeline program",
    "match": "Phrase",
    "segmentId": "nationwide",
+   "impressions": 2,
    "clicks": 2,
    "spendUsd": 5.94,
-   "ctrPct": null,
-   "avgCpcUsd": null
+   "ctrPct": 100.0,
+   "avgCpcUsd": 2.97
   },
   {
    "keyword": "assurance wireless",
    "match": "Exact",
    "segmentId": "nationwide",
+   "impressions": 20,
    "clicks": 2,
    "spendUsd": 5.32,
-   "ctrPct": null,
-   "avgCpcUsd": null
-  },
-  {
-   "keyword": "best lifeline phone providers",
-   "match": "Phrase",
-   "segmentId": "nationwide",
-   "clicks": 2,
-   "spendUsd": 4.98,
-   "ctrPct": null,
-   "avgCpcUsd": null
+   "ctrPct": 10.0,
+   "avgCpcUsd": 2.66
   }
  ],
  "searchTerms": {
@@ -649,7 +655,7 @@
    {
     "term": "lifeline program",
     "segmentId": "ca_search",
-    "clicks": 5,
+    "clicks": 9,
     "spendUsd": 13.19
    },
    {
@@ -733,8 +739,15 @@
    },
    {
     "term": "californialifeline com",
+    "segmentId": "ca_search",
     "spendUsd": 3.5,
     "reason": "Competitor / wrong site"
+   },
+   {
+    "term": "medicaid free phone nyc",
+    "segmentId": "nationwide",
+    "spendUsd": 4.01,
+    "reason": "Off-target (NYC-specific)"
    }
   ],
   "top": []
@@ -789,7 +802,7 @@
   },
   {
    "date": "2026-11-09",
-   "summary": "Account review snapshot loaded (Nov 4–9): $364.70 spend, 307 clicks, 7,936 impr. All campaigns Limited by budget. Google identity verification due Dec 9."
+   "summary": "Account review snapshot loaded (Nov 4\u20139): $364.70 spend, 307 clicks, 7,936 impr. All campaigns Limited by budget. Google identity verification due Dec 9."
   },
   {
    "date": "2026-11-09",
