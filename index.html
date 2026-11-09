@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GO Advertising · SafeLink Mission Control</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%23000000'/%3E%3Ctext x='50' y='72' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='54' fill='white' text-anchor='middle'%3EGO%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<style>
+:root{
+  --bg:#050810;--surface:rgba(12,17,32,.72);--surface2:rgba(17,24,39,.85);
+  --glass:rgba(12,17,32,.55);--border:rgba(99,179,237,.14);--border2:rgba(99,179,237,.06);
+  --accent:#38bdf8;--purple:#818cf8;--green:#34d399;--amber:#fbbf24;--red:#f87171;
+  --muted:#a7b4c9;--text:#eef2f8;--mono:'Space Mono',monospace;--sans:'DM Sans',sans-serif;
+  --glow-a:rgba(56,189,248,.35);--glow-p:rgba(129,140,248,.35);--glow-g:rgba(52,211,153,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.03) 2px,rgba(0,0,0,.03) 4px);pointer-events:none;z-index:1000}
+body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(56,189,248,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(56,189,248,.03) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;z-index:0}
+.bg-orbs{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+.orb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.45;animation:float 12s ease-in-out infinite}
+.orb.a{width:420px;height:420px;background:radial-gradient(circle,var(--glow-a),transparent 70%);top:-80px;left:-60px}
+.orb.b{width:380px;height:380px;background:radial-gradient(circle,var(--glow-p),transparent 70%);top:40%;right:-100px;animation-delay:-4s}
+.orb.c{width:320px;height:320px;background:radial-gradient(circle,var(--glow-g),transparent 70%);bottom:-60px;left:30%;animation-delay:-7s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(24px)}}
+.wrap{position:relative;z-index:1;max-width:1440px;margin:0 auto;padding:20px 18px 60px}
+
+/* Header */
+.header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:16px;border-bottom:1px solid var(--border);margin-bottom:18px;flex-wrap:wrap}
+.hdr-left{display:flex;align-items:center;gap:14px}
+.logo{width:38px;height:38px;border:1px solid var(--accent);border-radius:8px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(56,189,248,.15),rgba(129,140,248,.1));box-shadow:0 0 24px var(--glow-a)}
+.logo-dot{width:11px;height:11px;border-radius:50%;background:var(--accent);animation:lp 2s ease-in-out infinite}
+@keyframes lp{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.7)}}
+.logo-text{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:2px}
+.logo-sub{font-size:11px;color:var(--muted);letter-spacing:1px;margin-top:2px}
+.hdr-mid{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:2px}
+.hdr-right{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.live-row{display:flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10px;color:var(--green);letter-spacing:2px}
+.live-dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 0 rgba(52,211,153,.5);animation:pulse 1.6s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(52,211,153,.45)}70%{box-shadow:0 0 0 8px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
+.meta-line{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:1px}
+
+/* Alerts */
+.alert{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;border-radius:10px;margin-bottom:12px;font-family:var(--mono);font-size:11px;letter-spacing:.5px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.alert.warn{background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.28);color:var(--amber)}
+.alert.info{background:rgba(56,189,248,.08);border:1px solid rgba(56,189,248,.22);color:var(--accent)}
+
+/* Tabs */
+.tabs{display:flex;gap:8px;margin:14px 0 18px;flex-wrap:wrap}
+.tab{appearance:none;border:1px solid var(--border);background:var(--glass);color:var(--muted);font-family:var(--mono);font-size:11px;letter-spacing:1.5px;padding:10px 16px;border-radius:999px;cursor:pointer;backdrop-filter:blur(14px);transition:all .25s ease}
+.tab:hover{border-color:var(--accent);color:var(--text);transform:translateY(-1px)}
+.tab.active{color:#041018;font-weight:700;border-color:transparent}
+.tab.active[data-seg="combined"]{background:linear-gradient(135deg,#38bdf8,#818cf8);box-shadow:0 8px 28px rgba(56,189,248,.25)}
+.tab.active[data-seg="ca_search"]{background:linear-gradient(135deg,#38bdf8,#0ea5e9);box-shadow:0 8px 28px rgba(56,189,248,.28)}
+.tab.active[data-seg="ca_display"]{background:linear-gradient(135deg,#818cf8,#6366f1);box-shadow:0 8px 28px rgba(129,140,248,.28)}
+.tab.active[data-seg="nationwide"]{background:linear-gradient(135deg,#34d399,#10b981);box-shadow:0 8px 28px rgba(52,211,153,.28)}
+
+/* Glass cards */
+.glass{background:var(--glass);border:1px solid var(--border2);border-radius:14px;padding:16px;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 10px 40px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.04);transition:border-color .2s,transform .2s}
+.glass:hover{border-color:var(--border)}
+.panel-hdr{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--border2)}
+.ptitle{font-family:var(--mono);font-size:10px;color:var(--accent);letter-spacing:2px;text-transform:uppercase}
+.pmeta{font-family:var(--mono);font-size:9px;color:var(--muted);letter-spacing:1px}
+
+/* KPI */
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px}
+.kpi-grid.sec{grid-template-columns:repeat(3,1fr)}
+.kpi{position:relative;overflow:hidden}
+.kpi::before{content:'';position:absolute;top:0;left:0;right:0;height:2px}
+.kpi.c-accent::before{background:linear-gradient(90deg,var(--accent),transparent)}
+.kpi.c-green::before{background:linear-gradient(90deg,var(--green),transparent)}
+.kpi.c-amber::before{background:linear-gradient(90deg,var(--amber),transparent)}
+.kpi.c-purple::before{background:linear-gradient(90deg,var(--purple),transparent)}
+.kpi.c-red::before{background:linear-gradient(90deg,var(--red),transparent)}
+.kpi-lbl{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.kpi-val{font-family:var(--mono);font-size:32px;font-weight:700;line-height:1;margin-bottom:8px}
+.kpi-sub{font-size:11px;color:var(--muted)}
+.await{color:var(--muted);font-size:14px;letter-spacing:1px}
+
+/* Layout */
+.grid-2{display:grid;grid-template-columns:1.4fr 1fr;gap:14px;margin-bottom:14px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:14px}
+.chart-box{position:relative;height:280px}
+.chart-box.tall{height:340px}
+.map-box{position:relative;height:360px;border-radius:10px;overflow:hidden;background:rgba(0,0,0,.25)}
+#usMap{width:100%;height:100%}
+.map-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;font-family:var(--mono);font-size:12px;letter-spacing:2px;color:var(--muted);background:radial-gradient(circle at center,rgba(5,8,16,.55),rgba(5,8,16,.15))}
+
+/* Lists / tables */
+.list{display:flex;flex-direction:column;gap:8px;max-height:360px;overflow:auto}
+.row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;padding:10px 12px;border-radius:10px;background:var(--surface2);border:1px solid var(--border2)}
+.row-title{font-size:13px;font-weight:500}
+.row-sub{font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:3px;letter-spacing:.5px}
+.pill{font-family:var(--mono);font-size:10px;padding:3px 8px;border-radius:999px;letter-spacing:1px;border:1px solid}
+.pill.bad{color:var(--red);border-color:rgba(248,113,113,.35);background:rgba(248,113,113,.08)}
+.pill.good{color:var(--green);border-color:rgba(52,211,153,.35);background:rgba(52,211,153,.08)}
+.pill.warn{color:var(--amber);border-color:rgba(251,191,36,.35);background:rgba(251,191,36,.08)}
+.pill.accent{color:var(--accent);border-color:rgba(56,189,248,.35);background:rgba(56,189,248,.08)}
+.pill.purple{color:var(--purple);border-color:rgba(129,140,248,.35);background:rgba(129,140,248,.08)}
+.money{font-family:var(--mono);font-weight:700}
+.bar{height:6px;border-radius:99px;background:rgba(255,255,255,.05);overflow:hidden;margin-top:8px}
+.bar > i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--accent),var(--purple))}
+
+.seg-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px}
+.seg-card{cursor:pointer;position:relative;overflow:hidden}
+.seg-card .glow{position:absolute;inset:auto -20% -40% -20%;height:80%;filter:blur(30px);opacity:.35}
+.seg-card[data-seg="ca_search"] .glow{background:var(--accent)}
+.seg-card[data-seg="ca_display"] .glow{background:var(--purple)}
+.seg-card[data-seg="nationwide"] .glow{background:var(--green)}
+.seg-name{font-family:var(--mono);font-size:11px;letter-spacing:2px;margin-bottom:8px}
+.seg-stat{font-family:var(--mono);font-size:24px;font-weight:700}
+.seg-meta{font-size:11px;color:var(--muted);margin-top:6px}
+
+.empty{padding:28px;text-align:center;color:var(--muted);font-family:var(--mono);font-size:11px;letter-spacing:1.5px;border:1px dashed var(--border);border-radius:12px}
+
+.rec{display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:10px;background:var(--surface2);border:1px solid var(--border2);margin-bottom:8px}
+.rec:last-child{margin-bottom:0}
+.rec .pri{font-family:var(--mono);font-size:9px;letter-spacing:1px;padding:3px 7px;border-radius:4px;flex-shrink:0}
+.pri.high{background:rgba(248,113,113,.15);color:var(--red)}
+.pri.medium{background:rgba(251,191,36,.15);color:var(--amber)}
+
+.changelog li{list-style:none;padding:10px 0;border-bottom:1px solid var(--border2);display:grid;grid-template-columns:90px 1fr;gap:12px}
+.changelog li:last-child{border-bottom:0}
+.changelog .d{font-family:var(--mono);font-size:11px;color:var(--accent)}
+.changelog .s{font-size:13px;color:var(--text)}
+
+#loadingOverlay{position:fixed;inset:0;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:999;transition:opacity .45s}
+#loadingOverlay.hidden{opacity:0;pointer-events:none}
+.loader-text{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:4px;animation:blink 1s step-end infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+.loader-sub{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:2px;margin-top:8px}
+
+.fade{animation:fadeUp .5s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+@media(max-width:980px){
+  .kpi-grid,.kpi-grid.sec,.grid-2,.grid-3,.seg-cards{grid-template-columns:1fr 1fr}
+  .kpi-val{font-size:26px}
+}
+@media(max-width:640px){
+  .kpi-grid,.kpi-grid.sec,.grid-2,.grid-3,.seg-cards{grid-template-columns:1fr}
+  .hdr-mid{display:none}
+  .chart-box,.chart-box.tall,.map-box{height:260px}
+}
+.state{fill:#0f172a;stroke:rgba(148,163,184,.35);stroke-width:1;transition:fill .25s,stroke .25s}
+.state.eligible{fill:rgba(52,211,153,.18);stroke:rgba(52,211,153,.45)}
+.state.excluded{fill:rgba(248,113,113,.12);stroke:rgba(248,113,113,.3)}
+.state.ca{fill:rgba(56,189,248,.22);stroke:rgba(56,189,248,.55)}
+.state:hover{stroke:#fff;stroke-width:1.5}
+</style>
+</head>
+<body>
+<div class="bg-orbs"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+<div id="loadingOverlay"><div class="loader-text">INITIALIZING MISSION CONTROL...</div><div class="loader-sub">LOADING SAFELINK DATA FEED</div></div>
+
+<div class="wrap">
+  <div class="header fade">
+    <div class="hdr-left">
+      <div class="logo"><div class="logo-dot"></div></div>
+      <div>
+        <div class="logo-text">GO Advertising · Mission Control</div>
+        <div class="logo-sub">SafeLink Wireless · Partner Dashboard</div>
+      </div>
+    </div>
+    <div class="hdr-mid" id="clock">—</div>
+    <div class="hdr-right">
+      <div class="live-row"><div class="live-dot"></div><span id="liveStatus">SNAPSHOT</span></div>
+      <div class="meta-line" id="dataSource">SOURCE: data.json</div>
+      <div class="meta-line">ACCOUNT <span id="acctId">—</span></div>
+    </div>
+  </div>
+
+  <div class="alert warn fade" id="idAlert" style="display:none">
+    <span>⚠ Google Ads identity verification due by <strong id="idDue">—</strong>. Complete before the deadline to avoid account disruption.</span>
+  </div>
+  <div class="alert info fade" id="windowAlert">
+    <span id="windowText">REPORT WINDOW: —</span>
+  </div>
+
+  <div class="tabs fade" id="tabs"></div>
+
+  <div id="segCards" class="seg-cards fade"></div>
+
+  <div id="kpiPrimary" class="kpi-grid fade"></div>
+  <div id="kpiSecondary" class="kpi-grid sec fade"></div>
+
+  <div class="grid-2 fade">
+    <div class="glass">
+      <div class="panel-hdr"><div class="ptitle">Spend share</div><div class="pmeta" id="donutMeta">BY SEGMENT</div></div>
+      <div class="chart-box"><canvas id="donutSpend"></canvas></div>
+    </div>
+    <div class="glass">
+      <div class="panel-hdr"><div class="ptitle">Ad group cost</div><div class="pmeta">TOP BY SPEND</div></div>
+      <div class="chart-box"><canvas id="barAdGroups"></canvas></div>
+    </div>
+  </div>
+
+  <div class="grid-2 fade">
+    <div class="glass">
+      <div class="panel-hdr"><div class="ptitle">Trend · spend & clicks</div><div class="pmeta" id="trendMeta">AWAITING DAILY SERIES</div></div>
+      <div class="chart-box tall" id="trendWrap"><canvas id="lineTrend"></canvas></div>
+    </div>
+    <div class="glass">
+      <div class="panel-hdr"><div class="ptitle">Keyword cost</div><div class="pmeta">TOP KEYWORDS</div></div>
+      <div class="chart-box tall"><canvas id="barKeywords"></canvas></div>
+    </div>
+  </div>
+
+  <div class="grid-2 fade">
+    <div class="glass">
+      <div class="panel-hdr"><div class="ptitle">US map · targeting & spend</div><div class="pmeta" id="mapMeta">STRUCTURE READY · AWAITING STATE DATA</div></div>
+      <div class="map-box">
+        <svg id="usMap" viewBox="0 0 960 600" preserveAspectRatio="xMidYMid meet"></svg>
+        <div class="map-overlay" id="mapOverlay">AWAITING STATE PERFORMANCE DATA</div>
+      </div>
+    </div>
+    <div class="glass">
+      <div class="panel-hdr"><div class="ptitle">Devices</div><div class="pmeta">CLICKS · COST</div></div>
+      <div class="chart-box"><canvas id="donutDevices"></canvas></div>
+      <div id="deviceList" class="list" style="margin-top:10px;max-height:140px"></div>
+    </div>
+  </div>
+
+  <div class="grid-3 fade">
+    <div class="glass">
+      <div class="panel-hdr"><div class="ptitle">Wasted search terms</div><div class="pmeta">COMPETITOR LEAKAGE</div></div>
+      <div id="wastedList" class="list"></div>
+    </div>
+    <div class="glass">
+      <div class="panel-hdr"><div class="ptitle">Good search terms</div><div class="pmeta">INTENT ALIGNED</div></div>
+      <div id="goodList" class="list"></div>
+    </div>
+    <div class="glass">
+      <div class="panel-hdr"><div class="ptitle">Pending recommendations</div><div class="pmeta">NOT YET APPLIED</div></div>
+      <div id="recList"></div>
+    </div>
+  </div>
+
+  <div class="grid-2 fade">
+    <div class="glass">
+      <div class="panel-hdr"><div class="ptitle">Display placements</div><div class="pmeta" id="placeMeta">CA DISPLAY</div></div>
+      <div id="placeList" class="list"></div>
+    </div>
+    <div class="glass">
+      <div class="panel-hdr"><div class="ptitle">Negatives added</div><div class="pmeta">FROM ACCOUNT CHANGES</div></div>
+      <div id="negList" class="list"></div>
+    </div>
+  </div>
+
+  <div class="grid-2 fade">
+    <div class="glass">
+      <div class="panel-hdr"><div class="ptitle">Daily SafeLink reports</div><div class="pmeta">PASTE INTO data.json → dailyReports.rows</div></div>
+      <div id="dailyReports" class="empty">AWAITING DAILY REPORT DATA</div>
+    </div>
+    <div class="glass">
+      <div class="panel-hdr"><div class="ptitle">Biweekly enrollments</div><div class="pmeta">PASTE INTO data.json → biweeklyEnrollments.rows</div></div>
+      <div id="biweeklyReports" class="empty">AWAITING BIWEEKLY ENROLLMENT DATA · COST / ENROLLMENT WILL APPEAR HERE</div>
+    </div>
+  </div>
+
+  <div class="glass fade" style="margin-top:14px">
+    <div class="panel-hdr"><div class="ptitle">Change log</div><div class="pmeta">ACCOUNT EVENTS</div></div>
+    <ul class="changelog" id="changelog"></ul>
+  </div>
+</div>
+
+<script>
+const SEG_COLORS = {ca_search:'#38bdf8', ca_display:'#818cf8', nationwide:'#34d399', combined:'#38bdf8'};
+let DATA = null, active = 'combined';
+const charts = {};
+
+const $ = id => document.getElementById(id);
+const fmtMoney = v => v == null || Number.isNaN(v) ? '—' : '$' + Number(v).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+const fmtNum = v => v == null || Number.isNaN(v) ? '—' : Number(v).toLocaleString('en-US');
+const fmtPct = v => v == null || Number.isNaN(v) ? '—' : Number(v).toFixed(2) + '%';
+
+function animateValue(el, end, prefix='', suffix='', decimals=0){
+  if(end == null || Number.isNaN(end)){ el.textContent = '—'; el.classList.add('await'); return; }
+  el.classList.remove('await');
+  const start = 0, dur = 900, t0 = performance.now();
+  const step = t => {
+    const p = Math.min(1, (t - t0) / dur);
+    const eased = 1 - Math.pow(1 - p, 3);
+    const val = start + (end - start) * eased;
+    el.textContent = prefix + val.toLocaleString('en-US',{minimumFractionDigits:decimals,maximumFractionDigits:decimals}) + suffix;
+    if(p < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+function segmentMetrics(segId){
+  if(segId === 'combined') return DATA.overview;
+  return DATA.bySegment[segId] || {awaitingData:true};
+}
+
+function keywordsFor(segId){
+  const all = DATA.keywords || [];
+  return segId === 'combined' ? all : all.filter(k => k.segmentId === segId);
+}
+
+function adGroupsFor(segId){
+  if(segId === 'combined'){
+    return ['ca_search','ca_display','nationwide'].flatMap(id =>
+      (DATA.bySegment[id].adGroupPerformance||[]).map(a => ({...a, segmentId:id, label:`${a.name} · ${id.replace('_',' ')}`}))
+    );
+  }
+  return (DATA.bySegment[segId].adGroupPerformance||[]).map(a => ({...a, segmentId:segId, label:a.name}));
+}
+
+function devicesFor(segId){
+  if(segId === 'combined'){
+    const map = {};
+    for(const id of ['ca_search','nationwide','ca_display']){
+      for(const d of (DATA.bySegment[id].devices||[])){
+        map[d.device] = map[d.device] || {device:d.device, clicks:0, spendUsd:0};
+        map[d.device].clicks += d.clicks||0;
+        map[d.device].spendUsd += d.spendUsd||0;
+      }
+    }
+    return Object.values(map);
+  }
+  return DATA.bySegment[segId].devices || [];
+}
+
+function destroyChart(key){ if(charts[key]){ charts[key].destroy(); delete charts[key]; } }
+
+function buildTabs(){
+  const tabs = [
+    {id:'combined', label:'COMBINED'},
+    ...DATA.segments.map(s => ({id:s.id, label:s.shortLabel}))
+  ];
+  $('tabs').innerHTML = tabs.map(t => `<button class="tab${t.id===active?' active':''}" data-seg="${t.id}">${t.label}</button>`).join('');
+  $('tabs').onclick = e => {
+    const btn = e.target.closest('.tab'); if(!btn) return;
+    active = btn.dataset.seg; renderAll();
+  };
+}
+
+function buildSegCards(){
+  $('segCards').innerHTML = DATA.segments.map(s => {
+    const m = DATA.bySegment[s.id];
+    return `<div class="glass seg-card" data-seg="${s.id}">
+      <div class="glow"></div>
+      <div class="seg-name" style="color:${s.hex}">${s.shortLabel}</div>
+      <div class="seg-stat" style="color:${s.hex}">${fmtMoney(m.spendUsd)}</div>
+      <div class="seg-meta">${fmtNum(m.clicks)} clicks · ${fmtPct(m.ctrPct)} CTR · ${s.status}</div>
+      <div class="seg-meta">${s.campaignName} · $${s.dailyBudgetUsd}/day</div>
+    </div>`;
+  }).join('');
+  $('segCards').onclick = e => {
+    const card = e.target.closest('.seg-card'); if(!card) return;
+    active = card.dataset.seg; renderAll();
+  };
+}
+
+function buildKPIs(){
+  const m = segmentMetrics(active);
+  const color = SEG_COLORS[active] || '#38bdf8';
+  $('kpiPrimary').innerHTML = `
+    <div class="glass kpi c-green"><div class="kpi-lbl">Ad Spend</div><div class="kpi-val" style="color:var(--green)" id="kv-spend">—</div><div class="kpi-sub">${m.windowLabel || DATA.meta.dataWindow.label}</div></div>
+    <div class="glass kpi c-accent"><div class="kpi-lbl">Clicks</div><div class="kpi-val" style="color:${color}" id="kv-clicks">—</div><div class="kpi-sub">${fmtNum(m.impressions)} impressions</div></div>
+    <div class="glass kpi c-amber"><div class="kpi-lbl">CTR</div><div class="kpi-val" style="color:var(--amber)" id="kv-ctr">—</div><div class="kpi-sub">Avg CPC ${fmtMoney(m.avgCpcUsd)}</div></div>
+    <div class="glass kpi c-purple"><div class="kpi-lbl">Enrollments</div><div class="kpi-val" style="color:var(--purple)" id="kv-enroll">—</div><div class="kpi-sub">From SafeLink reports · not Google Ads</div></div>`;
+  $('kpiSecondary').innerHTML = `
+    <div class="glass kpi c-accent"><div class="kpi-lbl">Cost / Enrollment</div><div class="kpi-val" style="color:var(--accent)" id="kv-cpe">—</div><div class="kpi-sub">Awaiting biweekly / daily report join</div></div>
+    <div class="glass kpi c-red"><div class="kpi-lbl">Conversions (Google)</div><div class="kpi-val" style="color:var(--red)" id="kv-conv">0</div><div class="kpi-sub">No conversion tracking installed</div></div>
+    <div class="glass kpi c-amber"><div class="kpi-lbl">Budget status</div><div class="kpi-val" style="color:var(--amber);font-size:18px;line-height:1.2" id="kv-status">—</div><div class="kpi-sub">All live campaigns Limited by budget</div></div>`;
+  animateValue($('kv-spend'), m.spendUsd, '$', '', 2);
+  animateValue($('kv-clicks'), m.clicks);
+  animateValue($('kv-ctr'), m.ctrPct, '', '%', 2);
+  if(m.enrollments == null){ $('kv-enroll').textContent = 'Awaiting data'; $('kv-enroll').classList.add('await'); }
+  else animateValue($('kv-enroll'), m.enrollments);
+  if(m.costPerEnrollmentUsd == null){ $('kv-cpe').textContent = 'Awaiting data'; $('kv-cpe').classList.add('await'); }
+  else animateValue($('kv-cpe'), m.costPerEnrollmentUsd, '$', '', 2);
+  const status = active==='combined' ? 'Limited by budget' : (DATA.bySegment[active]?.status || '—');
+  $('kv-status').textContent = status;
+}
+
+function chartDefaults(){
+  Chart.defaults.color = '#a7b4c9';
+  Chart.defaults.borderColor = 'rgba(99,179,237,.08)';
+  Chart.defaults.font.family = "'DM Sans', sans-serif";
+}
+
+function renderDonutSpend(){
+  destroyChart('donut');
+  let labels, values, colors;
+  if(active === 'combined'){
+    labels = DATA.segments.map(s => s.label);
+    values = DATA.segments.map(s => DATA.bySegment[s.id].spendUsd || 0);
+    colors = DATA.segments.map(s => s.hex);
+    $('donutMeta').textContent = 'BY SEGMENT';
+  } else {
+    const ags = adGroupsFor(active).filter(a => (a.spendUsd||0) > 0).slice(0,8);
+    labels = ags.map(a => a.name || a.label);
+    values = ags.map(a => a.spendUsd || 0);
+    colors = labels.map((_,i) => `hsl(${200 + i*28}, 85%, ${55 - i*3}%)`);
+    $('donutMeta').textContent = 'BY AD GROUP';
+  }
+  charts.donut = new Chart($('donutSpend'), {
+    type:'doughnut',
+    data:{labels, datasets:[{data:values, backgroundColor:colors, borderWidth:0, hoverOffset:6}]},
+    options:{responsive:true, maintainAspectRatio:false, cutout:'68%',
+      plugins:{legend:{position:'bottom', labels:{boxWidth:10, font:{family:"'Space Mono'", size:10}}}}}
+  });
+}
+
+function renderBarAdGroups(){
+  destroyChart('ags');
+  const ags = adGroupsFor(active).filter(a => (a.spendUsd||0) > 0).sort((a,b)=>b.spendUsd-a.spendUsd).slice(0,10);
+  charts.ags = new Chart($('barAdGroups'), {
+    type:'bar',
+    data:{labels: ags.map(a => a.label || a.name),
+      datasets:[{label:'Spend', data:ags.map(a=>a.spendUsd), backgroundColor:ags.map(a => SEG_COLORS[a.segmentId]||'#38bdf8'), borderRadius:6}]},
+    options:{indexAxis:'y', responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{display:false}},
+      scales:{x:{ticks:{callback:v=>'$'+v}, grid:{color:'rgba(99,179,237,.06)'}}, y:{grid:{display:false}}}}
+  });
+}
+
+function renderTrend(){
+  destroyChart('trend');
+  const daily = active==='combined' ? (DATA.dailyAds||[]) : (DATA.bySegment[active].dailyAds||[]);
+  const wrap = $('trendWrap');
+  if(!daily.length){
+    $('trendMeta').textContent = 'SNAPSHOT ONLY · PASTE dailyAds[] FOR TRENDS';
+    // Show a single-point snapshot visual so the panel isn't blank
+    const m = segmentMetrics(active);
+    charts.trend = new Chart($('lineTrend'), {
+      type:'bar',
+      data:{labels:['Nov 4–9 snapshot'], datasets:[
+        {label:'Spend', data:[m.spendUsd||0], backgroundColor:SEG_COLORS[active], borderRadius:8},
+        {label:'Clicks', data:[m.clicks||0], backgroundColor:'rgba(251,191,36,.7)', borderRadius:8, yAxisID:'y1'}
+      ]},
+      options:{responsive:true, maintainAspectRatio:false,
+        plugins:{legend:{position:'bottom', labels:{boxWidth:10, font:{family:"'Space Mono'", size:10}}},
+          title:{display:true, text:'Daily trend series not loaded yet — showing window totals', color:'#a7b4c9', font:{size:11}}},
+        scales:{y:{position:'left', ticks:{callback:v=>'$'+v}}, y1:{position:'right', grid:{drawOnChartArea:false}}}}
+    });
+    return;
+  }
+  $('trendMeta').textContent = 'DAILY SERIES';
+  charts.trend = new Chart($('lineTrend'), {
+    type:'line',
+    data:{labels:daily.map(d=>d.date), datasets:[
+      {label:'Spend', data:daily.map(d=>d.spendUsd), borderColor:SEG_COLORS[active], tension:.35, fill:true, backgroundColor:'rgba(56,189,248,.12)'},
+      {label:'Clicks', data:daily.map(d=>d.clicks), borderColor:'#fbbf24', tension:.35, yAxisID:'y1'}
+    ]},
+    options:{responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{position:'bottom'}},
+      scales:{y:{ticks:{callback:v=>'$'+v}}, y1:{position:'right', grid:{drawOnChartArea:false}}}}
+  });
+}
+
+function renderKeywords(){
+  destroyChart('kw');
+  const kws = keywordsFor(active).slice().sort((a,b)=> (b.spendUsd||0)-(a.spendUsd||0)).slice(0,12);
+  charts.kw = new Chart($('barKeywords'), {
+    type:'bar',
+    data:{labels:kws.map(k => (k.match==='Exact'?'[':'"') + k.keyword + (k.match==='Exact'?']':'"')),
+      datasets:[{label:'Cost', data:kws.map(k=>k.spendUsd||0), backgroundColor:kws.map(k=>SEG_COLORS[k.segmentId]||'#38bdf8'), borderRadius:6}]},
+    options:{indexAxis:'y', responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{display:false}},
+      scales:{x:{ticks:{callback:v=>'$'+v}}, y:{ticks:{font:{size:10}}, grid:{display:false}}}}
+  });
+}
+
+function renderDevices(){
+  destroyChart('dev');
+  const devices = devicesFor(active);
+  const list = $('deviceList');
+  if(!devices.length){
+    list.innerHTML = '<div class="empty">NO DEVICE BREAKDOWN FOR THIS VIEW</div>';
+    charts.dev = new Chart($('donutDevices'), {type:'doughnut', data:{labels:['Awaiting data'], datasets:[{data:[1], backgroundColor:['#1f2937'], borderWidth:0}]},
+      options:{responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, cutout:'70%'}});
+    return;
+  }
+  charts.dev = new Chart($('donutDevices'), {
+    type:'doughnut',
+    data:{labels:devices.map(d=>d.device), datasets:[{data:devices.map(d=>d.spendUsd), backgroundColor:['#38bdf8','#818cf8','#34d399'], borderWidth:0}]},
+    options:{responsive:true, maintainAspectRatio:false, cutout:'65%', plugins:{legend:{position:'bottom', labels:{boxWidth:10, font:{size:10}}}}}
+  });
+  const max = Math.max(...devices.map(d=>d.spendUsd||0), 1);
+  list.innerHTML = devices.map(d => `<div class="row"><div><div class="row-title">${d.device}</div><div class="row-sub">${fmtNum(d.clicks)} clicks</div><div class="bar"><i style="width:${(d.spendUsd/max)*100}%"></i></div></div><div class="money">${fmtMoney(d.spendUsd)}</div></div>`).join('');
+}
+
+function renderLists(){
+  const wasted = DATA.searchTerms.wasted || [];
+  const good = DATA.searchTerms.good || [];
+  $('wastedList').innerHTML = wasted.length ? wasted.map(t => `<div class="row"><div><div class="row-title">${t.term}</div><div class="row-sub">${t.reason||'Wasted'}</div></div><div><span class="pill bad">${fmtMoney(t.spendUsd)}</span></div></div>`).join('') : '<div class="empty">NONE FLAGGED</div>';
+  $('goodList').innerHTML = good.length ? good.map(t => `<div class="row"><div><div class="row-title">${t.term}</div><div class="row-sub">${t.segmentId||'—'}</div></div><div class="money">${fmtMoney(t.spendUsd)} · ${fmtNum(t.clicks)} clk</div></div>`).join('') : '<div class="empty">NONE YET</div>';
+
+  const recs = DATA.recommendations || [];
+  $('recList').innerHTML = recs.length ? recs.map(r => `<div class="rec"><span class="pri ${r.priority}">${r.priority.toUpperCase()}</span><div><div class="row-title">${r.summary}</div><div class="row-sub">STATUS · ${r.status}</div></div></div>`).join('') : '<div class="empty">NONE</div>';
+
+  const placements = DATA.bySegment.ca_display.placements;
+  if(active === 'ca_display' || active === 'combined'){
+    $('placeMeta').textContent = `${placements?.total||0} PLACEMENTS`;
+    $('placeList').innerHTML = (placements?.topByCost||[]).map(p => `<div class="row"><div class="row-title">${p.name}</div><div class="money">${fmtMoney(p.spendUsd)}</div></div>`).join('') || '<div class="empty">NONE</div>';
+  } else {
+    $('placeMeta').textContent = 'CA DISPLAY ONLY';
+    $('placeList').innerHTML = '<div class="empty">SWITCH TO CA DISPLAY OR COMBINED</div>';
+  }
+
+  const negs = (DATA.negativesAdded||[]).filter(n => active==='combined' || n.segmentId===active);
+  $('negList').innerHTML = negs.length ? negs.map(n => `<div class="row"><div class="row-title">${n.term||n.keyword}</div><div class="row-sub">${n.date||''}</div></div>`).join('') : '<div class="empty">NONE ADDED YET · COMPETITOR NEGATIVES STILL PENDING</div>';
+
+  const daily = DATA.dailyReports.rows||[];
+  const bi = DATA.biweeklyEnrollments.rows||[];
+  $('dailyReports').className = daily.length ? 'list' : 'empty';
+  $('dailyReports').innerHTML = daily.length ? daily.map(r => `<div class="row"><div class="row-title">${r.date||'row'}</div><div class="row-sub">${JSON.stringify(r)}</div></div>`).join('') : 'AWAITING DAILY REPORT DATA';
+  $('biweeklyReports').className = bi.length ? 'list' : 'empty';
+  $('biweeklyReports').innerHTML = bi.length ? bi.map(r => `<div class="row"><div class="row-title">${r.period||r.date||'row'}</div><div class="row-sub">${JSON.stringify(r)}</div></div>`).join('') : 'AWAITING BIWEEKLY ENROLLMENT DATA · COST / ENROLLMENT WILL APPEAR HERE';
+
+  $('changelog').innerHTML = (DATA.changelog||[]).slice().reverse().map(c => `<li><div class="d">${c.date}</div><div class="s">${c.summary}</div></li>`).join('');
+}
+
+/* Lightweight US map (Albers-like positions via precomputed centroids + state paths from CDN TopoJSON) */
+async function renderMap(){
+  const svg = $('usMap');
+  $('mapMeta').textContent = active === 'nationwide'
+    ? 'NATIONWIDE TARGETING · STATE SPEND AWAITING DATA'
+    : active === 'combined'
+      ? 'CA HIGHLIGHT + NATIONWIDE FOOTPRINT · SPEND AWAITING STATE DATA'
+      : 'CA FOCUS · STATE SPEND AWAITING DATA';
+  try{
+    if(!window._usTopo){
+      const res = await fetch('https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json');
+      window._usTopo = await res.json();
+    }
+    const states = topojson.feature(window._usTopo, window._usTopo.objects.states);
+    // Use a tiny equirectangular-ish project via d3-free manual bbox fit
+    // Prefer browser Path2D? We'll use a simple SVG path projector with geoAlbersUsa-like via canvas-free math:
+    // Load d3-geo from CDN once
+    if(!window.d3geo){
+      await new Promise((resolve,reject)=>{
+        const s=document.createElement('script');
+        s.src='https://cdn.jsdelivr.net/npm/d3-geo@3/dist/d3-geo.min.js';
+        s.onload=()=>{ window.d3geo = window.d3; resolve(); };
+        s.onerror=reject; document.head.appendChild(s);
+      });
+    }
+    const projection = d3.geoAlbersUsa().translate([480,300]).scale(1000);
+    const path = d3.geoPath(projection);
+    const excluded = new Set(['California','Nebraska','Oregon','South Dakota']);
+    const fipsName = {}; // filled from properties
+    svg.innerHTML = states.features.map(f => {
+      const name = f.properties.name;
+      let cls = 'state eligible';
+      if(name === 'California') cls = 'state ca';
+      else if(excluded.has(name)) cls = 'state excluded';
+      const d = path(f);
+      return d ? `<path class="${cls}" data-name="${name}" d="${d}"><title>${name}</title></path>` : '';
+    }).join('');
+    const hasStateData = ['ca_search','ca_display','nationwide'].some(id => (DATA.bySegment[id].statePerformance||[]).length);
+    $('mapOverlay').style.display = hasStateData ? 'none' : 'flex';
+    $('mapOverlay').textContent = 'AWAITING STATE PERFORMANCE DATA';
+  }catch(err){
+    console.error(err);
+    svg.innerHTML = '';
+    $('mapOverlay').style.display = 'flex';
+    $('mapOverlay').textContent = 'MAP FAILED TO LOAD · STRUCTURE READY IN DATA MODEL';
+  }
+}
+
+function renderAll(){
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.seg===active));
+  buildKPIs();
+  renderDonutSpend();
+  renderBarAdGroups();
+  renderTrend();
+  renderKeywords();
+  renderDevices();
+  renderLists();
+  renderMap();
+}
+
+function tickClock(){
+  const now = new Date();
+  $('clock').textContent = now.toLocaleString('en-US',{timeZone:'America/New_York', weekday:'short', month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}) + ' ET';
+}
+
+async function boot(){
+  chartDefaults();
+  DATA = await fetch('data.json?ts=' + Date.now()).then(r => r.json());
+  $('acctId').textContent = DATA.meta.accountId;
+  $('windowText').textContent = `REPORT WINDOW: ${DATA.meta.dataWindow.label}`;
+  if(DATA.meta.identityVerificationDue){
+    $('idAlert').style.display = 'flex';
+    $('idDue').textContent = DATA.meta.identityVerificationDue;
+  }
+  $('liveStatus').textContent = DATA.meta.dataWindow.granularity === 'snapshot' ? 'SNAPSHOT' : 'LIVE';
+  $('dataSource').textContent = `SOURCE: data.json · UPDATED ${DATA.meta.updatedAt || '—'}`;
+  buildTabs();
+  buildSegCards();
+  renderAll();
+  tickClock(); setInterval(tickClock, 1000);
+  $('loadingOverlay').classList.add('hidden');
+}
+boot().catch(err => {
+  console.error(err);
+  $('loadingOverlay').innerHTML = '<div class="loader-text" style="color:var(--red)">FAILED TO LOAD data.json</div>';
+});
+</script>
+</body>
+</html>
