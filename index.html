@@ -252,7 +252,8 @@ body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(r
 
   <div class="grid-2 fade">
     <div class="glass">
-      <div class="panel-hdr"><div class="ptitle">Daily SafeLink reports</div><div class="pmeta">PASTE INTO data.json → dailyReports.rows</div></div>
+      <div class="panel-hdr"><div class="ptitle">Daily SafeLink reports · Enrollments</div><div class="pmeta" id="dailyReportsMeta">INITIAL ACTIVITY</div></div>
+      <div id="dailyReportsSummary" class="empty" style="margin-bottom:10px;display:none"></div>
       <div id="dailyReports" class="empty">AWAITING DAILY REPORT DATA</div>
     </div>
     <div class="glass">
@@ -365,7 +366,7 @@ function buildKPIs(){
     <div class="glass kpi c-amber"><div class="kpi-lbl">CTR</div><div class="kpi-val" style="color:var(--amber)" id="kv-ctr">—</div><div class="kpi-sub">Avg CPC ${fmtMoney(m.avgCpcUsd)}</div></div>
     <div class="glass kpi c-purple"><div class="kpi-lbl">Enrollments</div><div class="kpi-val" style="color:var(--purple)" id="kv-enroll">—</div><div class="kpi-sub">From SafeLink reports · not Google Ads</div></div>`;
   $('kpiSecondary').innerHTML = `
-    <div class="glass kpi c-accent"><div class="kpi-lbl">Cost / Enrollment</div><div class="kpi-val" style="color:var(--accent)" id="kv-cpe">—</div><div class="kpi-sub">Awaiting biweekly / daily report join</div></div>
+    <div class="glass kpi c-accent"><div class="kpi-lbl">Cost / Enrollment</div><div class="kpi-val" style="color:var(--accent)" id="kv-cpe">—</div><div class="kpi-sub" id="kv-cpe-sub">Initial daily activity · payout via biweekly</div></div>
     <div class="glass kpi c-red"><div class="kpi-lbl">Conversions (Google)</div><div class="kpi-val" style="color:var(--red)" id="kv-conv">0</div><div class="kpi-sub">No conversion tracking installed</div></div>
     <div class="glass kpi c-amber"><div class="kpi-lbl">Budget status</div><div class="kpi-val" style="color:var(--amber);font-size:18px;line-height:1.2" id="kv-status">—</div><div class="kpi-sub">All live campaigns Limited by budget</div></div>`;
   animateValue($('kv-spend'), m.spendUsd, '$', '', 2);
@@ -375,6 +376,12 @@ function buildKPIs(){
   else animateValue($('kv-enroll'), m.enrollments);
   if(m.costPerEnrollmentUsd == null){ $('kv-cpe').textContent = 'Awaiting data'; $('kv-cpe').classList.add('await'); }
   else animateValue($('kv-cpe'), m.costPerEnrollmentUsd, '$', '', 2);
+  if($('kv-cpe-sub')){
+    const lbl = DATA.dailyReports?.label || 'Initial daily activity, payout confirmed only in biweekly reports';
+    $('kv-cpe-sub').textContent = (active==='combined' && m.costPerEnrollmentUsd != null)
+      ? lbl
+      : (m.costPerEnrollmentUsd == null ? 'Awaiting biweekly / daily report join' : lbl);
+  }
   const status = active==='combined' ? 'Limited by budget' : (DATA.bySegment[active]?.status || '—');
   $('kv-status').textContent = status;
 }
@@ -508,10 +515,38 @@ function renderLists(){
   const negs = (DATA.negativesAdded||[]).filter(n => active==='combined' || n.segmentId===active);
   $('negList').innerHTML = negs.length ? negs.map(n => `<div class="row"><div class="row-title">${n.term||n.keyword}</div><div class="row-sub">${n.date||''}</div></div>`).join('') : '<div class="empty">NONE ADDED YET · COMPETITOR NEGATIVES STILL PENDING</div>';
 
-  const daily = DATA.dailyReports.rows||[];
+  const dailyAll = DATA.dailyReports?.rows||[];
+  const dailyLabel = DATA.dailyReports?.label || 'Initial daily activity, payout confirmed only in biweekly reports';
+  const dailySummary = DATA.dailyReports?.summary || null;
+  // segmentId "all" = all campaigns combined (report not split). Show on Combined tab.
+  const daily = active === 'combined'
+    ? dailyAll.filter(r => !r.segmentId || r.segmentId === 'all' || r.segmentId === 'combined')
+    : dailyAll.filter(r => r.segmentId === active);
   const bi = DATA.biweeklyEnrollments.rows||[];
+  if($('dailyReportsMeta')){
+    $('dailyReportsMeta').textContent = active === 'combined'
+      ? 'ALL CAMPAIGNS · PROMO ' + (DATA.dailyReports?.promoCode || '—')
+      : active.toUpperCase().replace('_',' ') + ' · SPLIT AWAITING DATA';
+  }
+  const sumEl = $('dailyReportsSummary');
+  if(sumEl){
+    if(active === 'combined' && dailySummary){
+      sumEl.style.display = 'block';
+      sumEl.className = 'list';
+      sumEl.innerHTML = `<div class="row"><div><div class="row-title">${dailyLabel}</div><div class="row-sub">${fmtNum(dailySummary.total)} total · ${fmtNum(dailySummary.qualified)} qualified · ${fmtNum(dailySummary.pending)} pending · ${fmtNum(dailySummary.unqualified||0)} unqualified · ${fmtNum(dailySummary.rejected||0)} rejected</div><div class="row-sub">Spend basis Nov 6–8: ${fmtMoney(dailySummary.spendUsd)} ad spend ÷ ${fmtNum(dailySummary.total)} enrollments</div></div><div class="money">${fmtMoney(dailySummary.costPerEnrollmentUsd)}<div class="row-sub">cost / enrollment</div></div></div>`;
+    } else if(active !== 'combined'){
+      sumEl.style.display = 'block';
+      sumEl.className = 'empty';
+      sumEl.textContent = 'Enrollment report is all-campaigns combined (segmentId all). Switch to Combined to see totals. ' + dailyLabel;
+    } else {
+      sumEl.style.display = 'none';
+      sumEl.innerHTML = '';
+    }
+  }
   $('dailyReports').className = daily.length ? 'list' : 'empty';
-  $('dailyReports').innerHTML = daily.length ? daily.map(r => `<div class="row"><div class="row-title">${r.date||'row'}</div><div class="row-sub">${JSON.stringify(r)}</div></div>`).join('') : 'AWAITING DAILY REPORT DATA';
+  $('dailyReports').innerHTML = daily.length
+    ? daily.map(r => `<div class="row"><div><div class="row-title">${r.date||'row'}</div><div class="row-sub">${r.segmentId||'all'} · ${r.source||''}</div></div><div class="money">${fmtNum(r.total ?? ((r.qualified||0)+(r.pending||0)+(r.unqualified||0)+(r.rejected||0)))} total<div class="row-sub">${fmtNum(r.qualified||0)} Q · ${fmtNum(r.pending||0)} P · ${fmtNum(r.unqualified||0)} U · ${fmtNum(r.rejected||0)} R</div></div></div>`).join('')
+    : (active === 'combined' ? 'AWAITING DAILY REPORT DATA' : 'NO SEGMENT-SPLIT DAILY ROWS YET');
   $('biweeklyReports').className = bi.length ? 'list' : 'empty';
   $('biweeklyReports').innerHTML = bi.length ? bi.map(r => `<div class="row"><div class="row-title">${r.period||r.date||'row'}</div><div class="row-sub">${JSON.stringify(r)}</div></div>`).join('') : 'AWAITING BIWEEKLY ENROLLMENT DATA · COST / ENROLLMENT WILL APPEAR HERE';
 
