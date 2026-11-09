@@ -7,7 +7,7 @@
     "loginEmail": "xavidalmau9@gmail.com",
     "liveSince": "2026-11-06",
     "timezone": "America/New_York",
-    "updatedAt": "2026-11-09T09:38:00-05:00",
+    "updatedAt": "2026-11-09T10:08:00-05:00",
     "dataWindow": {
       "from": "2026-11-04",
       "to": "2026-11-09",
@@ -19,10 +19,11 @@
   },
   "budgets": {
     "dailyTotalUsd": 100,
-    "searchMaxCpcUsd": 2.5,
-    "applySnapMaxCpcUsd": 3.5,
+    "searchMaxCpcUsd": 2.0,
+    "applySnapMaxCpcUsd": 2.0,
     "displayMaxCpcUsd": 1.0,
-    "mobileBidAdjustmentPct": 0
+    "mobileBidAdjustmentPct": 0,
+    "notes": "As of 2026-11-09: all Search ad group max CPCs $2.00; Competitor terms ad groups $1.00; keyword-level bid overrides cleared."
   },
   "segments": [
     {
@@ -35,10 +36,10 @@
       "dailyBudgetUsd": 40,
       "targeting": "California only",
       "status": "Eligible (Limited by budget)",
-      "maxCpcUsd": 2.5,
+      "maxCpcUsd": 2.0,
       "colorKey": "accent",
       "hex": "#38bdf8",
-      "notes": "Apply and SNAP/EBT ad groups use $3.50 max CPC"
+      "notes": "Apply and SNAP/EBT ad groups use $3.50 max CPC All ad groups max CPC $2.00 (was $3.50 Apply/SNAP, $2.50 others). Keyword-level overrides cleared. Competitor terms ad group at $1.00."
     },
     {
       "id": "ca_display",
@@ -53,7 +54,7 @@
       "maxCpcUsd": 1.0,
       "colorKey": "purple",
       "hex": "#818cf8",
-      "notes": "378 placements mostly game/utility apps"
+      "notes": "Excluded mobileappcategory::69500 (all apps) plus lakesidemtconstruction.com, plumbertip.com, jqrkjxh.com, urongames.top."
     },
     {
       "id": "nationwide",
@@ -65,7 +66,7 @@
       "dailyBudgetUsd": 40,
       "targeting": "All US except CA, NE, OR, SD",
       "status": "Eligible (Limited by budget)",
-      "maxCpcUsd": 2.5,
+      "maxCpcUsd": 2.0,
       "colorKey": "green",
       "hex": "#34d399",
       "excludedStates": [
@@ -74,7 +75,7 @@
         "OR",
         "SD"
       ],
-      "notes": "Apply and SNAP/EBT ad groups use $3.50 max CPC. No free-phone claims outside CA."
+      "notes": "Apply and SNAP/EBT ad groups use $3.50 max CPC. No free-phone claims outside CA. All ad groups max CPC $2.00 (was $3.50 Apply/SNAP, $2.50 others). Keyword-level overrides cleared. Competitor terms ad group at $1.00."
     }
   ],
   "overview": {
@@ -174,6 +175,16 @@
           "ctrPct": 0,
           "avgCpcUsd": null,
           "spendUsd": 0
+        },
+        {
+          "name": "Competitor terms",
+          "impressions": null,
+          "clicks": null,
+          "ctrPct": null,
+          "avgCpcUsd": 1.0,
+          "spendUsd": null,
+          "maxCpcUsd": 1.0,
+          "notes": "Created 2026-11-09 \u00b7 phrase competitor keywords \u00b7 ads from approved Apply \u00b7 awaiting performance data"
         }
       ],
       "searchTerms": {
@@ -352,6 +363,16 @@
           "ctrPct": 0,
           "avgCpcUsd": null,
           "spendUsd": 0
+        },
+        {
+          "name": "Competitor terms",
+          "impressions": null,
+          "clicks": null,
+          "ctrPct": null,
+          "avgCpcUsd": 1.0,
+          "spendUsd": null,
+          "maxCpcUsd": 1.0,
+          "notes": "Created 2026-11-09 \u00b7 phrase competitor keywords \u00b7 ads from approved Apply \u00b7 awaiting performance data"
         }
       ],
       "searchTerms": {
@@ -629,26 +650,30 @@
     {
       "id": "block_display_apps",
       "priority": "high",
-      "status": "pending",
-      "summary": "Block mobile apps on Display (placements dominated by games/utilities)."
+      "status": "applied",
+      "summary": "Block mobile apps on Display (placements dominated by games/utilities). Applied: excluded mobileappcategory::69500 + lakesidemtconstruction.com, plumbertip.com, jqrkjxh.com, urongames.top.",
+      "appliedDate": "2026-11-09"
     },
     {
       "id": "competitor_negatives",
       "priority": "high",
-      "status": "pending",
-      "summary": "Add competitor brand negatives (AirTalk, TruConnect, Tag Mobile, Cricket, California Lifeline)."
+      "status": "applied",
+      "summary": "Competitor terms handled via new $1.00 CPC \"Competitor terms\" ad groups (CA + US ex CA) instead of negatives. 10 phrase keywords; ads copied from approved Apply ads. \"californialifeline com\" rejected by policy.",
+      "appliedDate": "2026-11-09",
+      "approach": "ad_group_not_negatives"
     },
     {
       "id": "fix_bid_strategy",
       "priority": "high",
-      "status": "pending",
-      "summary": "Fix bid strategy \u2014 actual Search CPCs exceed caps ($2.50 / $3.50)."
+      "status": "applied",
+      "summary": "All Search ad group max CPCs set to $2.00 (Apply/SNAP were $3.50; others $2.50). Keyword-level bid overrides cleared (root cause of CPCs exceeding caps). Bid strategy already Manual CPC.",
+      "appliedDate": "2026-11-09"
     },
     {
       "id": "rewrite_poor_ads",
       "priority": "medium",
       "status": "pending",
-      "summary": "Rewrite Poor-strength Assurance and Near me ads."
+      "summary": "Rewrite Poor-strength Assurance and Near me ads. Awaiting Javier approval of new copy (approved baseline must be preserved)."
     }
   ],
   "dailyReports": {
@@ -675,6 +700,31 @@
     {
       "date": "2026-11-09",
       "summary": "GO Advertising SafeLink Mission Control created with Combined + CA Search / CA Display / Nationwide tabs."
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "Display: excluded all apps (mobileappcategory::69500) plus lakesidemtconstruction.com, plumbertip.com, jqrkjxh.com, and urongames.top."
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "Search: all ad group max CPCs set to $2.00 (Apply and SNAP were $3.50; the rest $2.50). Keyword-level bid overrides cleared (why actual CPCs had exceeded caps). Bid strategy already Manual CPC."
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "New \"Competitor terms\" ad group in CA Search and Nationwide at $1.00 CPC with 10 phrase keywords (airtalk wireless, airtalk government phone, airtalk free phone, truconnect, truconnect application, tag mobile, tag com free phone, cricket lifeline, does cricket have lifeline, california lifeline website). Ads copied from approved Apply ads. \"californialifeline com\" rejected by policy."
+    }
+  ],
+  "displayExclusions": [
+    {
+      "date": "2026-11-09",
+      "segmentId": "ca_display",
+      "items": [
+        "mobileappcategory::69500",
+        "lakesidemtconstruction.com",
+        "plumbertip.com",
+        "jqrkjxh.com",
+        "urongames.top"
+      ]
     }
   ]
 }
