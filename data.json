@@ -1,21 +1,21 @@
 {
   "meta": {
-    "title": "GO Advertising \u00b7 SafeLink Mission Control",
+    "title": "GO Advertising · SafeLink Mission Control",
     "brand": "GO Advertising",
     "product": "SafeLink",
     "accountId": "734-978-8944",
     "loginEmail": "xavidalmau9@gmail.com",
     "liveSince": "2026-11-06",
     "timezone": "America/New_York",
-    "updatedAt": "2026-11-09T15:00:00-05:00",
+    "updatedAt": "2026-11-09T15:30:00-05:00",
     "dataWindow": {
       "from": "2026-11-04",
       "to": "2026-11-09",
-      "label": "Nov 4\u20139, 2026 \u00b7 all-time totals; daily series from Nov 8",
+      "label": "Nov 4–9, 2026 · all-time totals; daily series from Nov 8",
       "granularity": "daily"
     },
     "identityVerificationDue": "2026-12-09",
-    "notes": "No Google Ads conversion tracking (conversions always 0). Enrollments come from SafeLink reports. Daily trend charts start from this snapshot until a daily series is pasted. State/region and city spend not available in the Google Ads UI views checked (matched locations shows only United States); statePerformance stays empty. Identity verification due 2026-12-09."
+    "notes": "No Google Ads conversion tracking (conversions always 0). Enrollments come from SafeLink reports by promo code from 2026-11-09: ABJ0020=Nationwide, ABJ0021=CA Search, ABJ0022=CA Display. Pre-split Nov 6–8 rows used shared ABJ0020 and stay segment \"all\". Daily trend charts start from this snapshot until a daily series is pasted. State/region and city spend not available in the Google Ads UI views checked (matched locations shows only United States); statePerformance stays empty. Identity verification due 2026-12-09."
   },
   "budgets": {
     "dailyTotalUsd": 100,
@@ -39,7 +39,8 @@
       "maxCpcUsd": 2.0,
       "colorKey": "accent",
       "hex": "#38bdf8",
-      "notes": "Apply and SNAP/EBT ad groups use $3.50 max CPC All ad groups max CPC $2.00 (was $3.50 Apply/SNAP, $2.50 others). Keyword-level overrides cleared. Competitor terms ad group at $1.00."
+      "notes": "Apply and SNAP/EBT ad groups use $3.50 max CPC All ad groups max CPC $2.00 (was $3.50 Apply/SNAP, $2.50 others). Keyword-level overrides cleared. Competitor terms ad group at $1.00.",
+      "promoCode": "ABJ0021"
     },
     {
       "id": "ca_display",
@@ -54,7 +55,8 @@
       "maxCpcUsd": 1.0,
       "colorKey": "purple",
       "hex": "#818cf8",
-      "notes": "Excluded mobileappcategory::69500 (all apps) plus lakesidemtconstruction.com, plumbertip.com, jqrkjxh.com, urongames.top."
+      "notes": "Excluded mobileappcategory::69500 (all apps) plus lakesidemtconstruction.com, plumbertip.com, jqrkjxh.com, urongames.top.",
+      "promoCode": "ABJ0022"
     },
     {
       "id": "nationwide",
@@ -75,7 +77,8 @@
         "OR",
         "SD"
       ],
-      "notes": "Apply and SNAP/EBT ad groups use $3.50 max CPC. No free-phone claims outside CA. All ad groups max CPC $2.00 (was $3.50 Apply/SNAP, $2.50 others). Keyword-level overrides cleared. Competitor terms ad group at $1.00."
+      "notes": "Apply and SNAP/EBT ad groups use $3.50 max CPC. No free-phone claims outside CA. All ad groups max CPC $2.00 (was $3.50 Apply/SNAP, $2.50 others). Keyword-level overrides cleared. Competitor terms ad group at $1.00.",
+      "promoCode": "ABJ0020"
     }
   ],
   "overview": {
@@ -88,7 +91,9 @@
     "enrollments": 4,
     "costPerEnrollmentUsd": 88.66,
     "conversions": 0,
-    "windowLabel": "Nov 4\u20139, 2026 snapshot"
+    "windowLabel": "Nov 4–9, 2026 snapshot",
+    "enrollmentsNote": "Pre-split combined (Nov 6–8 · ABJ0020 shared by all campaigns)",
+    "enrollmentsScope": "pre_split_all"
   },
   "bySegment": {
     "ca_search": {
@@ -98,7 +103,7 @@
       "impressions": 208,
       "ctrPct": 20.67,
       "avgCpcUsd": 3.28,
-      "enrollments": null,
+      "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
       "status": "Eligible (Limited by budget)",
@@ -227,7 +232,8 @@
           "spendUsd": 3.47
         }
       ],
-      "statePerformance": []
+      "statePerformance": [],
+      "enrollmentsNote": "Post-split promo enrollments only (from 2026-11-09). No rows yet."
     },
     "ca_display": {
       "awaitingData": false,
@@ -236,7 +242,7 @@
       "impressions": 8715,
       "ctrPct": 2.82,
       "avgCpcUsd": 0.42,
-      "enrollments": null,
+      "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
       "status": "Eligible (Limited by budget)",
@@ -337,7 +343,8 @@
           "spendUsd": 1.45
         }
       ],
-      "statePerformance": []
+      "statePerformance": [],
+      "enrollmentsNote": "Post-split promo enrollments only (from 2026-11-09). No rows yet."
     },
     "nationwide": {
       "awaitingData": false,
@@ -346,7 +353,7 @@
       "impressions": 198,
       "ctrPct": 22.73,
       "avgCpcUsd": 3.11,
-      "enrollments": null,
+      "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
       "status": "Eligible (Limited by budget)",
@@ -475,7 +482,8 @@
           "spendUsd": 3.4
         }
       ],
-      "statePerformance": []
+      "statePerformance": [],
+      "enrollmentsNote": "Post-split promo enrollments only (from 2026-11-09). No rows yet."
     }
   },
   "dailyAds": [
@@ -784,14 +792,14 @@
     }
   ],
   "dailyReports": {
-    "notes": "SafeLink daily report rows. segmentId is ca_search|ca_display|nationwide when known, or all when the report is not split by campaign. Payout confirmed only in biweekly reports.",
-    "label": "Initial daily activity, payout confirmed only in biweekly reports",
+    "notes": "SafeLink daily report rows by promo code. Pre-split (before 2026-11-09): segmentId \"all\", promoCode ABJ0020 (all campaigns shared one code). From 2026-11-09: one row set per promo — ABJ0020=nationwide, ABJ0021=ca_search, ABJ0022=ca_display. Do not reassign pre-split rows to Nationwide. Payout confirmed only in biweekly reports.",
+    "label": "Initial daily activity (pre-split combined) · payout confirmed only in biweekly reports",
     "promoCode": "ABJ0020",
     "spendBasis": {
       "from": "2026-11-06",
       "to": "2026-11-08",
       "overviewSpendUsd": 383.98,
-      "overviewWindow": "Nov 4\u20139, 2026 \u00b7 all-time totals; daily series from Nov 8",
+      "overviewWindow": "Nov 4–9, 2026 · all-time totals; daily series from Nov 8",
       "nov9PartialSpendUsd": 29.35,
       "spendUsd": 354.63,
       "method": "overview.spendUsd minus Nov 9 partial dailyAds spend (campaigns live since Nov 6; window starts Nov 4)"
@@ -804,7 +812,10 @@
       "rejected": 0,
       "total": 4,
       "spendUsd": 354.63,
-      "costPerEnrollmentUsd": 88.66
+      "costPerEnrollmentUsd": 88.66,
+      "promoCode": "ABJ0020",
+      "preSplit": true,
+      "label": "Pre-split combined (Nov 6–8 · all campaigns · ABJ0020)"
     },
     "rows": [
       {
@@ -816,7 +827,9 @@
         "rejected": 0,
         "total": 1,
         "promoCode": "ABJ0020",
-        "source": "SafeLink daily report (initial)"
+        "source": "SafeLink daily report (initial)",
+        "preSplit": true,
+        "note": "Pre-split: all three campaigns used ABJ0020"
       },
       {
         "date": "2026-11-07",
@@ -827,7 +840,9 @@
         "rejected": 0,
         "total": 1,
         "promoCode": "ABJ0020",
-        "source": "SafeLink daily report (initial)"
+        "source": "SafeLink daily report (initial)",
+        "preSplit": true,
+        "note": "Pre-split: all three campaigns used ABJ0020"
       },
       {
         "date": "2026-11-08",
@@ -838,12 +853,54 @@
         "rejected": 0,
         "total": 2,
         "promoCode": "ABJ0020",
-        "source": "SafeLink daily report (initial)"
+        "source": "SafeLink daily report (initial)",
+        "preSplit": true,
+        "note": "Pre-split: all three campaigns used ABJ0020"
       }
-    ]
+    ],
+    "promoCodeSplitEffective": "2026-11-09",
+    "preSplitPromoCode": "ABJ0020",
+    "byPromoCode": {
+      "ABJ0020": {
+        "segmentId": "nationwide",
+        "label": "Nationwide",
+        "qualified": 0,
+        "pending": 0,
+        "unqualified": 0,
+        "rejected": 0,
+        "total": 0,
+        "spendUsd": null,
+        "costPerEnrollmentUsd": null,
+        "notes": "Post-split from 2026-11-09. No daily rows yet."
+      },
+      "ABJ0021": {
+        "segmentId": "ca_search",
+        "label": "CA Search",
+        "qualified": 0,
+        "pending": 0,
+        "unqualified": 0,
+        "rejected": 0,
+        "total": 0,
+        "spendUsd": null,
+        "costPerEnrollmentUsd": null,
+        "notes": "Post-split from 2026-11-09. No daily rows yet."
+      },
+      "ABJ0022": {
+        "segmentId": "ca_display",
+        "label": "CA Display",
+        "qualified": 0,
+        "pending": 0,
+        "unqualified": 0,
+        "rejected": 0,
+        "total": 0,
+        "spendUsd": null,
+        "costPerEnrollmentUsd": null,
+        "notes": "Post-split from 2026-11-09. No daily rows yet."
+      }
+    }
   },
   "biweeklyEnrollments": {
-    "notes": "Paste SafeLink biweekly enrollment/activation rows. Include segmentId when possible. costPerEnrollment = period spend / enrollments.",
+    "notes": "Paste SafeLink biweekly enrollment/activation rows. Include promoCode (ABJ0020|ABJ0021|ABJ0022) and matching segmentId (nationwide|ca_search|ca_display). Pre-split periods before 2026-11-09 use segmentId \"all\" and promoCode ABJ0020. costPerEnrollment = period spend / enrollments using that campaign's spend from the split date on.",
     "rows": []
   },
   "changelog": [
@@ -857,7 +914,7 @@
     },
     {
       "date": "2026-11-09",
-      "summary": "Account review snapshot loaded (Nov 4\u20139): $364.70 spend, 307 clicks, 7,936 impr. All campaigns Limited by budget. Google identity verification due Dec 9."
+      "summary": "Account review snapshot loaded (Nov 4–9): $364.70 spend, 307 clicks, 7,936 impr. All campaigns Limited by budget. Google identity verification due Dec 9."
     },
     {
       "date": "2026-11-09",
@@ -881,7 +938,11 @@
     },
     {
       "date": "2026-11-09",
-      "summary": "First SafeLink daily enrollment report loaded (promo ABJ0020, all campaigns combined): 4 enrollments Nov 6\u20138 (3 qualified, 1 pending). Initial cost/enrollment $88.66 on $354.63 ad spend through Nov 8. Payout confirmed only in biweekly reports."
+      "summary": "First SafeLink daily enrollment report loaded (promo ABJ0020, all campaigns combined): 4 enrollments Nov 6–8 (3 qualified, 1 pending). Initial cost/enrollment $88.66 on $354.63 ad spend through Nov 8. Payout confirmed only in biweekly reports."
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "Split promo codes per campaign: Nationwide ABJ0020, CA Search ABJ0021, CA Display ABJ0022"
     }
   ],
   "displayExclusions": [
@@ -896,5 +957,28 @@
         "urongames.top"
       ]
     }
-  ]
+  ],
+  "promoCodes": {
+    "ABJ0020": {
+      "segmentId": "nationwide",
+      "label": "Nationwide",
+      "campaignName": "SafeLink - US ex CA",
+      "effectiveDate": "2026-11-09",
+      "url": "https://www.safelinkwireless.com/en/#!/newHome?promotionCode=ABJ0020"
+    },
+    "ABJ0021": {
+      "segmentId": "ca_search",
+      "label": "CA Search",
+      "campaignName": "SafeLink - CA",
+      "effectiveDate": "2026-11-09",
+      "url": "https://www.safelinkwireless.com/en/#!/newHome?promotionCode=ABJ0021"
+    },
+    "ABJ0022": {
+      "segmentId": "ca_display",
+      "label": "CA Display",
+      "campaignName": "SafeLink - CA Display",
+      "effectiveDate": "2026-11-09",
+      "url": "https://www.safelinkwireless.com/en/#!/newHome?promotionCode=ABJ0022"
+    }
+  }
 }

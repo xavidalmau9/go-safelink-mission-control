@@ -150,6 +150,19 @@ body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(r
 .state.excluded{fill:rgba(248,113,113,.12);stroke:rgba(248,113,113,.3)}
 .state.ca{fill:rgba(56,189,248,.22);stroke:rgba(56,189,248,.55)}
 .state:hover{stroke:#fff;stroke-width:1.5}
+
+.promo-badge{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;letter-spacing:1px;padding:3px 9px;border-radius:999px;border:1px solid rgba(56,189,248,.35);background:rgba(56,189,248,.1);color:var(--accent);margin-top:8px}
+.promo-badge.pre{border-color:rgba(251,191,36,.35);background:rgba(251,191,36,.1);color:var(--amber)}
+.promo-badge.green{border-color:rgba(52,211,153,.35);background:rgba(52,211,153,.1);color:var(--green)}
+.promo-badge.purple{border-color:rgba(129,140,248,.35);background:rgba(129,140,248,.1);color:var(--purple)}
+.promo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px}
+.promo-card{padding:12px;border-radius:10px;background:var(--surface2);border:1px solid var(--border2)}
+.promo-card .pc-title{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;margin-bottom:6px}
+.promo-card .pc-val{font-family:var(--mono);font-size:22px;font-weight:700}
+.promo-card .pc-sub{font-size:11px;color:var(--muted);margin-top:4px}
+.pre-split-box{padding:12px;border-radius:10px;background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.22);margin-bottom:12px}
+@media(max-width:980px){.promo-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.promo-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -250,14 +263,20 @@ body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(r
     </div>
   </div>
 
+  <div class="glass fade" style="margin-bottom:14px">
+    <div class="panel-hdr"><div class="ptitle">Enrollments by promo code</div><div class="pmeta" id="promoEnrollMeta">FROM 2026-11-09 · PRE-SPLIT SHOWN SEPARATELY</div></div>
+    <div id="preSplitBox" class="pre-split-box" style="display:none"></div>
+    <div id="promoEnrollGrid" class="promo-grid"></div>
+  </div>
+
   <div class="grid-2 fade">
     <div class="glass">
-      <div class="panel-hdr"><div class="ptitle">Daily SafeLink reports · Enrollments</div><div class="pmeta" id="dailyReportsMeta">INITIAL ACTIVITY</div></div>
+      <div class="panel-hdr"><div class="ptitle">Daily SafeLink reports · Enrollments</div><div class="pmeta" id="dailyReportsMeta">BY PROMO CODE</div></div>
       <div id="dailyReportsSummary" class="empty" style="margin-bottom:10px;display:none"></div>
       <div id="dailyReports" class="empty">AWAITING DAILY REPORT DATA</div>
     </div>
     <div class="glass">
-      <div class="panel-hdr"><div class="ptitle">Biweekly enrollments</div><div class="pmeta">PASTE INTO data.json → biweeklyEnrollments.rows</div></div>
+      <div class="panel-hdr"><div class="ptitle">Biweekly enrollments</div><div class="pmeta">BY PROMO CODE · PASTE INTO biweeklyEnrollments.rows</div></div>
       <div id="biweeklyReports" class="empty">AWAITING BIWEEKLY ENROLLMENT DATA · COST / ENROLLMENT WILL APPEAR HERE</div>
     </div>
   </div>
@@ -340,15 +359,78 @@ function buildTabs(){
   };
 }
 
+function promoForSegment(segId){
+  const codes = DATA.promoCodes || {};
+  for(const [code, meta] of Object.entries(codes)){
+    if(meta.segmentId === segId) return code;
+  }
+  const seg = (DATA.segments||[]).find(s => s.id === segId);
+  return seg?.promoCode || null;
+}
+
+function badgeClassForSeg(segId){
+  if(segId === 'nationwide') return 'green';
+  if(segId === 'ca_display') return 'purple';
+  return '';
+}
+
+function enrollmentsForSegment(segId){
+  // Post-split only: rows with matching segmentId OR matching promoCode after split date
+  const splitDate = DATA.dailyReports?.promoCodeSplitEffective || '2026-11-09';
+  const code = promoForSegment(segId);
+  const byPromo = DATA.dailyReports?.byPromoCode?.[code];
+  const rows = (DATA.dailyReports?.rows||[]).filter(r => {
+    if(r.preSplit || r.segmentId === 'all') return false;
+    if((r.date||'') < splitDate) return false;
+    return r.segmentId === segId || (code && r.promoCode === code);
+  });
+  const bi = (DATA.biweeklyEnrollments?.rows||[]).filter(r => r.segmentId === segId || (code && r.promoCode === code));
+  let total = 0, qualified = 0, pending = 0;
+  for(const r of [...rows, ...bi]){
+    total += Number(r.total ?? ((r.qualified||0)+(r.pending||0)+(r.unqualified||0)+(r.rejected||0))) || 0;
+    qualified += Number(r.qualified||0);
+    pending += Number(r.pending||0);
+  }
+  if(!rows.length && !bi.length && byPromo){
+    total = byPromo.total ?? 0;
+    qualified = byPromo.qualified ?? 0;
+    pending = byPromo.pending ?? 0;
+  }
+  const spend = byPromo?.spendUsd;
+  const cpe = (total > 0 && spend != null) ? spend / total : (byPromo?.costPerEnrollmentUsd ?? null);
+  return {total, qualified, pending, spendUsd: spend ?? null, costPerEnrollmentUsd: cpe, promoCode: code, hasRows: rows.length + bi.length > 0};
+}
+
+function preSplitSummary(){
+  const s = DATA.dailyReports?.summary;
+  if(s && (s.preSplit || s.segmentId === 'all')) return s;
+  const rows = (DATA.dailyReports?.rows||[]).filter(r => r.preSplit || r.segmentId === 'all');
+  if(!rows.length) return null;
+  const out = {qualified:0,pending:0,unqualified:0,rejected:0,total:0,spendUsd:DATA.dailyReports?.spendBasis?.spendUsd ?? null, preSplit:true, promoCode:'ABJ0020', segmentId:'all'};
+  for(const r of rows){
+    out.qualified += r.qualified||0; out.pending += r.pending||0;
+    out.unqualified += r.unqualified||0; out.rejected += r.rejected||0;
+    out.total += r.total ?? ((r.qualified||0)+(r.pending||0)+(r.unqualified||0)+(r.rejected||0));
+  }
+  if(out.spendUsd != null && out.total > 0) out.costPerEnrollmentUsd = out.spendUsd / out.total;
+  return out;
+}
+
 function buildSegCards(){
   $('segCards').innerHTML = DATA.segments.map(s => {
     const m = DATA.bySegment[s.id];
+    const code = s.promoCode || promoForSegment(s.id) || '—';
+    const en = enrollmentsForSegment(s.id);
+    const enLabel = en.total > 0 ? `${fmtNum(en.total)} enrollments` : '0 enrollments (post-split)';
+    const cpeLabel = en.costPerEnrollmentUsd != null ? ` · ${fmtMoney(en.costPerEnrollmentUsd)} CPE` : '';
     return `<div class="glass seg-card" data-seg="${s.id}">
       <div class="glow"></div>
       <div class="seg-name" style="color:${s.hex}">${s.shortLabel}</div>
       <div class="seg-stat" style="color:${s.hex}">${fmtMoney(m.spendUsd)}</div>
       <div class="seg-meta">${fmtNum(m.clicks)} clicks · ${fmtPct(m.ctrPct)} CTR · ${s.status}</div>
       <div class="seg-meta">${s.campaignName} · $${s.dailyBudgetUsd}/day</div>
+      <div class="promo-badge ${badgeClassForSeg(s.id)}">PROMO ${code}</div>
+      <div class="seg-meta" style="margin-top:6px">${enLabel}${cpeLabel}</div>
     </div>`;
   }).join('');
   $('segCards').onclick = e => {
@@ -372,15 +454,30 @@ function buildKPIs(){
   animateValue($('kv-spend'), m.spendUsd, '$', '', 2);
   animateValue($('kv-clicks'), m.clicks);
   animateValue($('kv-ctr'), m.ctrPct, '', '%', 2);
-  if(m.enrollments == null){ $('kv-enroll').textContent = 'Awaiting data'; $('kv-enroll').classList.add('await'); }
-  else animateValue($('kv-enroll'), m.enrollments);
-  if(m.costPerEnrollmentUsd == null){ $('kv-cpe').textContent = 'Awaiting data'; $('kv-cpe').classList.add('await'); }
-  else animateValue($('kv-cpe'), m.costPerEnrollmentUsd, '$', '', 2);
-  if($('kv-cpe-sub')){
-    const lbl = DATA.dailyReports?.label || 'Initial daily activity, payout confirmed only in biweekly reports';
-    $('kv-cpe-sub').textContent = (active==='combined' && m.costPerEnrollmentUsd != null)
-      ? lbl
-      : (m.costPerEnrollmentUsd == null ? 'Awaiting biweekly / daily report join' : lbl);
+  const pre = preSplitSummary();
+  if(active === 'combined'){
+    // Combined KPI shows pre-split totals when that is the only enrollment data, labeled clearly
+    if(pre && (pre.total||0) > 0){
+      animateValue($('kv-enroll'), pre.total);
+      if(pre.costPerEnrollmentUsd != null) animateValue($('kv-cpe'), pre.costPerEnrollmentUsd, '$', '', 2);
+      else { $('kv-cpe').textContent = '—'; $('kv-cpe').classList.add('await'); }
+      if($('kv-cpe-sub')) $('kv-cpe-sub').textContent = 'Pre-split combined (Nov 6–8 · shared ABJ0020) · payout via biweekly';
+    } else {
+      $('kv-enroll').textContent = '0';
+      $('kv-cpe').textContent = '—'; $('kv-cpe').classList.add('await');
+      if($('kv-cpe-sub')) $('kv-cpe-sub').textContent = 'No enrollment rows yet';
+    }
+  } else {
+    const en = enrollmentsForSegment(active);
+    animateValue($('kv-enroll'), en.total);
+    if(en.costPerEnrollmentUsd != null) animateValue($('kv-cpe'), en.costPerEnrollmentUsd, '$', '', 2);
+    else { $('kv-cpe').textContent = '—'; $('kv-cpe').classList.add('await'); }
+    if($('kv-cpe-sub')){
+      const code = en.promoCode || promoForSegment(active) || '—';
+      $('kv-cpe-sub').textContent = en.total > 0
+        ? `Promo ${code} · post-split from 2026-11-09 · payout via biweekly`
+        : `Promo ${code} · 0 post-split enrollments yet`;
+    }
   }
   const status = active==='combined' ? 'Limited by budget' : (DATA.bySegment[active]?.status || '—');
   $('kv-status').textContent = status;
@@ -515,29 +612,41 @@ function renderLists(){
   const negs = (DATA.negativesAdded||[]).filter(n => active==='combined' || n.segmentId===active);
   $('negList').innerHTML = negs.length ? negs.map(n => `<div class="row"><div class="row-title">${n.term||n.keyword}</div><div class="row-sub">${n.date||''}</div></div>`).join('') : '<div class="empty">NONE ADDED YET · COMPETITOR NEGATIVES STILL PENDING</div>';
 
+  renderPromoEnrollments();
+
   const dailyAll = DATA.dailyReports?.rows||[];
   const dailyLabel = DATA.dailyReports?.label || 'Initial daily activity, payout confirmed only in biweekly reports';
   const dailySummary = DATA.dailyReports?.summary || null;
-  // segmentId "all" = all campaigns combined (report not split). Show on Combined tab.
+  const codeForActive = active === 'combined' ? null : promoForSegment(active);
+  // Combined: show pre-split (segment all) rows. Segment tabs: show matching promo/segment rows only (never reassign pre-split).
   const daily = active === 'combined'
-    ? dailyAll.filter(r => !r.segmentId || r.segmentId === 'all' || r.segmentId === 'combined')
-    : dailyAll.filter(r => r.segmentId === active);
-  const bi = DATA.biweeklyEnrollments.rows||[];
+    ? dailyAll.filter(r => !r.segmentId || r.segmentId === 'all' || r.segmentId === 'combined' || r.preSplit)
+    : dailyAll.filter(r => !r.preSplit && r.segmentId !== 'all' && (r.segmentId === active || (codeForActive && r.promoCode === codeForActive)));
+  const biAll = DATA.biweeklyEnrollments.rows||[];
+  const bi = active === 'combined'
+    ? biAll
+    : biAll.filter(r => r.segmentId === active || (codeForActive && r.promoCode === codeForActive));
   if($('dailyReportsMeta')){
     $('dailyReportsMeta').textContent = active === 'combined'
-      ? 'ALL CAMPAIGNS · PROMO ' + (DATA.dailyReports?.promoCode || '—')
-      : active.toUpperCase().replace('_',' ') + ' · SPLIT AWAITING DATA';
+      ? 'PRE-SPLIT COMBINED · SHARED ABJ0020 (NOV 6–8)'
+      : `${(DATA.segments.find(s=>s.id===active)?.shortLabel)||active} · PROMO ${codeForActive||'—'}`;
   }
   const sumEl = $('dailyReportsSummary');
   if(sumEl){
     if(active === 'combined' && dailySummary){
       sumEl.style.display = 'block';
       sumEl.className = 'list';
-      sumEl.innerHTML = `<div class="row"><div><div class="row-title">${dailyLabel}</div><div class="row-sub">${fmtNum(dailySummary.total)} total · ${fmtNum(dailySummary.qualified)} qualified · ${fmtNum(dailySummary.pending)} pending · ${fmtNum(dailySummary.unqualified||0)} unqualified · ${fmtNum(dailySummary.rejected||0)} rejected</div><div class="row-sub">Spend basis Nov 6–8: ${fmtMoney(dailySummary.spendUsd)} ad spend ÷ ${fmtNum(dailySummary.total)} enrollments</div></div><div class="money">${fmtMoney(dailySummary.costPerEnrollmentUsd)}<div class="row-sub">cost / enrollment</div></div></div>`;
+      sumEl.innerHTML = `<div class="row"><div><div class="row-title">Pre-split combined · ${dailyLabel}</div><div class="row-sub">${fmtNum(dailySummary.total)} total · ${fmtNum(dailySummary.qualified)} qualified · ${fmtNum(dailySummary.pending)} pending · ${fmtNum(dailySummary.unqualified||0)} unqualified · ${fmtNum(dailySummary.rejected||0)} rejected</div><div class="row-sub">Shared promo ABJ0020 · spend basis Nov 6–8: ${fmtMoney(dailySummary.spendUsd)} ÷ ${fmtNum(dailySummary.total)}</div><div class="row-sub">Not assigned to Nationwide — all three campaigns shared this code before the split</div></div><div class="money">${fmtMoney(dailySummary.costPerEnrollmentUsd)}<div class="row-sub">cost / enrollment</div></div></div>`;
     } else if(active !== 'combined'){
+      const en = enrollmentsForSegment(active);
       sumEl.style.display = 'block';
-      sumEl.className = 'empty';
-      sumEl.textContent = 'Enrollment report is all-campaigns combined (segmentId all). Switch to Combined to see totals. ' + dailyLabel;
+      if(en.total > 0){
+        sumEl.className = 'list';
+        sumEl.innerHTML = `<div class="row"><div><div class="row-title">Promo ${en.promoCode} · post-split</div><div class="row-sub">${fmtNum(en.total)} total · ${fmtNum(en.qualified)} Q · ${fmtNum(en.pending)} P</div></div><div class="money">${en.costPerEnrollmentUsd!=null?fmtMoney(en.costPerEnrollmentUsd):'—'}<div class="row-sub">cost / enrollment</div></div></div>`;
+      } else {
+        sumEl.className = 'empty';
+        sumEl.textContent = `Promo ${codeForActive||'—'} · 0 post-split enrollments yet. Pre-split Nov 6–8 figures stay on Combined (shared ABJ0020).`;
+      }
     } else {
       sumEl.style.display = 'none';
       sumEl.innerHTML = '';
@@ -545,12 +654,83 @@ function renderLists(){
   }
   $('dailyReports').className = daily.length ? 'list' : 'empty';
   $('dailyReports').innerHTML = daily.length
-    ? daily.map(r => `<div class="row"><div><div class="row-title">${r.date||'row'}</div><div class="row-sub">${r.segmentId||'all'} · ${r.source||''}</div></div><div class="money">${fmtNum(r.total ?? ((r.qualified||0)+(r.pending||0)+(r.unqualified||0)+(r.rejected||0)))} total<div class="row-sub">${fmtNum(r.qualified||0)} Q · ${fmtNum(r.pending||0)} P · ${fmtNum(r.unqualified||0)} U · ${fmtNum(r.rejected||0)} R</div></div></div>`).join('')
-    : (active === 'combined' ? 'AWAITING DAILY REPORT DATA' : 'NO SEGMENT-SPLIT DAILY ROWS YET');
+    ? daily.map(r => {
+        const badge = r.preSplit || r.segmentId === 'all'
+          ? `<span class="promo-badge pre">PRE-SPLIT · ${r.promoCode||'ABJ0020'}</span>`
+          : `<span class="promo-badge ${badgeClassForSeg(r.segmentId||'')}">${r.promoCode||'—'}</span>`;
+        return `<div class="row"><div><div class="row-title">${r.date||'row'}</div><div class="row-sub">${r.segmentId||'all'} · ${r.source||''}</div>${badge}</div><div class="money">${fmtNum(r.total ?? ((r.qualified||0)+(r.pending||0)+(r.unqualified||0)+(r.rejected||0)))} total<div class="row-sub">${fmtNum(r.qualified||0)} Q · ${fmtNum(r.pending||0)} P · ${fmtNum(r.unqualified||0)} U · ${fmtNum(r.rejected||0)} R</div></div></div>`;
+      }).join('')
+    : (active === 'combined' ? 'AWAITING DAILY REPORT DATA' : 'NO POST-SPLIT DAILY ROWS FOR THIS PROMO YET');
   $('biweeklyReports').className = bi.length ? 'list' : 'empty';
-  $('biweeklyReports').innerHTML = bi.length ? bi.map(r => `<div class="row"><div class="row-title">${r.period||r.date||'row'}</div><div class="row-sub">${JSON.stringify(r)}</div></div>`).join('') : 'AWAITING BIWEEKLY ENROLLMENT DATA · COST / ENROLLMENT WILL APPEAR HERE';
+  $('biweeklyReports').innerHTML = bi.length
+    ? bi.map(r => `<div class="row"><div><div class="row-title">${r.period||r.date||'row'}</div><div class="row-sub">${r.segmentId||'—'} · promo ${r.promoCode||'—'}</div></div><div class="money">${fmtNum(r.total ?? r.enrollments ?? 0)}<div class="row-sub">${r.costPerEnrollmentUsd!=null?fmtMoney(r.costPerEnrollmentUsd)+' CPE':'—'}</div></div></div>`).join('')
+    : 'AWAITING BIWEEKLY ENROLLMENT DATA · COST / ENROLLMENT WILL APPEAR HERE';
 
   $('changelog').innerHTML = (DATA.changelog||[]).slice().reverse().map(c => `<li><div class="d">${c.date}</div><div class="s">${c.summary}</div></li>`).join('');
+}
+
+function renderPromoEnrollments(){
+  const grid = $('promoEnrollGrid');
+  const preBox = $('preSplitBox');
+  const meta = $('promoEnrollMeta');
+  if(!grid) return;
+  const pre = preSplitSummary();
+  if(preBox){
+    if(pre && (pre.total||0) > 0 && (active === 'combined')){
+      preBox.style.display = 'block';
+      preBox.innerHTML = `<div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:flex-start">
+        <div><div class="promo-badge pre">PRE-SPLIT COMBINED · ABJ0020</div>
+        <div class="pc-sub" style="margin-top:8px">Nov 6–8 · all three campaigns shared one promo code. Not assigned to Nationwide.</div>
+        <div class="pc-sub">${fmtNum(pre.qualified)} qualified · ${fmtNum(pre.pending)} pending · ${fmtNum(pre.total)} total</div></div>
+        <div style="text-align:right"><div class="pc-val" style="color:var(--amber)">${fmtNum(pre.total)}</div>
+        <div class="pc-sub">enrollments</div>
+        <div class="money" style="margin-top:6px">${fmtMoney(pre.costPerEnrollmentUsd)}</div>
+        <div class="pc-sub">cost / enrollment on ${fmtMoney(pre.spendUsd)} spend</div></div>
+      </div>`;
+    } else {
+      preBox.style.display = 'none';
+      preBox.innerHTML = '';
+    }
+  }
+  if(meta){
+    meta.textContent = active === 'combined'
+      ? 'POST-SPLIT BY PROMO · PRE-SPLIT SHOWN ABOVE'
+      : `FOCUS · ${(DATA.segments.find(s=>s.id===active)?.label)||active}`;
+  }
+  const order = [
+    {code:'ABJ0020', seg:'nationwide', hex:'#34d399'},
+    {code:'ABJ0021', seg:'ca_search', hex:'#38bdf8'},
+    {code:'ABJ0022', seg:'ca_display', hex:'#818cf8'}
+  ];
+  const cards = order.filter(o => active === 'combined' || active === o.seg).map(o => {
+    const metaP = (DATA.promoCodes||{})[o.code] || {};
+    const en = enrollmentsForSegment(o.seg);
+    const label = metaP.label || o.seg;
+    const totalLabel = en.total > 0 ? fmtNum(en.total) : '0';
+    const cpeLabel = en.costPerEnrollmentUsd != null ? fmtMoney(en.costPerEnrollmentUsd) : '—';
+    return `<div class="promo-card">
+      <div class="pc-title" style="color:${o.hex}">${label.toUpperCase()} · ${o.code}</div>
+      <div class="pc-val" style="color:${o.hex}">${totalLabel}</div>
+      <div class="pc-sub">enrollments (post-split)</div>
+      <div class="pc-sub" style="margin-top:8px">Cost / enrollment <strong style="color:var(--text)">${cpeLabel}</strong></div>
+      <div class="pc-sub">Uses this campaign's own spend from 2026-11-09 on</div>
+    </div>`;
+  });
+  // Combined total card when viewing combined
+  if(active === 'combined'){
+    const parts = order.map(o => enrollmentsForSegment(o.seg));
+    const tot = parts.reduce((a,p)=>a+p.total,0);
+    const spendParts = parts.filter(p => p.spendUsd != null);
+    const spendSum = spendParts.length === parts.length ? spendParts.reduce((a,p)=>a+(p.spendUsd||0),0) : null;
+    const cpe = (tot > 0 && spendSum != null) ? spendSum / tot : null;
+    cards.push(`<div class="promo-card" style="grid-column:1/-1;border-color:rgba(56,189,248,.25)">
+      <div class="pc-title" style="color:var(--accent)">COMBINED POST-SPLIT TOTAL</div>
+      <div class="pc-val" style="color:var(--accent)">${tot > 0 ? fmtNum(tot) : '0'}</div>
+      <div class="pc-sub">sum of ABJ0020 + ABJ0021 + ABJ0022 · excludes pre-split</div>
+      <div class="pc-sub" style="margin-top:8px">Cost / enrollment <strong style="color:var(--text)">${cpe!=null?fmtMoney(cpe):'—'}</strong></div>
+    </div>`);
+  }
+  grid.innerHTML = cards.join('');
 }
 
 /* Lightweight US map (Albers-like positions via precomputed centroids + state paths from CDN TopoJSON) */

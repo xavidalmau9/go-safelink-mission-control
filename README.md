@@ -26,6 +26,17 @@ Ads KPIs (spend, clicks, impressions, CTR, CPC) come from Google Ads reviews pas
 
 Nationwide excludes CA, NE, OR, SD. Mobile bid adjustment is **0%** (removed Nov 9).
 
+
+## Promo codes (from 2026-11-09)
+
+| Promo | Campaign | `segmentId` |
+|---|---|---|
+| ABJ0020 | Nationwide (SafeLink - US ex CA) | `nationwide` |
+| ABJ0021 | CA Search (SafeLink - CA) | `ca_search` |
+| ABJ0022 | CA Display (SafeLink - CA Display) | `ca_display` |
+
+Pre-split Nov 6–8 enrollments used shared **ABJ0020** and stay as `segmentId: "all"` (not reassigned to Nationwide). See **`ingest-notes.md`** for how to append daily / biweekly rows per promo.
+
 ## Updating data
 
 Edit **`data.json`** only (do not invent numbers). Then commit and push to `main` — GitHub Pages redeploys in ~1 minute.
@@ -40,8 +51,9 @@ Edit **`data.json`** only (do not invent numbers). Then commit and push to `main
 | Top / wasted / good search terms | `searchTerms` (set `segmentId` when known) |
 | Keyword performance | `keywords[]` |
 | Negatives you added | `negativesAdded[]` |
-| SafeLink daily report rows | `dailyReports.rows[]` |
-| SafeLink biweekly enrollments | `biweeklyEnrollments.rows[]` (include `segmentId` when the report allows) |
+| SafeLink daily report rows (include `promoCode`) | `dailyReports.rows[]` + `dailyReports.byPromoCode` |
+| Promo code → campaign map | `promoCodes` |
+| SafeLink biweekly enrollments | `biweeklyEnrollments.rows[]` (include `promoCode` + `segmentId`) |
 | State performance (choropleth) | `bySegment.*.statePerformance[]` as `{state, spendUsd, clicks, ...}` |
 | Recommendations / changelog | `recommendations[]` / `changelog[]` |
 
