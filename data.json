@@ -1239,6 +1239,32 @@
       "priority": "medium",
       "status": "pending",
       "summary": "Rewrite Poor-strength Assurance and Near me ads. Awaiting Javier approval of new copy (approved baseline must be preserved)."
+    },
+    {
+      "id": "daily_2026-11-10",
+      "date": "2026-11-10",
+      "priority": "high",
+      "status": "pending",
+      "summary": "Daily 1% review (Nov 9 vs Nov 8): $2.00 caps worked, clicks +30% (91 to 118) on +4% spend, avg CPC $1.20 to $0.96 (-20%), clicks per dollar +25%. Proposed: (1) add phrase negative \"assurance\" to CA Search and US ex CA Search (Assurance-brand queries spent $7.68 to date at 8-9% CTR, off-policy for non-branded rule); (2) block all mobile apps on CA Display via placement exclusion adsenseformobileapps.com plus solvedlib.com (apps still serving: 8 of top 10 Display placements, $14.52 of $109.16, about 13%). Expected: about $2/day of Search and $2.50/day of Display moved to relevant traffic. Awaiting Javier's yes; nothing applied.",
+      "items": [
+        {
+          "type": "negative_keyword",
+          "campaigns": [
+            "CA Search",
+            "US ex CA Search"
+          ],
+          "keyword": "assurance",
+          "match": "phrase"
+        },
+        {
+          "type": "placement_exclusion",
+          "campaign": "CA Display",
+          "placements": [
+            "adsenseformobileapps.com",
+            "solvedlib.com"
+          ]
+        }
+      ]
     }
   ],
   "dailyReports": {
