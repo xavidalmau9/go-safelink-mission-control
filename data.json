@@ -7,7 +7,7 @@
   "loginEmail": "xavidalmau9@gmail.com",
   "liveSince": "2026-11-06",
   "timezone": "America/New_York",
-  "updatedAt": "2026-11-11T08:53:08-05:00",
+  "updatedAt": "2026-11-11T09:41:47-05:00",
   "dataWindow": {
    "from": "2026-11-04",
    "to": "2026-11-11",
@@ -15,7 +15,7 @@
    "granularity": "daily"
   },
   "identityVerificationDue": "2026-12-09",
-  "notes": "No Google Ads conversion tracking (conversions always 0). Enrollments come from SafeLink reports by promo code from 2026-11-09: ABJ0020=Nationwide, ABJ0021=CA Search, ABJ0022=CA Display. Pre-split Nov 6\u20138 rows used shared ABJ0020 and stay segment \"all\". Daily trend charts start from this snapshot until a daily series is pasted. State/region spend comes from the User locations report (see pullNotes.spendByRegion). Identity verification due 2026-12-09."
+  "notes": "No Google Ads conversion tracking (conversions always 0). Enrollments come from SafeLink reports by promo code from 2026-11-09: ABJ0020=Nationwide, ABJ0021=CA Search, ABJ0022=CA Display, ABJ0023=CA Demand Gen. Promo-code split went live about 3:40 PM ET on 2026-11-09 (Nov 9 per-code spend is a full-day approximation). Pre-split Nov 6\u20138 rows used shared ABJ0020 and stay segment \"all\". Daily trend charts start from this snapshot until a daily series is pasted. State/region spend comes from the User locations report (see pullNotes.spendByRegion). Identity verification due 2026-12-09."
  },
  "budgets": {
   "dailyTotalUsd": 100,
@@ -1277,7 +1277,7 @@
   }
  ],
  "dailyReports": {
-  "notes": "SafeLink daily report rows by promo code. Pre-split (before 2026-11-09): segmentId \"all\", promoCode ABJ0020 (all campaigns shared one code). From 2026-11-09: one row set per promo \u2014 ABJ0020=nationwide, ABJ0021=ca_search, ABJ0022=ca_display. Do not reassign pre-split rows to Nationwide. Payout confirmed only in biweekly reports.",
+  "notes": "SafeLink daily report rows by promo code. Pre-split (before 2026-11-09 15:40 ET): segmentId \"all\", promoCode ABJ0020 (all campaigns shared one code). Promo-code split went live in Google Ads on 2026-11-09 at about 3:40 PM ET. From that time: one row set per promo \u2014 ABJ0020=nationwide, ABJ0021=ca_search, ABJ0022=ca_display, ABJ0023=ca_demand_gen. Nov 9 is a partial split day: before ~3:40 PM ET all clicks went to ABJ0020, so Nov 9 per-code spend is an approximation that attributes each campaign's full-day Google Ads spend to that campaign's code. Do not reassign pre-split rows to Nationwide. Payout confirmed only in biweekly reports. dailyReports.byPromoCode is the cumulative tally from 2026-11-09 on (costPerApplicationUsd = spend / total applications of every status; costPerQualifiedUsd = spend / qualified).",
   "label": "Initial daily activity (pre-split combined) \u00b7 payout confirmed only in biweekly reports",
   "promoCode": "ABJ0020",
   "spendBasis": {
@@ -1341,48 +1341,141 @@
     "source": "SafeLink daily report (initial)",
     "preSplit": true,
     "note": "Pre-split: all three campaigns used ABJ0020"
+   },
+   {
+    "date": "2026-11-09",
+    "segmentId": "nationwide",
+    "promoCode": "ABJ0020",
+    "qualified": 0,
+    "pending": 1,
+    "unqualified": 0,
+    "rejected": 0,
+    "total": 1,
+    "spendUsd": 46.25,
+    "partial": true,
+    "source": "SafeLink daily report",
+    "note": "1 pending. Partial split day: per-code spend is an approximation (full-day campaign spend). Promo split effective 2026-11-09 15:40 ET. Before ~3:40 PM ET all clicks used ABJ0020. Spend is this campaign's full-day Google Ads spend attributed to this code (approximation)."
+   },
+   {
+    "date": "2026-11-09",
+    "segmentId": "ca_search",
+    "promoCode": "ABJ0021",
+    "qualified": 1,
+    "pending": 0,
+    "unqualified": 0,
+    "rejected": 0,
+    "total": 1,
+    "spendUsd": 47.96,
+    "partial": true,
+    "source": "SafeLink daily report",
+    "note": "1 qualified. Partial split day: per-code spend is an approximation (full-day campaign spend). Promo split effective 2026-11-09 15:40 ET. Before ~3:40 PM ET all clicks used ABJ0020. Spend is this campaign's full-day Google Ads spend attributed to this code (approximation)."
+   },
+   {
+    "date": "2026-11-09",
+    "segmentId": "ca_display",
+    "promoCode": "ABJ0022",
+    "qualified": 0,
+    "pending": 0,
+    "unqualified": 0,
+    "rejected": 0,
+    "total": 0,
+    "spendUsd": 19.66,
+    "partial": true,
+    "source": "SafeLink daily report",
+    "note": "0 applications. Demand-side activity only. Partial split day: per-code spend is an approximation (full-day campaign spend). Promo split effective 2026-11-09 15:40 ET. Before ~3:40 PM ET all clicks used ABJ0020. Spend is this campaign's full-day Google Ads spend attributed to this code (approximation)."
+   },
+   {
+    "date": "2026-11-09",
+    "segmentId": "ca_demand_gen",
+    "promoCode": "ABJ0023",
+    "qualified": 0,
+    "pending": 0,
+    "unqualified": 0,
+    "rejected": 0,
+    "total": 0,
+    "spendUsd": 0,
+    "partial": true,
+    "source": "SafeLink daily report",
+    "note": "0 applications. CA Demand Gen launched Nov 10, so Nov 9 spend is $0. Partial split day (codes live ~3:40 PM ET)."
    }
   ],
   "promoCodeSplitEffective": "2026-11-09",
+  "promoCodeSplitEffectiveAt": "2026-11-09T15:40:00-05:00",
+  "promoCodeSplitEffectiveTimeEt": "15:40",
+  "promoCodeSplitNote": "Promo codes went live in Google Ads on Nov 9, 2026 at about 3:40 PM ET. Before then, all campaigns used ABJ0020. Nov 9 is a partial split day: morning clicks still went to ABJ0020, so Nov 9 per-code spend is an approximation that attributes each campaign's full-day spend to that campaign's code.",
   "preSplitPromoCode": "ABJ0020",
   "byPromoCode": {
    "ABJ0020": {
+    "label": "Nationwide Search (US ex CA)",
     "segmentId": "nationwide",
-    "label": "Nationwide",
+    "campaignName": "SafeLink - US ex CA",
+    "notes": "Cumulative from Nov 9, 2026 through Nov 9, 2026. Nov 9 is a partial split day (codes live ~3:40 PM ET); spend is this campaign's full-day Google Ads spend attributed to this code (approximation).",
+    "sinceDate": "2026-11-09",
+    "throughDate": "2026-11-09",
     "qualified": 0,
-    "pending": 0,
+    "pending": 1,
     "unqualified": 0,
     "rejected": 0,
-    "total": 0,
-    "spendUsd": null,
-    "costPerEnrollmentUsd": null,
-    "notes": "Post-split from 2026-11-09. No daily rows yet."
+    "total": 1,
+    "spendUsd": 46.25,
+    "costPerApplicationUsd": 46.25,
+    "costPerQualifiedUsd": null,
+    "costPerEnrollmentUsd": 46.25
    },
    "ABJ0021": {
-    "segmentId": "ca_search",
     "label": "CA Search",
-    "qualified": 0,
+    "segmentId": "ca_search",
+    "campaignName": "SafeLink - CA",
+    "notes": "Cumulative from Nov 9, 2026 through Nov 9, 2026. Nov 9 is a partial split day (codes live ~3:40 PM ET); spend is this campaign's full-day Google Ads spend attributed to this code (approximation).",
+    "sinceDate": "2026-11-09",
+    "throughDate": "2026-11-09",
+    "qualified": 1,
     "pending": 0,
     "unqualified": 0,
     "rejected": 0,
-    "total": 0,
-    "spendUsd": null,
-    "costPerEnrollmentUsd": null,
-    "notes": "Post-split from 2026-11-09. No daily rows yet."
+    "total": 1,
+    "spendUsd": 47.96,
+    "costPerApplicationUsd": 47.96,
+    "costPerQualifiedUsd": 47.96,
+    "costPerEnrollmentUsd": 47.96
    },
    "ABJ0022": {
-    "segmentId": "ca_display",
     "label": "CA Display",
+    "segmentId": "ca_display",
+    "campaignName": "SafeLink - CA Display",
+    "notes": "Cumulative from Nov 9, 2026 through Nov 9, 2026. Nov 9 is a partial split day (codes live ~3:40 PM ET); spend is this campaign's full-day Google Ads spend attributed to this code (approximation).",
+    "sinceDate": "2026-11-09",
+    "throughDate": "2026-11-09",
     "qualified": 0,
     "pending": 0,
     "unqualified": 0,
     "rejected": 0,
     "total": 0,
-    "spendUsd": null,
-    "costPerEnrollmentUsd": null,
-    "notes": "Post-split from 2026-11-09. No daily rows yet."
+    "spendUsd": 19.66,
+    "costPerApplicationUsd": null,
+    "costPerQualifiedUsd": null,
+    "costPerEnrollmentUsd": null
+   },
+   "ABJ0023": {
+    "label": "CA Demand Gen",
+    "segmentId": "ca_demand_gen",
+    "campaignName": "SafeLink - CA Demand Gen",
+    "notes": "Cumulative from Nov 9, 2026 through Nov 9, 2026. Nov 9 is a partial split day (codes live ~3:40 PM ET); spend is this campaign's full-day Google Ads spend attributed to this code (approximation). CA Demand Gen launched Nov 10, so Nov 9 spend is $0.",
+    "sinceDate": "2026-11-09",
+    "throughDate": "2026-11-09",
+    "qualified": 0,
+    "pending": 0,
+    "unqualified": 0,
+    "rejected": 0,
+    "total": 0,
+    "spendUsd": 0,
+    "costPerApplicationUsd": null,
+    "costPerQualifiedUsd": null,
+    "costPerEnrollmentUsd": null
    }
-  }
+  },
+  "byPromoCodeSinceDate": "2026-11-09",
+  "byPromoCodeThroughDate": "2026-11-09"
  },
  "biweeklyEnrollments": {
   "notes": "Paste SafeLink biweekly enrollment/activation rows. Include promoCode (ABJ0020|ABJ0021|ABJ0022) and matching segmentId (nationwide|ca_search|ca_display). Pre-split periods before 2026-11-09 use segmentId \"all\" and promoCode ABJ0020. costPerEnrollment = period spend / enrollments using that campaign's spend from the split date on.",
@@ -1464,6 +1557,10 @@
   {
    "date": "2026-11-11",
    "summary": "8:45 AM daily 1% review: Nov 10 vs Nov 9 compared; 2 recommendations logged (AirTalk negatives in non-competitor ad groups, 2 Display junk-site exclusions), awaiting approval."
+  },
+  {
+   "date": "2026-11-11",
+   "summary": "Per-promo-code cumulative tally from Nov 9 added"
   }
  ],
  "displayExclusions": [
@@ -1482,7 +1579,7 @@
  "promoCodes": {
   "ABJ0020": {
    "segmentId": "nationwide",
-   "label": "Nationwide",
+   "label": "Nationwide Search (US ex CA)",
    "campaignName": "SafeLink - US ex CA",
    "effectiveDate": "2026-11-09",
    "url": "https://www.safelinkwireless.com/en/#!/newHome?promotionCode=ABJ0020"
@@ -1500,6 +1597,13 @@
    "campaignName": "SafeLink - CA Display",
    "effectiveDate": "2026-11-09",
    "url": "https://www.safelinkwireless.com/en/#!/newHome?promotionCode=ABJ0022"
+  },
+  "ABJ0023": {
+   "campaignName": "SafeLink - CA Demand Gen",
+   "effectiveDate": "2026-11-10",
+   "label": "CA Demand Gen",
+   "segmentId": "ca_demand_gen",
+   "url": "https://www.safelinkwireless.com/en/#!/newHome?promotionCode=ABJ0023"
   }
  },
  "demandGen": {
