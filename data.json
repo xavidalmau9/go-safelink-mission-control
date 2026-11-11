@@ -1,21 +1,21 @@
 {
   "meta": {
-    "title": "GO Advertising \u00b7 SafeLink Mission Control",
+    "title": "GO Advertising · SafeLink Mission Control",
     "brand": "GO Advertising",
     "product": "SafeLink",
     "accountId": "734-978-8944",
     "loginEmail": "xavidalmau9@gmail.com",
     "liveSince": "2026-11-06",
     "timezone": "America/New_York",
-    "updatedAt": "2026-11-10T22:55:00-05:00",
+    "updatedAt": "2026-11-11T06:55:00-05:00",
     "dataWindow": {
       "from": "2026-11-04",
-      "to": "2026-11-10",
-      "label": "Nov 6\u201310, 2026 \u00b7 all-time totals; daily series from Nov 6",
+      "to": "2026-11-11",
+      "label": "Nov 6–10, 2026 · all-time totals; daily series from Nov 6",
       "granularity": "daily"
     },
     "identityVerificationDue": "2026-12-09",
-    "notes": "No Google Ads conversion tracking (conversions always 0). Enrollments come from SafeLink reports by promo code from 2026-11-09: ABJ0020=Nationwide, ABJ0021=CA Search, ABJ0022=CA Display. Pre-split Nov 6\u20138 rows used shared ABJ0020 and stay segment \"all\". Daily trend charts start from this snapshot until a daily series is pasted. State/region and city spend not available in the Google Ads UI views checked (Nov 9 3 PM: matched locations shows only United States; Geographic reports not offered); statePerformance stays empty. Identity verification due 2026-12-09."
+    "notes": "No Google Ads conversion tracking (conversions always 0). Enrollments come from SafeLink reports by promo code from 2026-11-09: ABJ0020=Nationwide, ABJ0021=CA Search, ABJ0022=CA Display. Pre-split Nov 6–8 rows used shared ABJ0020 and stay segment \"all\". Daily trend charts start from this snapshot until a daily series is pasted. State/region and city spend not available in the Google Ads UI views checked (Nov 9 3 PM: matched locations shows only United States; Geographic reports not offered); statePerformance stays empty. Identity verification due 2026-12-09."
   },
   "budgets": {
     "dailyTotalUsd": 100,
@@ -83,16 +83,16 @@
   ],
   "overview": {
     "awaitingData": false,
-    "spendUsd": 591.81,
-    "clicks": 600,
-    "impressions": 18336,
-    "ctrPct": 3.27,
-    "avgCpcUsd": 0.99,
+    "spendUsd": 592.18,
+    "clicks": 605,
+    "impressions": 18354,
+    "ctrPct": 3.3,
+    "avgCpcUsd": 0.98,
     "enrollments": 4,
     "costPerEnrollmentUsd": 87.92,
     "conversions": 0,
-    "windowLabel": "Nov 6\u201310, 2026 (incl. Demand Gen from Nov 10)",
-    "enrollmentsNote": "Pre-split combined (Nov 6\u20138 \u00b7 ABJ0020 shared by all campaigns); cost/enrollment = Nov 6-8 spend $351.67 / 4",
+    "windowLabel": "Nov 6–11, 2026 (Nov 11 partial; incl. Demand Gen from Nov 10)",
+    "enrollmentsNote": "Pre-split combined (Nov 6–8 · ABJ0020 shared by all campaigns); cost/enrollment = Nov 6-8 spend $351.67 / 4",
     "enrollmentsScope": "pre_split_all"
   },
   "bySegment": {
@@ -142,12 +142,11 @@
         },
         {
           "date": "2026-11-10",
-          "impressions": 117,
+          "impressions": 126,
           "clicks": 22,
-          "ctrPct": 18.8,
+          "ctrPct": 17.46,
           "avgCpcUsd": 1.97,
-          "spendUsd": 43.24,
-          "partial": true
+          "spendUsd": 43.24
         }
       ],
       "adGroupPerformance": [
@@ -416,8 +415,7 @@
           "clicks": 72,
           "ctrPct": 2.2,
           "avgCpcUsd": 0.28,
-          "spendUsd": 19.81,
-          "partial": true
+          "spendUsd": 19.81
         }
       ],
       "adGroupPerformance": [
@@ -559,12 +557,11 @@
         },
         {
           "date": "2026-11-10",
-          "impressions": 93,
+          "impressions": 97,
           "clicks": 24,
-          "ctrPct": 25.81,
+          "ctrPct": 24.74,
           "avgCpcUsd": 1.78,
-          "spendUsd": 42.75,
-          "partial": true
+          "spendUsd": 42.75
         }
       ],
       "adGroupPerformance": [
@@ -851,11 +848,19 @@
     },
     {
       "date": "2026-11-10",
-      "impressions": 7908,
-      "clicks": 206,
-      "ctrPct": 2.6,
-      "avgCpcUsd": 0.61,
-      "spendUsd": 126.27,
+      "impressions": 7931,
+      "clicks": 211,
+      "ctrPct": 2.66,
+      "avgCpcUsd": 0.6,
+      "spendUsd": 126.64
+    },
+    {
+      "date": "2026-11-11",
+      "impressions": 1809,
+      "clicks": 38,
+      "ctrPct": 2.1,
+      "avgCpcUsd": 0.11,
+      "spendUsd": 4.0,
       "partial": true
     }
   ],
@@ -1242,14 +1247,14 @@
     }
   ],
   "dailyReports": {
-    "notes": "SafeLink daily report rows by promo code. Pre-split (before 2026-11-09): segmentId \"all\", promoCode ABJ0020 (all campaigns shared one code). From 2026-11-09: one row set per promo \u2014 ABJ0020=nationwide, ABJ0021=ca_search, ABJ0022=ca_display. Do not reassign pre-split rows to Nationwide. Payout confirmed only in biweekly reports.",
-    "label": "Initial daily activity (pre-split combined) \u00b7 payout confirmed only in biweekly reports",
+    "notes": "SafeLink daily report rows by promo code. Pre-split (before 2026-11-09): segmentId \"all\", promoCode ABJ0020 (all campaigns shared one code). From 2026-11-09: one row set per promo — ABJ0020=nationwide, ABJ0021=ca_search, ABJ0022=ca_display. Do not reassign pre-split rows to Nationwide. Payout confirmed only in biweekly reports.",
+    "label": "Initial daily activity (pre-split combined) · payout confirmed only in biweekly reports",
     "promoCode": "ABJ0020",
     "spendBasis": {
       "from": "2026-11-06",
       "to": "2026-11-08",
       "overviewSpendUsd": 466.12,
-      "overviewWindow": "Nov 4\u20139, 2026 \u00b7 all-time totals; daily series from Nov 8",
+      "overviewWindow": "Nov 4–9, 2026 · all-time totals; daily series from Nov 8",
       "nov9PartialSpendUsd": 111.9,
       "spendUsd": 351.67,
       "method": "sum of per-campaign daily Google Ads spend Nov 6-8 (pull 2026-11-10 6:50 PM ET)"
@@ -1265,7 +1270,7 @@
       "costPerEnrollmentUsd": 87.92,
       "promoCode": "ABJ0020",
       "preSplit": true,
-      "label": "Pre-split combined (Nov 6\u20138 \u00b7 all campaigns \u00b7 ABJ0020)"
+      "label": "Pre-split combined (Nov 6–8 · all campaigns · ABJ0020)"
     },
     "rows": [
       {
@@ -1364,7 +1369,7 @@
     },
     {
       "date": "2026-11-09",
-      "summary": "Account review snapshot loaded (Nov 4\u20139): $364.70 spend, 307 clicks, 7,936 impr. All campaigns Limited by budget. Google identity verification due Dec 9."
+      "summary": "Account review snapshot loaded (Nov 4–9): $364.70 spend, 307 clicks, 7,936 impr. All campaigns Limited by budget. Google identity verification due Dec 9."
     },
     {
       "date": "2026-11-09",
@@ -1388,7 +1393,7 @@
     },
     {
       "date": "2026-11-09",
-      "summary": "First SafeLink daily enrollment report loaded (promo ABJ0020, all campaigns combined): 4 enrollments Nov 6\u20138 (3 qualified, 1 pending). Initial cost/enrollment $88.66 on $354.63 ad spend through Nov 8. Payout confirmed only in biweekly reports."
+      "summary": "First SafeLink daily enrollment report loaded (promo ABJ0020, all campaigns combined): 4 enrollments Nov 6–8 (3 qualified, 1 pending). Initial cost/enrollment $88.66 on $354.63 ad spend through Nov 8. Payout confirmed only in biweekly reports."
     },
     {
       "date": "2026-11-09",
@@ -1420,7 +1425,7 @@
     },
     {
       "date": "2026-11-10",
-      "summary": "6:50 PM ET refresh: Google Ads totals re-pulled ($546.11 spend, 489 clicks, 13,368 impr); per-campaign daily series Nov 6\u201310 updated (Nov 10 partial: $80.57); Nov 6-8 cost per enrollment $87.92 on $351.67 spend; CA Demand Gen learning, no spend yet; state breakdown still unavailable."
+      "summary": "6:50 PM ET refresh: Google Ads totals re-pulled ($546.11 spend, 489 clicks, 13,368 impr); per-campaign daily series Nov 6–10 updated (Nov 10 partial: $80.57); Nov 6-8 cost per enrollment $87.92 on $351.67 spend; CA Demand Gen learning, no spend yet; state breakdown still unavailable."
     },
     {
       "date": "2026-11-10",
@@ -1467,22 +1472,22 @@
     "campaignName": "SafeLink - CA Demand Gen",
     "promoCode": "ABJ0023",
     "dailyBudgetUsd": 20,
-    "status": "Enabled; Eligible (Learning) \u2014 Bid strategy learning",
+    "status": "Enabled; Eligible (Learning) — Bid strategy learning",
     "sinceLaunch": {
-      "impressions": 4430,
-      "clicks": 88,
-      "ctr_pct": 1.99,
-      "avg_cpc": 0.23,
-      "cost": 20.47
+      "impressions": 4440,
+      "clicks": 93,
+      "ctr_pct": 2.09,
+      "avg_cpc": 0.22,
+      "cost": 20.84
     },
     "today": {
-      "impressions": 4430,
-      "clicks": 88,
-      "ctr_pct": 1.99,
-      "avg_cpc": 0.23,
-      "cost": 20.47
+      "impressions": 1809,
+      "clicks": 38,
+      "ctr_pct": 2.1,
+      "avg_cpc": 0.11,
+      "cost": 4.0
     },
-    "asOf": "2026-11-10T22:54-05:00"
+    "asOf": "2026-11-11T06:53:00-05:00"
   },
   "pullNotes": {
     "topKeywordsByCost": [
@@ -1640,7 +1645,7 @@
         "cost": 1.07
       }
     ],
-    "adStatus": "CA, US ex CA, and CA Display are Eligible (Limited) \u2014 Limited by budget. CA Demand Gen is Eligible (Learning) \u2014 Bid strategy learning.",
+    "adStatus": "CA, US ex CA, and CA Display are Eligible (Limited) — Limited by budget. CA Demand Gen is Eligible (Learning) — Bid strategy learning.",
     "disapprovals": 0
   }
 }
