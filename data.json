@@ -7,7 +7,7 @@
     "loginEmail": "xavidalmau9@gmail.com",
     "liveSince": "2026-11-06",
     "timezone": "America/New_York",
-    "updatedAt": "2026-11-10T22:06:00-05:00",
+    "updatedAt": "2026-11-10T22:55:00-05:00",
     "dataWindow": {
       "from": "2026-11-04",
       "to": "2026-11-10",
@@ -83,11 +83,11 @@
   ],
   "overview": {
     "awaitingData": false,
-    "spendUsd": 584.45,
-    "clicks": 585,
-    "impressions": 17912,
+    "spendUsd": 591.81,
+    "clicks": 600,
+    "impressions": 18336,
     "ctrPct": 3.27,
-    "avgCpcUsd": 1.0,
+    "avgCpcUsd": 0.99,
     "enrollments": 4,
     "costPerEnrollmentUsd": 87.92,
     "conversions": 0,
@@ -98,11 +98,11 @@
   "bySegment": {
     "ca_search": {
       "awaitingData": false,
-      "spendUsd": 217.56,
-      "clicks": 82,
-      "impressions": 381,
-      "ctrPct": 21.52,
-      "avgCpcUsd": 2.65,
+      "spendUsd": 223.34,
+      "clicks": 85,
+      "impressions": 396,
+      "ctrPct": 21.46,
+      "avgCpcUsd": 2.63,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
@@ -142,11 +142,11 @@
         },
         {
           "date": "2026-11-10",
-          "impressions": 102,
-          "clicks": 19,
-          "ctrPct": 18.63,
+          "impressions": 117,
+          "clicks": 22,
+          "ctrPct": 18.8,
           "avgCpcUsd": 1.97,
-          "spendUsd": 37.46,
+          "spendUsd": 43.24,
           "partial": true
         }
       ],
@@ -517,8 +517,8 @@
       "awaitingData": false,
       "spendUsd": 221.58,
       "clicks": 88,
-      "impressions": 402,
-      "ctrPct": 21.89,
+      "impressions": 406,
+      "ctrPct": 21.67,
       "avgCpcUsd": 2.52,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
@@ -559,9 +559,9 @@
         },
         {
           "date": "2026-11-10",
-          "impressions": 92,
+          "impressions": 93,
           "clicks": 24,
-          "ctrPct": 26.09,
+          "ctrPct": 25.81,
           "avgCpcUsd": 1.78,
           "spendUsd": 42.75,
           "partial": true
@@ -851,11 +851,11 @@
     },
     {
       "date": "2026-11-10",
-      "impressions": 7397,
-      "clicks": 190,
-      "ctrPct": 2.57,
-      "avgCpcUsd": 0.62,
-      "spendUsd": 118.72,
+      "impressions": 7908,
+      "clicks": 206,
+      "ctrPct": 2.6,
+      "avgCpcUsd": 0.61,
+      "spendUsd": 126.27,
       "partial": true
     }
   ],
@@ -1421,6 +1421,10 @@
     {
       "date": "2026-11-10",
       "summary": "6:50 PM ET refresh: Google Ads totals re-pulled ($546.11 spend, 489 clicks, 13,368 impr); per-campaign daily series Nov 6\u201310 updated (Nov 10 partial: $80.57); Nov 6-8 cost per enrollment $87.92 on $351.67 spend; CA Demand Gen learning, no spend yet; state breakdown still unavailable."
+    },
+    {
+      "date": "2026-11-10",
+      "summary": "10:55 PM ET refresh: totals re-pulled ($591.81 spend, 600 clicks, 18,336 impr); all Search/Display limited by budget, Demand Gen learning; no disapprovals seen; new competitor terms in US ex CA ('free assurance wireless phones', 'airtalk wireless free phone'); state breakdown still unavailable in UI."
     }
   ],
   "displayExclusions": [
@@ -1465,20 +1469,20 @@
     "dailyBudgetUsd": 20,
     "status": "Enabled; Eligible (Learning) \u2014 Bid strategy learning",
     "sinceLaunch": {
-      "impressions": 4026,
-      "clicks": 76,
-      "ctr_pct": 1.89,
-      "avg_cpc": 0.25,
-      "cost": 18.89
+      "impressions": 4430,
+      "clicks": 88,
+      "ctr_pct": 1.99,
+      "avg_cpc": 0.23,
+      "cost": 20.47
     },
     "today": {
-      "impressions": 3935,
-      "clicks": 75,
-      "ctr_pct": 1.91,
-      "avg_cpc": 0.25,
-      "cost": 18.7
+      "impressions": 4430,
+      "clicks": 88,
+      "ctr_pct": 1.99,
+      "avg_cpc": 0.23,
+      "cost": 20.47
     },
-    "asOf": "2026-11-10T22:05-05:00"
+    "asOf": "2026-11-10T22:54-05:00"
   },
   "pullNotes": {
     "topKeywordsByCost": [
