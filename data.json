@@ -7,7 +7,7 @@
     "loginEmail": "xavidalmau9@gmail.com",
     "liveSince": "2026-11-06",
     "timezone": "America/New_York",
-    "updatedAt": "2026-11-12T14:22:00-05:00",
+    "updatedAt": "2026-11-12T15:05:00-05:00",
     "dataWindow": {
       "from": "2026-11-04",
       "to": "2026-11-12",
@@ -113,26 +113,26 @@
   ],
   "overview": {
     "awaitingData": false,
-    "spendUsd": 766.44,
-    "clicks": 1025,
-    "impressions": 34188,
-    "ctrPct": 3.0,
+    "spendUsd": 775.8,
+    "clicks": 1033,
+    "impressions": 34748,
+    "ctrPct": 2.97,
     "avgCpcUsd": 0.75,
     "enrollments": 4,
     "costPerEnrollmentUsd": 183.78,
     "conversions": 0,
-    "windowLabel": "Nov 6–12, 2026 (Nov 12 partial, pulled 2:09 PM ET; all 5 campaigns)",
-    "enrollmentsNote": "Pre-split combined (Nov 6–8 · ABJ0020 shared by all campaigns); cost/enrollment = Nov 6-8 spend $351.67 / 4 (spend per report date recomputed from real Google Ads daily data Nov 12 1PM ET)",
+    "windowLabel": "Nov 6–12, 2026 (Nov 12 partial, pulled 2:48–2:53 PM ET; all 5 campaigns)",
+    "enrollmentsNote": "Pre-split combined (Nov 6–8 · ABJ0020 shared by all campaigns); cost/enrollment = Nov 6-8 spend $351.67 / 4 (spend per report date recomputed from real Google Ads daily data Nov 12 1PM ET) (spend per report date recomputed from real Google Ads daily data Nov 12 3PM ET)",
     "enrollmentsScope": "pre_split_all"
   },
   "bySegment": {
     "ca_search": {
       "awaitingData": false,
-      "spendUsd": 294.19,
-      "clicks": 121,
-      "impressions": 518,
-      "ctrPct": 23.36,
-      "avgCpcUsd": 2.43,
+      "spendUsd": 302.16,
+      "clicks": 125,
+      "impressions": 526,
+      "ctrPct": 23.76,
+      "avgCpcUsd": 2.42,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
@@ -188,22 +188,22 @@
         },
         {
           "date": "2026-11-12",
-          "impressions": 20,
-          "clicks": 6,
-          "ctrPct": 30.0,
-          "avgCpcUsd": 1.95,
-          "spendUsd": 11.7
+          "impressions": 28,
+          "clicks": 10,
+          "ctrPct": 35.71,
+          "avgCpcUsd": 1.97,
+          "spendUsd": 19.67
         }
       ],
       "adGroupPerformance": [
         {
           "name": "Lifeline program",
           "status": "Enabled",
-          "impressions": 182,
-          "clicks": 62,
-          "ctrPct": 34.07,
-          "avgCpcUsd": 2.05,
-          "spendUsd": 127.1
+          "impressions": 196,
+          "clicks": 70,
+          "ctrPct": 35.71,
+          "avgCpcUsd": 2.04,
+          "spendUsd": 142.83
         },
         {
           "name": "Apply / sign up (high intent)",
@@ -226,9 +226,9 @@
         {
           "name": "Low income",
           "status": "Enabled",
-          "impressions": 37,
+          "impressions": 39,
           "clicks": 9,
-          "ctrPct": 24.32,
+          "ctrPct": 23.08,
           "avgCpcUsd": 1.97,
           "spendUsd": 17.77
         },
@@ -244,9 +244,9 @@
         {
           "name": "Near me / providers",
           "status": "Enabled",
-          "impressions": 17,
+          "impressions": 20,
           "clicks": 3,
-          "ctrPct": 17.65,
+          "ctrPct": 15.0,
           "avgCpcUsd": 1.93,
           "spendUsd": 5.79
         },
@@ -298,20 +298,26 @@
           {
             "term": "california lifeline",
             "segmentId": "ca_search",
-            "clicks": 13,
-            "spendUsd": 29.97
+            "clicks": 14,
+            "spendUsd": 31.97
           },
           {
             "term": "california lifeline program",
             "segmentId": "ca_search",
-            "clicks": 4,
-            "spendUsd": 10.24
+            "clicks": 7,
+            "spendUsd": 16.0
           },
           {
             "term": "senior lifeline program",
             "segmentId": "ca_search",
             "clicks": 2,
             "spendUsd": 8.2
+          },
+          {
+            "term": "californialifeline com",
+            "segmentId": "ca_search",
+            "clicks": 3,
+            "spendUsd": 7.48
           },
           {
             "term": "apply for free government phone",
@@ -342,12 +348,6 @@
             "segmentId": "ca_search",
             "clicks": 2,
             "spendUsd": 4.0
-          },
-          {
-            "term": "ca lifeline",
-            "segmentId": "ca_search",
-            "clicks": 2,
-            "spendUsd": 3.98
           }
         ],
         "wasted": [
@@ -427,15 +427,15 @@
       "devices": [
         {
           "device": "Mobile",
-          "clicks": 95,
-          "spendUsd": 236.78,
-          "impressions": 399
+          "clicks": 102,
+          "spendUsd": 250.69,
+          "impressions": 413
         },
         {
           "device": "Computer",
-          "clicks": 21,
-          "spendUsd": 46.18,
-          "impressions": 94
+          "clicks": 22,
+          "spendUsd": 48.0,
+          "impressions": 99
         },
         {
           "device": "Tablet",
@@ -447,18 +447,18 @@
       "statePerformance": [
         {
           "state": "California (incl. Bay Area/Silicon Valley regions)",
-          "clicks": 117,
-          "spendUsd": 286.43,
+          "clicks": 125,
+          "spendUsd": 302.16,
           "regions": [
             {
               "state": "California",
-              "clicks": 109,
-              "spendUsd": 266.78
+              "clicks": 116,
+              "spendUsd": 280.52
             },
             {
               "state": "San Francisco Bay Area",
-              "clicks": 7,
-              "spendUsd": 16.69
+              "clicks": 8,
+              "spendUsd": 18.68
             },
             {
               "state": "Silicon Valley",
@@ -474,10 +474,10 @@
     },
     "ca_display": {
       "awaitingData": false,
-      "spendUsd": 150.59,
-      "clicks": 440,
-      "impressions": 16135,
-      "ctrPct": 2.72,
+      "spendUsd": 150.68,
+      "clicks": 441,
+      "impressions": 16449,
+      "ctrPct": 2.68,
       "avgCpcUsd": 0.34,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
@@ -502,15 +502,15 @@
         },
         {
           "date": "2026-11-08",
-          "impressions": 2233,
+          "impressions": 2230,
           "clicks": 57,
-          "ctrPct": 2.55,
+          "ctrPct": 2.56,
           "avgCpcUsd": 0.31,
           "spendUsd": 17.94
         },
         {
           "date": "2026-11-09",
-          "impressions": 3317,
+          "impressions": 3316,
           "clicks": 74,
           "ctrPct": 2.23,
           "avgCpcUsd": 0.27,
@@ -518,7 +518,7 @@
         },
         {
           "date": "2026-11-10",
-          "impressions": 3269,
+          "impressions": 3268,
           "clicks": 71,
           "ctrPct": 2.17,
           "avgCpcUsd": 0.27,
@@ -526,7 +526,7 @@
         },
         {
           "date": "2026-11-11",
-          "impressions": 2540,
+          "impressions": 2539,
           "clicks": 91,
           "ctrPct": 3.58,
           "avgCpcUsd": 0.23,
@@ -534,22 +534,22 @@
         },
         {
           "date": "2026-11-12",
-          "impressions": 534,
-          "clicks": 12,
-          "ctrPct": 2.25,
-          "avgCpcUsd": 0.33,
-          "spendUsd": 3.98
+          "impressions": 860,
+          "clicks": 14,
+          "ctrPct": 1.63,
+          "avgCpcUsd": 0.31,
+          "spendUsd": 4.32
         }
       ],
       "adGroupPerformance": [
         {
           "name": "CA Banners",
           "status": "Enabled",
-          "impressions": 15704,
-          "clicks": 429,
-          "ctrPct": 2.73,
+          "impressions": 16449,
+          "clicks": 441,
+          "ctrPct": 2.68,
           "avgCpcUsd": 0.34,
-          "spendUsd": 147.0
+          "spendUsd": 150.68
         }
       ],
       "searchTerms": {
@@ -559,7 +559,7 @@
       "negativesAdded": [],
       "placements": {
         "total": 313,
-        "notes": "Nov 6–12 automatic placements with spend (pulled Nov 12 ~1:05 PM ET). Mobile games and junk sites still serve; earlier exclusions (all app categories, solvedlib.com, savenowy.com, mydrawingstar.com) only apply going forward, so these still show cumulative spend. Candidates to exclude: lakesidemtconstruction.com, bajusgold.com, tipake.com, termo.onl, vdrwopsuxb.xyz, plumbertip.com, dilkas.online.",
+        "notes": "Nov 6–12 automatic placements with spend (pulled Nov 12 ~2:52 PM ET). Mobile games and junk sites still serve; earlier exclusions (all app categories, solvedlib.com, savenowy.com, mydrawingstar.com) only apply going forward, so these still show cumulative spend. Site exclusions added Nov 12 (bajusgold.com, tipake.com, termo.onl, vdrwopsuxb.xyz, dilkas.online, lakesidemtconstruction.com, plumbertip.com) apply going forward.",
         "topByCost": [
           {
             "name": "Mobile App: Solitaire - Card Solitaire (iTunes App Store), by Doodle Mobile Limited",
@@ -686,43 +686,43 @@
       "devices": [
         {
           "device": "Mobile",
-          "clicks": 359,
-          "spendUsd": 122.68,
-          "impressions": 10327
+          "clicks": 369,
+          "spendUsd": 125.87,
+          "impressions": 10788
         },
         {
           "device": "Tablet",
           "clicks": 52,
           "spendUsd": 18.97,
-          "impressions": 3154
+          "impressions": 3186
         },
         {
           "device": "Computer",
-          "clicks": 18,
-          "spendUsd": 5.36,
-          "impressions": 2203
+          "clicks": 20,
+          "spendUsd": 5.84,
+          "impressions": 2466
         }
       ],
       "statePerformance": [
         {
           "state": "California (incl. Bay Area/Silicon Valley regions)",
-          "clicks": 429,
-          "spendUsd": 147.0,
+          "clicks": 441,
+          "spendUsd": 150.67,
           "regions": [
             {
               "state": "California",
-              "clicks": 316,
-              "spendUsd": 109.83
+              "clicks": 324,
+              "spendUsd": 112.59
             },
             {
               "state": "San Francisco Bay Area",
-              "clicks": 97,
-              "spendUsd": 32.72
+              "clicks": 100,
+              "spendUsd": 33.4
             },
             {
               "state": "Silicon Valley",
-              "clicks": 16,
-              "spendUsd": 4.45
+              "clicks": 17,
+              "spendUsd": 4.68
             }
           ]
         }
@@ -733,8 +733,8 @@
       "awaitingData": false,
       "spendUsd": 261.99,
       "clicks": 110,
-      "impressions": 518,
-      "ctrPct": 21.28,
+      "impressions": 519,
+      "ctrPct": 21.19,
       "avgCpcUsd": 2.38,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
@@ -791,9 +791,9 @@
         },
         {
           "date": "2026-11-12",
-          "impressions": 32,
+          "impressions": 34,
           "clicks": 7,
-          "ctrPct": 21.88,
+          "ctrPct": 20.59,
           "avgCpcUsd": 1.85,
           "spendUsd": 12.92
         }
@@ -811,27 +811,27 @@
         {
           "name": "Lifeline program",
           "status": "Enabled",
-          "impressions": 128,
+          "impressions": 131,
           "clicks": 36,
-          "ctrPct": 28.12,
+          "ctrPct": 27.48,
           "avgCpcUsd": 2.01,
           "spendUsd": 72.41
         },
         {
           "name": "SNAP / EBT / Food stamps",
           "status": "Enabled",
-          "impressions": 100,
+          "impressions": 101,
           "clicks": 20,
-          "ctrPct": 20.0,
+          "ctrPct": 19.8,
           "avgCpcUsd": 3.12,
           "spendUsd": 62.34
         },
         {
           "name": "Near me / providers",
           "status": "Enabled",
-          "impressions": 54,
+          "impressions": 55,
           "clicks": 11,
-          "ctrPct": 20.37,
+          "ctrPct": 20.0,
           "avgCpcUsd": 2.05,
           "spendUsd": 22.5
         },
@@ -1032,13 +1032,13 @@
           "device": "Mobile",
           "clicks": 88,
           "spendUsd": 207.57,
-          "impressions": 415
+          "impressions": 419
         },
         {
           "device": "Computer",
           "clicks": 21,
           "spendUsd": 51.02,
-          "impressions": 88
+          "impressions": 89
         },
         {
           "device": "Tablet",
@@ -1211,10 +1211,10 @@
       "costPerEnrollmentUsd": null,
       "conversions": 0,
       "awaitingData": false,
-      "spendUsd": 44.92,
-      "clicks": 339,
-      "impressions": 16820,
-      "ctrPct": 2.02,
+      "spendUsd": 45.23,
+      "clicks": 341,
+      "impressions": 17048,
+      "ctrPct": 2.0,
       "avgCpcUsd": 0.13,
       "status": "Enabled; Eligible (Learning) — Bid strategy learning",
       "dailyAds": [
@@ -1261,71 +1261,71 @@
         {
           "date": "2026-11-11",
           "impressions": 10640,
-          "clicks": 213,
-          "ctrPct": 2.0,
+          "clicks": 214,
+          "ctrPct": 2.01,
           "avgCpcUsd": 0.1,
           "spendUsd": 20.9
         },
         {
           "date": "2026-11-12",
-          "impressions": 1725,
-          "clicks": 32,
-          "ctrPct": 1.86,
+          "impressions": 1967,
+          "clicks": 34,
+          "ctrPct": 1.73,
           "avgCpcUsd": 0.1,
-          "spendUsd": 3.15
+          "spendUsd": 3.49
         }
       ],
       "adGroupPerformance": [
         {
           "name": "CA Demand Gen - Apply",
           "status": "Enabled",
-          "impressions": 15853,
-          "clicks": 322,
-          "ctrPct": 2.03,
+          "impressions": 17048,
+          "clicks": 341,
+          "ctrPct": 2.0,
           "avgCpcUsd": 0.13,
-          "spendUsd": 43.43
+          "spendUsd": 45.24
         }
       ],
       "devices": [
         {
           "device": "Mobile",
-          "clicks": 301,
-          "spendUsd": 41.05,
-          "impressions": 14477
+          "clicks": 323,
+          "spendUsd": 42.97,
+          "impressions": 15627
         },
         {
           "device": "Tablet",
           "clicks": 11,
-          "spendUsd": 1.71,
-          "impressions": 1075
+          "spendUsd": 1.79,
+          "impressions": 1142
         },
         {
           "device": "Computer",
-          "clicks": 10,
-          "spendUsd": 0.62,
+          "clicks": 7,
+          "spendUsd": 0.48,
           "impressions": 276
         }
       ],
       "statePerformance": [
         {
           "state": "California (incl. Bay Area/Silicon Valley regions)",
-          "clicks": 325,
-          "spendUsd": 43.59,
+          "clicks": 343,
+          "spendUsd": 45.26,
           "regions": [
             {
               "state": "California",
-              "clicks": 259,
-              "spendUsd": 33.95
+              "clicks": 272,
+              "spendUsd": 35.29
             },
             {
               "state": "San Francisco Bay Area",
-              "clicks": 54,
-              "spendUsd": 7.38
+              "clicks": 57,
+              "spendUsd": 7.65
             },
             {
               "state": "Silicon Valley",
-              "clicks": 12,
-              "spendUsd": 2.26
+              "clicks": 14,
+              "spendUsd": 2.32
             }
           ]
         }
@@ -1401,10 +1401,10 @@
       "costPerEnrollmentUsd": null,
       "conversions": 0,
       "awaitingData": false,
-      "spendUsd": 14.75,
-      "clicks": 15,
-      "impressions": 197,
-      "ctrPct": 7.61,
+      "spendUsd": 15.74,
+      "clicks": 16,
+      "impressions": 206,
+      "ctrPct": 7.77,
       "avgCpcUsd": 0.98,
       "status": "Enabled; Eligible (Limited) — Missing enough relevant keywords",
       "dailyAds": [
@@ -1458,30 +1458,30 @@
         },
         {
           "date": "2026-11-12",
-          "impressions": 43,
-          "clicks": 2,
-          "ctrPct": 4.65,
+          "impressions": 52,
+          "clicks": 3,
+          "ctrPct": 5.77,
           "avgCpcUsd": 1.0,
-          "spendUsd": 2.0
+          "spendUsd": 2.99
         }
       ],
       "adGroupPerformance": [
         {
           "name": "Competitors",
           "status": "Enabled",
-          "impressions": 185,
-          "clicks": 15,
-          "ctrPct": 8.11,
+          "impressions": 206,
+          "clicks": 16,
+          "ctrPct": 7.77,
           "avgCpcUsd": 0.98,
-          "spendUsd": 14.75
+          "spendUsd": 15.74
         }
       ],
       "devices": [
         {
           "device": "Mobile",
-          "clicks": 15,
-          "spendUsd": 14.75,
-          "impressions": 170
+          "clicks": 16,
+          "spendUsd": 15.74,
+          "impressions": 190
         },
         {
           "device": "Computer",
@@ -1493,19 +1493,19 @@
           "device": "Tablet",
           "clicks": 0,
           "spendUsd": 0.0,
-          "impressions": 4
+          "impressions": 5
         }
       ],
       "statePerformance": [
         {
           "state": "California (incl. Bay Area/Silicon Valley regions)",
-          "clicks": 15,
-          "spendUsd": 14.75,
+          "clicks": 16,
+          "spendUsd": 15.74,
           "regions": [
             {
               "state": "California",
-              "clicks": 14,
-              "spendUsd": 13.77
+              "clicks": 15,
+              "spendUsd": 14.76
             },
             {
               "state": "San Francisco Bay Area",
@@ -1520,8 +1520,8 @@
           {
             "term": "airtalk wireless",
             "segmentId": "ca_competitors",
-            "clicks": 4,
-            "spendUsd": 3.96
+            "clicks": 5,
+            "spendUsd": 4.95
           },
           {
             "term": "tag mobile",
@@ -1530,13 +1530,13 @@
             "spendUsd": 2.96
           },
           {
-            "term": "airtalk wireless free phone list",
+            "term": "airtalk wireless com",
             "segmentId": "ca_competitors",
             "clicks": 1,
             "spendUsd": 1.0
           },
           {
-            "term": "airtalk wireless com",
+            "term": "airtalk wireless free phone list",
             "segmentId": "ca_competitors",
             "clicks": 1,
             "spendUsd": 1.0
@@ -1570,8 +1570,8 @@
           {
             "term": "airtalk wireless",
             "segmentId": "ca_competitors",
-            "clicks": 4,
-            "spendUsd": 3.96,
+            "clicks": 5,
+            "spendUsd": 4.95,
             "reason": "competitor-brand query (intended in 0024 Competitors; measure by ABJ0024)"
           },
           {
@@ -1582,14 +1582,14 @@
             "reason": "competitor-brand query (intended in 0024 Competitors; measure by ABJ0024)"
           },
           {
-            "term": "airtalk wireless free phone list",
+            "term": "airtalk wireless com",
             "segmentId": "ca_competitors",
             "clicks": 1,
             "spendUsd": 1.0,
             "reason": "competitor-brand query (intended in 0024 Competitors; measure by ABJ0024)"
           },
           {
-            "term": "airtalk wireless com",
+            "term": "airtalk wireless free phone list",
             "segmentId": "ca_competitors",
             "clicks": 1,
             "spendUsd": 1.0,
@@ -1646,7 +1646,7 @@
     },
     {
       "date": "2026-11-08",
-      "impressions": 2358,
+      "impressions": 2355,
       "clicks": 86,
       "ctrPct": 3.65,
       "avgCpcUsd": 1.25,
@@ -1654,7 +1654,7 @@
     },
     {
       "date": "2026-11-09",
-      "impressions": 3534,
+      "impressions": 3533,
       "clicks": 119,
       "ctrPct": 3.37,
       "avgCpcUsd": 0.96,
@@ -1662,7 +1662,7 @@
     },
     {
       "date": "2026-11-10",
-      "impressions": 7933,
+      "impressions": 7932,
       "clicks": 210,
       "ctrPct": 2.65,
       "avgCpcUsd": 0.6,
@@ -1670,19 +1670,19 @@
     },
     {
       "date": "2026-11-11",
-      "impressions": 13506,
-      "clicks": 362,
-      "ctrPct": 2.68,
+      "impressions": 13505,
+      "clicks": 363,
+      "ctrPct": 2.69,
       "avgCpcUsd": 0.39,
       "spendUsd": 141.35
     },
     {
       "date": "2026-11-12",
-      "impressions": 2354,
-      "clicks": 59,
-      "ctrPct": 2.51,
-      "avgCpcUsd": 0.57,
-      "spendUsd": 33.75
+      "impressions": 2941,
+      "clicks": 68,
+      "ctrPct": 2.31,
+      "avgCpcUsd": 0.64,
+      "spendUsd": 43.39
     }
   ],
   "keywords": [
@@ -1707,6 +1707,16 @@
       "avgCpcUsd": 2.16
     },
     {
+      "keyword": "\"lifeline cellphones\"",
+      "match": "Phrase",
+      "segmentId": "ca_search",
+      "adGroup": "Lifeline program",
+      "status": "Enabled",
+      "clicks": 20,
+      "spendUsd": 39.2,
+      "avgCpcUsd": 1.96
+    },
+    {
       "keyword": "\"free public assistance phones\"",
       "match": "Phrase",
       "segmentId": "nationwide",
@@ -1715,16 +1725,6 @@
       "clicks": 11,
       "spendUsd": 38.57,
       "avgCpcUsd": 3.51
-    },
-    {
-      "keyword": "\"lifeline cellphones\"",
-      "match": "Phrase",
-      "segmentId": "ca_search",
-      "adGroup": "Lifeline program",
-      "status": "Enabled",
-      "clicks": 19,
-      "spendUsd": 37.2,
-      "avgCpcUsd": 1.96
     },
     {
       "keyword": "\"lifeline free phone application\"",
@@ -1747,6 +1747,16 @@
       "avgCpcUsd": 2.02
     },
     {
+      "keyword": "\"lifeline program\"",
+      "match": "Phrase",
+      "segmentId": "ca_search",
+      "adGroup": "Lifeline program",
+      "status": "Enabled",
+      "clicks": 10,
+      "spendUsd": 20.54,
+      "avgCpcUsd": 2.05
+    },
+    {
       "keyword": "[lifeline program]",
       "match": "Exact",
       "segmentId": "nationwide",
@@ -1755,6 +1765,16 @@
       "clicks": 10,
       "spendUsd": 20.16,
       "avgCpcUsd": 2.02
+    },
+    {
+      "keyword": "\"lifeline government phone program\"",
+      "match": "Phrase",
+      "segmentId": "ca_search",
+      "adGroup": "Lifeline program",
+      "status": "Enabled",
+      "clicks": 10,
+      "spendUsd": 19.73,
+      "avgCpcUsd": 1.97
     },
     {
       "keyword": "\"free public assistance phones\"",
@@ -1775,26 +1795,6 @@
       "clicks": 4,
       "spendUsd": 15.82,
       "avgCpcUsd": 3.96
-    },
-    {
-      "keyword": "\"lifeline program\"",
-      "match": "Phrase",
-      "segmentId": "ca_search",
-      "adGroup": "Lifeline program",
-      "status": "Enabled",
-      "clicks": 7,
-      "spendUsd": 14.78,
-      "avgCpcUsd": 2.11
-    },
-    {
-      "keyword": "\"lifeline government phone program\"",
-      "match": "Phrase",
-      "segmentId": "ca_search",
-      "adGroup": "Lifeline program",
-      "status": "Enabled",
-      "clicks": 7,
-      "spendUsd": 13.75,
-      "avgCpcUsd": 1.96
     },
     {
       "keyword": "[apply for a free cell phone]",
@@ -1838,7 +1838,7 @@
     }
   ],
   "searchTerms": {
-    "notes": "Wasted = competitor brand leakage, off-target (broadband/internet), or free-phone intent outside CA. Good = intent-aligned. Nov 6–12 Search terms report lists ~$417.59 of $563.17 Search spend; Google hides the rest (low-volume terms). Refreshed Nov 12 1:00 PM ET.",
+    "notes": "Wasted = competitor brand leakage, off-target (broadband/internet), or free-phone intent outside CA. Good = intent-aligned. Nov 6–12 Search terms report lists ~$434.31 of $563.17 Search spend; Google hides the rest (low-volume terms). Refreshed Nov 12 2:50 PM ET.",
     "good": [
       {
         "term": "lifeline program",
@@ -1849,8 +1849,8 @@
       {
         "term": "california lifeline",
         "segmentId": "ca_search",
-        "clicks": 13,
-        "spendUsd": 29.97
+        "clicks": 14,
+        "spendUsd": 31.97
       },
       {
         "term": "lifeline program",
@@ -1859,22 +1859,28 @@
         "spendUsd": 18.25
       },
       {
+        "term": "california lifeline program",
+        "segmentId": "ca_search",
+        "clicks": 7,
+        "spendUsd": 16.0
+      },
+      {
         "term": "lifeline",
         "segmentId": "nationwide",
         "clicks": 5,
         "spendUsd": 11.37
       },
       {
-        "term": "california lifeline program",
-        "segmentId": "ca_search",
-        "clicks": 4,
-        "spendUsd": 10.24
-      },
-      {
         "term": "senior lifeline program",
         "segmentId": "ca_search",
         "clicks": 2,
         "spendUsd": 8.2
+      },
+      {
+        "term": "californialifeline com",
+        "segmentId": "ca_search",
+        "clicks": 3,
+        "spendUsd": 7.48
       },
       {
         "term": "apply for free government phone",
@@ -1907,28 +1913,22 @@
         "spendUsd": 4.0
       },
       {
-        "term": "ca lifeline",
-        "segmentId": "ca_search",
-        "clicks": 2,
-        "spendUsd": 3.98
-      },
-      {
         "term": "free phone california lifeline",
         "segmentId": "ca_search",
         "clicks": 2,
         "spendUsd": 3.98
       },
       {
-        "term": "free phone medi cal",
+        "term": "ca lifeline",
         "segmentId": "ca_search",
         "clicks": 2,
-        "spendUsd": 3.9
+        "spendUsd": 3.98
       },
       {
-        "term": "californialifeline com",
+        "term": "californialifeline com application",
         "segmentId": "ca_search",
-        "clicks": 1,
-        "spendUsd": 3.5
+        "clicks": 2,
+        "spendUsd": 3.94
       }
     ],
     "wasted": [
@@ -1982,6 +1982,13 @@
         "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
       },
       {
+        "term": "airtalk wireless",
+        "segmentId": "ca_competitors",
+        "clicks": 5,
+        "spendUsd": 4.95,
+        "reason": "competitor-brand query (intended in 0024 Competitors; measure by ABJ0024)"
+      },
+      {
         "term": "free government phone plans with unlimited data",
         "segmentId": "nationwide",
         "clicks": 1,
@@ -2008,13 +2015,6 @@
         "clicks": 2,
         "spendUsd": 4.0,
         "reason": "off-target (broadband/internet/device/jobs); negatives added Nov 12"
-      },
-      {
-        "term": "airtalk wireless",
-        "segmentId": "ca_competitors",
-        "clicks": 4,
-        "spendUsd": 3.96,
-        "reason": "competitor-brand query (intended in 0024 Competitors; measure by ABJ0024)"
       },
       {
         "term": "assurance lifeline",
@@ -2109,7 +2109,7 @@
       }
     ],
     "top": [],
-    "totalFlaggedWastedUsd": 171.81
+    "totalFlaggedWastedUsd": 172.8
   },
   "negativesAdded": [],
   "recommendations": [
@@ -2209,7 +2209,7 @@
       "overviewWindow": "Nov 4–9, 2026 · all-time totals; daily series from Nov 8",
       "nov9PartialSpendUsd": 111.9,
       "spendUsd": 350.97,
-      "method": "sum of per-campaign daily Google Ads spend Nov 6-8 (recomputed from pull 2026-11-12 1:00 PM ET)"
+      "method": "sum of per-campaign daily Google Ads spend Nov 6-8 (recomputed from pull 2026-11-12 2:50 PM ET)"
     },
     "summary": {
       "segmentId": "all",
@@ -2491,6 +2491,10 @@
     {
       "date": "2026-11-12",
       "summary": "Hourly refresh 1:20 PM ET: all 5 campaigns, daily series through Nov 12 (partial), ad groups, keywords, search terms (competitor/off-target flagged), regions, devices, placements. Top CA cities unavailable. Enrollments/reports unchanged; spend per report date recomputed."
+    },
+    {
+      "date": "2026-11-12",
+      "summary": "Hourly refresh 3:05 PM ET: all 5 campaigns, daily series through Nov 12 (partial), ad groups, keywords, search terms (competitor/off-target flagged), regions, devices, placements. Top CA cities unavailable. Enrollments/reports unchanged; spend per report date recomputed."
     }
   ],
   "displayExclusions": [
@@ -2542,20 +2546,20 @@
     "dailyBudgetUsd": 20,
     "status": "Enabled; Eligible (Learning) — Bid strategy learning",
     "sinceLaunch": {
-      "impressions": 16820,
-      "clicks": 339,
-      "ctr_pct": "2.02%",
+      "impressions": 17048,
+      "clicks": 341,
+      "ctr_pct": "2.00%",
       "avg_cpc": 0.13,
-      "cost": 44.92
+      "cost": 45.23
     },
     "today": {
-      "impressions": 1725,
-      "clicks": 32,
-      "ctr_pct": 1.86,
+      "impressions": 1967,
+      "clicks": 34,
+      "ctr_pct": 1.73,
       "avg_cpc": 0.1,
-      "cost": 3.15
+      "cost": 3.49
     },
-    "asOf": "2026-11-12T14:20:00-05:00"
+    "asOf": "2026-11-12T15:05:00-05:00"
   },
   "pullNotes": {
     "topKeywordsByCost": [
@@ -2574,18 +2578,18 @@
         "clicks": 20
       },
       {
+        "keyword": "\"lifeline cellphones\"",
+        "campaign": "SafeLink - CA - 0021",
+        "ad_group": "Lifeline program",
+        "cost": 39.2,
+        "clicks": 20
+      },
+      {
         "keyword": "\"free public assistance phones\" (paused)",
         "campaign": "SafeLink - US ex CA - 0020",
         "ad_group": "SNAP / EBT / Food stamps",
         "cost": 38.57,
         "clicks": 11
-      },
-      {
-        "keyword": "\"lifeline cellphones\"",
-        "campaign": "SafeLink - CA - 0021",
-        "ad_group": "Lifeline program",
-        "cost": 37.2,
-        "clicks": 19
       },
       {
         "keyword": "\"lifeline free phone application\" (paused)",
@@ -2602,10 +2606,24 @@
         "clicks": 11
       },
       {
+        "keyword": "\"lifeline program\"",
+        "campaign": "SafeLink - CA - 0021",
+        "ad_group": "Lifeline program",
+        "cost": 20.54,
+        "clicks": 10
+      },
+      {
         "keyword": "[lifeline program]",
         "campaign": "SafeLink - US ex CA - 0020",
         "ad_group": "Lifeline program",
         "cost": 20.16,
+        "clicks": 10
+      },
+      {
+        "keyword": "\"lifeline government phone program\"",
+        "campaign": "SafeLink - CA - 0021",
+        "ad_group": "Lifeline program",
+        "cost": 19.73,
         "clicks": 10
       },
       {
@@ -2614,23 +2632,9 @@
         "ad_group": "SNAP / EBT / Food stamps",
         "cost": 18.98,
         "clicks": 6
-      },
-      {
-        "keyword": "\"free welfare cell phones\"",
-        "campaign": "SafeLink - CA - 0021",
-        "ad_group": "SNAP / EBT / Food stamps",
-        "cost": 15.82,
-        "clicks": 4
-      },
-      {
-        "keyword": "\"lifeline program\"",
-        "campaign": "SafeLink - CA - 0021",
-        "ad_group": "Lifeline program",
-        "cost": 14.78,
-        "clicks": 7
       }
     ],
-    "competitorSearchTermFlags": "Competitor/brand terms with spend Nov 6–12: $72.67 (29 terms). Leakage into 0021/0020: $59.78; 0024 (intended): $12.89.",
+    "competitorSearchTermFlags": "Competitor/brand terms with spend Nov 6–12: $73.66 (29 terms). Leakage into 0021/0020: $59.78; 0024 (intended): $13.88.",
     "displayTopPlacements": [
       {
         "placement": "youtube.com",
@@ -2681,17 +2685,17 @@
         "cost": 1.58
       }
     ],
-    "adStatus": "Ads page: 34 ads; 21 Eligible, 2 Paused; no disapproved/limited ad status seen. 0021/0020/0022 = Eligible (Limited by budget); 0023 = Eligible (Learning, bid strategy learning); 0024 = Eligible (Limited: missing enough relevant keywords). Account banner: verify advertiser identity by 2026-12-09.",
+    "adStatus": "Ads page: 34 ads; 21 Eligible, 2 Paused; no disapproved/limited ad status seen. 0021/0020/0022 = Eligible (Limited by budget); 0023 = Eligible (Learning, bid strategy learning); 0024 = Eligible (Limited: missing enough relevant keywords). Account banner: verify advertiser identity by 2026-12-09. (status text from 1:00 PM pull; disapprovals not rechecked at 2:50 PM)",
     "disapprovals": 0,
     "spendByRegion": {
       "SafeLink - CA - 0021": {
         "California": {
-          "clicks": 109,
-          "cost": 266.78
+          "clicks": 116,
+          "cost": 280.52
         },
         "San Francisco Bay Area": {
-          "clicks": 7,
-          "cost": 16.69
+          "clicks": 8,
+          "cost": 18.68
         },
         "Silicon Valley": {
           "clicks": 1,
@@ -2826,36 +2830,36 @@
       },
       "SafeLink - CA Display - 0022": {
         "California": {
-          "clicks": 316,
-          "cost": 109.83
+          "clicks": 324,
+          "cost": 112.59
         },
         "San Francisco Bay Area": {
-          "clicks": 97,
-          "cost": 32.72
+          "clicks": 100,
+          "cost": 33.4
         },
         "Silicon Valley": {
-          "clicks": 16,
-          "cost": 4.45
+          "clicks": 17,
+          "cost": 4.68
         }
       },
       "SafeLink - CA Demand Gen - 0023": {
         "California": {
-          "clicks": 259,
-          "cost": 33.95
+          "clicks": 272,
+          "cost": 35.29
         },
         "San Francisco Bay Area": {
-          "clicks": 54,
-          "cost": 7.38
+          "clicks": 57,
+          "cost": 7.65
         },
         "Silicon Valley": {
-          "clicks": 12,
-          "cost": 2.26
+          "clicks": 14,
+          "cost": 2.32
         }
       },
       "SafeLink - CA Competitors - 0024": {
         "California": {
-          "clicks": 14,
-          "cost": 13.77
+          "clicks": 15,
+          "cost": 14.76
         },
         "San Francisco Bay Area": {
           "clicks": 1,
@@ -2866,12 +2870,12 @@
     "deviceSplit": {
       "SafeLink - CA - 0021": {
         "mobile": {
-          "clicks": 95,
-          "cost": 236.78
+          "clicks": 102,
+          "cost": 250.69
         },
         "computers": {
-          "clicks": 21,
-          "cost": 46.18
+          "clicks": 22,
+          "cost": 48.0
         },
         "tablets": {
           "clicks": 1,
@@ -2894,36 +2898,36 @@
       },
       "SafeLink - CA Display - 0022": {
         "mobile": {
-          "clicks": 359,
-          "cost": 122.68
+          "clicks": 369,
+          "cost": 125.87
         },
         "tablets": {
           "clicks": 52,
           "cost": 18.97
         },
         "computers": {
-          "clicks": 18,
-          "cost": 5.36
+          "clicks": 20,
+          "cost": 5.84
         }
       },
       "SafeLink - CA Demand Gen - 0023": {
         "mobile": {
-          "clicks": 301,
-          "cost": 41.05
+          "clicks": 323,
+          "cost": 42.97
         },
         "tablets": {
           "clicks": 11,
-          "cost": 1.71
+          "cost": 1.79
         },
         "computers": {
-          "clicks": 10,
-          "cost": 0.62
+          "clicks": 7,
+          "cost": 0.48
         }
       },
       "SafeLink - CA Competitors - 0024": {
         "mobile": {
-          "clicks": 15,
-          "cost": 14.75
+          "clicks": 16,
+          "cost": 15.74
         },
         "computers": {
           "clicks": 0,
@@ -2943,13 +2947,13 @@
       "airtalk wireless free phone (0020, $5.96)",
       "government phone (0020, $5.37)",
       "assurance wireless (0020, $5.32)",
+      "airtalk wireless (0024, $4.95)",
       "free government phone plans with unlimited data (0020, $4.20)",
       "medicaid free phone nyc (0020, $4.01)",
       "free assurance wireless phones (0020, $4.00)",
-      "ca lifeline home broadband pilot program (0021, $4.00)",
-      "airtalk wireless (0024, $3.96)"
+      "ca lifeline home broadband pilot program (0021, $4.00)"
     ],
-    "pulledAt": "2026-11-12T13:20:00-05:00",
+    "pulledAt": "2026-11-12T15:05:00-05:00",
     "identityVerificationDue": "2026-12-09",
     "conversionNote": "Google Ads conversions = 0 everywhere; tracking is by promo code only."
   }
