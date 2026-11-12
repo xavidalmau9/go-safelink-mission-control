@@ -2685,7 +2685,7 @@
         "cost": 1.58
       }
     ],
-    "adStatus": "Ads page: 34 ads; 21 Eligible, 2 Paused; no disapproved/limited ad status seen. 0021/0020/0022 = Eligible (Limited by budget); 0023 = Eligible (Learning, bid strategy learning); 0024 = Eligible (Limited: missing enough relevant keywords). Account banner: verify advertiser identity by 2026-12-09. (status text from 1:00 PM pull; disapprovals not rechecked at 2:50 PM)",
+    "adStatus": "Ads page (2:50 PM ET): 12 ads Eligible, 3 Removed (old CA Display image ads); no disapproved/limited ads. 0021/0020/0022/0024 = Eligible (Limited); 0023 = Eligible (Learning). Account banner: verify advertiser identity by 2026-12-09.",
     "disapprovals": 0,
     "spendByRegion": {
       "SafeLink - CA - 0021": {
