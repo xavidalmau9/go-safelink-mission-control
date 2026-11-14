@@ -7,11 +7,11 @@
     "loginEmail": "xavidalmau9@gmail.com",
     "liveSince": "2026-11-06",
     "timezone": "America/New_York",
-    "updatedAt": "2026-11-14T11:58:00-05:00",
+    "updatedAt": "2026-11-14T13:26:35-05:00",
     "dataWindow": {
       "from": "2026-11-04",
       "to": "2026-11-14",
-      "label": "Nov 6–13, 2026 · all-time totals; daily series from Nov 6",
+      "label": "Nov 6-14, 2026 - all-time totals; daily series from Nov 6",
       "granularity": "daily"
     },
     "identityVerificationDue": "2026-12-09",
@@ -113,30 +113,30 @@
   ],
   "overview": {
     "awaitingData": false,
-    "spendUsd": 1026.64,
-    "clicks": 1774,
-    "impressions": 64675,
+    "spendUsd": 1031.21,
+    "clicks": 1782,
+    "impressions": 65118,
     "ctrPct": 2.74,
     "avgCpcUsd": 0.58,
     "enrollments": 4,
     "costPerEnrollmentUsd": 256.66,
     "conversions": 0,
-    "windowLabel": "Nov 4–14, 2026 (Nov 13 final; Nov 14 partial, pulled ~11:55 AM ET)",
+    "windowLabel": "Nov 4-14, 2026 (Nov 13 final; Nov 14 partial, pulled ~1:20 PM ET)",
     "enrollmentsNote": "Pre-split combined (Nov 6–8 · ABJ0020 shared by all campaigns); cost/enrollment = Nov 6-8 spend $351.67 / 4 (spend per report date recomputed from real Google Ads daily data Nov 12 1PM ET) (spend per report date recomputed from real Google Ads daily data Nov 12 3PM ET)",
     "enrollmentsScope": "pre_split_all"
   },
   "bySegment": {
     "ca_search": {
       "awaitingData": false,
-      "spendUsd": 409.01,
-      "clicks": 180,
-      "impressions": 852,
-      "ctrPct": 21.13,
+      "spendUsd": 410.92,
+      "clicks": 181,
+      "impressions": 865,
+      "ctrPct": 20.92,
       "avgCpcUsd": 2.27,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
-      "status": "Eligible (Limited by budget)",
+      "status": "Enabled; Eligible (Limited by budget)",
       "dailyAds": [
         {
           "date": "2026-11-06",
@@ -204,11 +204,11 @@
         },
         {
           "date": "2026-11-14",
-          "impressions": 0,
-          "clicks": 0,
-          "ctrPct": 0,
-          "avgCpcUsd": 0,
-          "spendUsd": 0
+          "impressions": 13,
+          "clicks": 1,
+          "ctrPct": 7.69,
+          "avgCpcUsd": 1.91,
+          "spendUsd": 1.91
         }
       ],
       "adGroupPerformance": [
@@ -490,15 +490,15 @@
     },
     "ca_display": {
       "awaitingData": false,
-      "spendUsd": 187.99,
-      "clicks": 580,
-      "impressions": 22747,
-      "ctrPct": 2.55,
+      "spendUsd": 189.19,
+      "clicks": 584,
+      "impressions": 23037,
+      "ctrPct": 2.54,
       "avgCpcUsd": 0.32,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
-      "status": "Eligible (Limited by budget)",
+      "status": "Enabled; Eligible (Limited by budget)",
       "dailyAds": [
         {
           "date": "2026-11-06",
@@ -558,7 +558,7 @@
         },
         {
           "date": "2026-11-13",
-          "impressions": 3362,
+          "impressions": 3361,
           "clicks": 79,
           "ctrPct": 2.35,
           "avgCpcUsd": 0.26,
@@ -566,11 +566,11 @@
         },
         {
           "date": "2026-11-14",
-          "impressions": 0,
-          "clicks": 0,
-          "ctrPct": 0,
-          "avgCpcUsd": 0,
-          "spendUsd": 0
+          "impressions": 290,
+          "clicks": 4,
+          "ctrPct": 1.38,
+          "avgCpcUsd": 0.3,
+          "spendUsd": 1.2
         }
       ],
       "adGroupPerformance": [
@@ -763,15 +763,15 @@
     },
     "nationwide": {
       "awaitingData": false,
-      "spendUsd": 305.85,
-      "clicks": 133,
-      "impressions": 679,
-      "ctrPct": 19.59,
-      "avgCpcUsd": 2.3,
+      "spendUsd": 307.25,
+      "clicks": 134,
+      "impressions": 690,
+      "ctrPct": 19.42,
+      "avgCpcUsd": 2.29,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
-      "status": "Eligible (Limited by budget)",
+      "status": "Enabled; Eligible (Limited by budget)",
       "dailyAds": [
         {
           "date": "2026-11-06",
@@ -839,11 +839,11 @@
         },
         {
           "date": "2026-11-14",
-          "impressions": 10,
-          "clicks": 2,
-          "ctrPct": 20.0,
-          "avgCpcUsd": 1.96,
-          "spendUsd": 3.91
+          "impressions": 21,
+          "clicks": 3,
+          "ctrPct": 14.29,
+          "avgCpcUsd": 1.77,
+          "spendUsd": 5.31
         }
       ],
       "adGroupPerformance": [
@@ -1259,12 +1259,12 @@
       "costPerEnrollmentUsd": null,
       "conversions": 0,
       "awaitingData": false,
-      "spendUsd": 82.69,
-      "clicks": 839,
-      "impressions": 39829,
+      "spendUsd": 82.74,
+      "clicks": 841,
+      "impressions": 39939,
       "ctrPct": 2.11,
       "avgCpcUsd": 0.1,
-      "status": "Enabled; Eligible (Learning) — Bid strategy learning",
+      "status": "Enabled; Eligible (Learning) - Bid strategy learning",
       "dailyAds": [
         {
           "date": "2026-11-06",
@@ -1332,11 +1332,11 @@
         },
         {
           "date": "2026-11-14",
-          "impressions": 0,
-          "clicks": 0,
-          "ctrPct": 0,
-          "avgCpcUsd": 0,
-          "spendUsd": 0
+          "impressions": 110,
+          "clicks": 2,
+          "ctrPct": 1.82,
+          "avgCpcUsd": 0.03,
+          "spendUsd": 0.05
         }
       ],
       "adGroupPerformance": [
@@ -1467,10 +1467,10 @@
       "awaitingData": false,
       "spendUsd": 41.11,
       "clicks": 42,
-      "impressions": 568,
-      "ctrPct": 7.39,
+      "impressions": 587,
+      "ctrPct": 7.16,
       "avgCpcUsd": 0.98,
-      "status": "Enabled; Eligible (Limited) — Missing enough relevant keywords",
+      "status": "Enabled; Eligible (Limited) - Missing enough relevant keywords",
       "dailyAds": [
         {
           "date": "2026-11-06",
@@ -1538,9 +1538,9 @@
         },
         {
           "date": "2026-11-14",
-          "impressions": 43,
+          "impressions": 55,
           "clicks": 3,
-          "ctrPct": 6.98,
+          "ctrPct": 5.45,
           "avgCpcUsd": 0.99,
           "spendUsd": 2.98
         }
@@ -1766,7 +1766,7 @@
     },
     {
       "date": "2026-11-13",
-      "impressions": 18286,
+      "impressions": 18285,
       "clicks": 428,
       "ctrPct": 2.34,
       "avgCpcUsd": 0.34,
@@ -1774,11 +1774,11 @@
     },
     {
       "date": "2026-11-14",
-      "impressions": 53,
-      "clicks": 5,
-      "ctrPct": 9.43,
-      "avgCpcUsd": 1.38,
-      "spendUsd": 6.89
+      "impressions": 489,
+      "clicks": 13,
+      "ctrPct": 2.66,
+      "avgCpcUsd": 0.88,
+      "spendUsd": 11.45
     }
   ],
   "keywords": [
@@ -2700,7 +2700,7 @@
     "campaignName": "SafeLink - CA Demand Gen",
     "promoCode": "ABJ0023",
     "dailyBudgetUsd": 20,
-    "status": "Enabled; Eligible (Learning) — Bid strategy learning",
+    "status": "Enabled; Eligible (Learning) - Bid strategy learning",
     "sinceLaunch": {
       "impressions": 17048,
       "clicks": 341,
@@ -2709,13 +2709,13 @@
       "cost": 45.23
     },
     "today": {
-      "impressions": 13534,
-      "clicks": 272,
-      "ctr_pct": 2.01,
-      "avg_cpc": 0.07,
-      "cost": 19.97
+      "impressions": 110,
+      "clicks": 2,
+      "ctr_pct": 1.82,
+      "avg_cpc": 0.03,
+      "cost": 0.05
     },
-    "asOf": "2026-11-13T22:58:00-05:00"
+    "asOf": "2026-11-14T13:26:35-05:00"
   },
   "pullNotes": {
     "topKeywordsByCost": [
@@ -3186,7 +3186,7 @@
         ]
       }
     },
-    "hourlyNote": "Nov 14 pulled ~6:50-7:00 AM ET. Last 7d (Nov 7-13) account: $888.12, 1,663 clicks, 62,345 impr. Nov 13 final: $143.70, 428 clicks. No disapprovals. All 5 campaigns Eligible; 0021/0020/0022 limited by budget, 0023 learning, 0024 'Missing enough relevant keywords'. Competitor terms (AirTalk, Tag Mobile, Assurance incl. free-phone variants) still appear in 0021/0020. Kids/game placements still show 7d spend in Display 0022 (timestables.com $1.03, videosfortoddlers.com $0.85, coloring/game apps), likely pre-exclusion; videosfortoddlers.com and any new kids apps need exclusion review. Off-target Display sites: uspaydayclub.com, countyjailroster.net, happymod.ws, bettergames.top, gamenexer.com.",
+    "hourlyNote": "Nov 14 pulled ~1:20 PM ET. Account all-time Nov 4-14: $1031.21, 1782 clicks. Nov 13 final $143.70 / 428 clicks (matches). Nov 14 so far $11.45 / 13 clicks. No disapprovals; all 5 campaigns Eligible (0021/0020/0022 limited by budget, 0023 learning, 0024 missing enough relevant keywords). Top 7d placements still include lakesidemtconstruction.com, bajusgold.com, tipake.com, termo.onl (all already excluded; likely pre-exclusion spend), plus off-target uspaydayclub.com, countyjailroster.net, bettergames.top, omylegend.com and game apps Bubble Shooter and Block Blast - review for exclusion (no-kids rule). Top 7d search terms: lifeline program, california lifeline; free-phone terms in 0020 are already excluded. 0020 spend spans 32 states led by TX $33.05, NC $21.75, NY $20.00, PA $18.74, FL $15.22.",
     "last7dNov7_13": {
       "campaigns": {
         "CA Search 0021": {
