@@ -1,21 +1,21 @@
 {
   "meta": {
-    "title": "GO Advertising · SafeLink Mission Control",
+    "title": "GO Advertising \u00b7 SafeLink Mission Control",
     "brand": "GO Advertising",
     "product": "SafeLink",
     "accountId": "734-978-8944",
     "loginEmail": "xavidalmau9@gmail.com",
     "liveSince": "2026-11-06",
     "timezone": "America/New_York",
-    "updatedAt": "2026-11-12T16:12:00-05:00",
+    "updatedAt": "2026-11-13T21:10:00-05:00",
     "dataWindow": {
       "from": "2026-11-04",
-      "to": "2026-11-12",
-      "label": "Nov 6–12, 2026 · all-time totals; daily series from Nov 6",
+      "to": "2026-11-13",
+      "label": "Nov 6\u201313, 2026 \u00b7 all-time totals; daily series from Nov 6",
       "granularity": "daily"
     },
     "identityVerificationDue": "2026-12-09",
-    "notes": "No Google Ads conversion tracking (conversions always 0). Enrollments come from SafeLink reports by promo code from 2026-11-09: ABJ0020=Nationwide, ABJ0021=CA Search, ABJ0022=CA Display, ABJ0023=CA Demand Gen. Promo-code split went live about 3:40 PM ET on 2026-11-09 (Nov 9 per-code spend is a full-day approximation). Pre-split Nov 6–8 rows used shared ABJ0020 and stay segment \"all\". Daily trend charts start from this snapshot until a daily series is pasted. State/region spend comes from the User locations report (see pullNotes.spendByRegion). Identity verification due 2026-12-09."
+    "notes": "No Google Ads conversion tracking (conversions always 0). Enrollments come from SafeLink reports by promo code from 2026-11-09: ABJ0020=Nationwide, ABJ0021=CA Search, ABJ0022=CA Display, ABJ0023=CA Demand Gen. Promo-code split went live about 3:40 PM ET on 2026-11-09 (Nov 9 per-code spend is a full-day approximation). Pre-split Nov 6\u20138 rows used shared ABJ0020 and stay segment \"all\". Daily trend charts start from this snapshot until a daily series is pasted. State/region spend comes from the User locations report (see pullNotes.spendByRegion). Identity verification due 2026-12-09."
   },
   "budgets": {
     "dailyTotalUsd": 135,
@@ -93,7 +93,7 @@
       "campaignName": "SafeLink - CA Demand Gen - 0023",
       "promoCode": "ABJ0023",
       "dailyBudgetUsd": 20,
-      "status": "Enabled; Eligible (Learning) — Bid strategy learning"
+      "status": "Enabled; Eligible (Learning) \u2014 Bid strategy learning"
     },
     {
       "id": "ca_competitors",
@@ -108,31 +108,31 @@
       "campaignName": "SafeLink - CA Competitors - 0024",
       "promoCode": "ABJ0024",
       "dailyBudgetUsd": 15,
-      "status": "Enabled; Eligible (Limited) — Missing enough relevant keywords"
+      "status": "Enabled; Eligible (Limited) \u2014 Missing enough relevant keywords"
     }
   ],
   "overview": {
     "awaitingData": false,
-    "spendUsd": 789.18,
-    "clicks": 1090,
-    "impressions": 36350,
-    "ctrPct": 3.0,
-    "avgCpcUsd": 0.72,
+    "spendUsd": 1004.25,
+    "clicks": 1697,
+    "impressions": 60529,
+    "ctrPct": 2.8,
+    "avgCpcUsd": 0.59,
     "enrollments": 4,
     "costPerEnrollmentUsd": 183.78,
     "conversions": 0,
-    "windowLabel": "Nov 6–12, 2026 (Nov 12 partial, pulled 3:55–4:10 PM ET; all 5 campaigns)",
-    "enrollmentsNote": "Pre-split combined (Nov 6–8 · ABJ0020 shared by all campaigns); cost/enrollment = Nov 6-8 spend $351.67 / 4 (spend per report date recomputed from real Google Ads daily data Nov 12 1PM ET) (spend per report date recomputed from real Google Ads daily data Nov 12 3PM ET)",
+    "windowLabel": "Nov 6\u201313, 2026 (Nov 13 partial, pulled ~9 PM ET; all 5 campaigns)",
+    "enrollmentsNote": "Pre-split combined (Nov 6\u20138 \u00b7 ABJ0020 shared by all campaigns); cost/enrollment = Nov 6-8 spend $351.67 / 4 (spend per report date recomputed from real Google Ads daily data Nov 12 1PM ET) (spend per report date recomputed from real Google Ads daily data Nov 12 3PM ET)",
     "enrollmentsScope": "pre_split_all"
   },
   "bySegment": {
     "ca_search": {
       "awaitingData": false,
-      "spendUsd": 308.12,
-      "clicks": 128,
-      "impressions": 542,
-      "ctrPct": 23.62,
-      "avgCpcUsd": 2.41,
+      "spendUsd": 401.22,
+      "clicks": 176,
+      "impressions": 834,
+      "ctrPct": 21.1,
+      "avgCpcUsd": 2.28,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
@@ -188,11 +188,19 @@
         },
         {
           "date": "2026-11-12",
-          "impressions": 44,
-          "clicks": 13,
-          "ctrPct": 29.55,
-          "avgCpcUsd": 1.97,
-          "spendUsd": 25.63
+          "impressions": 166,
+          "clicks": 34,
+          "ctrPct": 20.48,
+          "avgCpcUsd": 1.96,
+          "spendUsd": 66.79
+        },
+        {
+          "date": "2026-11-13",
+          "impressions": 170,
+          "clicks": 27,
+          "ctrPct": 15.88,
+          "avgCpcUsd": 1.92,
+          "spendUsd": 51.94
         }
       ],
       "adGroupPerformance": [
@@ -363,56 +371,56 @@
             "segmentId": "ca_search",
             "clicks": 1,
             "spendUsd": 3.5,
-            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
           },
           {
             "term": "airtalk wireless free phone",
             "segmentId": "ca_search",
             "clicks": 1,
             "spendUsd": 3.47,
-            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
           },
           {
             "term": "airtalk wireless free phones",
             "segmentId": "ca_search",
             "clicks": 1,
             "spendUsd": 3.46,
-            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
           },
           {
             "term": "truconnect application",
             "segmentId": "ca_search",
             "clicks": 1,
             "spendUsd": 3.13,
-            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
           },
           {
             "term": "assurance wireless",
             "segmentId": "ca_search",
             "clicks": 1,
             "spendUsd": 2.36,
-            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
           },
           {
             "term": "truconnect phones",
             "segmentId": "ca_search",
             "clicks": 1,
             "spendUsd": 2.0,
-            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
           },
           {
             "term": "airtalk wireless website",
             "segmentId": "ca_search",
             "clicks": 1,
             "spendUsd": 2.0,
-            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
           },
           {
             "term": "lifeline genmobile application online",
             "segmentId": "ca_search",
             "clicks": 1,
             "spendUsd": 1.99,
-            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
           },
           {
             "term": "lifeline for internet",
@@ -474,11 +482,11 @@
     },
     "ca_display": {
       "awaitingData": false,
-      "spendUsd": 154.14,
-      "clicks": 452,
-      "impressions": 16955,
-      "ctrPct": 2.67,
-      "avgCpcUsd": 0.34,
+      "spendUsd": 189.45,
+      "clicks": 585,
+      "impressions": 22812,
+      "ctrPct": 2.56,
+      "avgCpcUsd": 0.32,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
@@ -534,11 +542,19 @@
         },
         {
           "date": "2026-11-12",
-          "impressions": 1371,
-          "clicks": 26,
-          "ctrPct": 1.9,
-          "avgCpcUsd": 0.31,
-          "spendUsd": 7.96
+          "impressions": 3862,
+          "clicks": 80,
+          "ctrPct": 2.07,
+          "avgCpcUsd": 0.28,
+          "spendUsd": 22.41
+        },
+        {
+          "date": "2026-11-13",
+          "impressions": 3366,
+          "clicks": 79,
+          "ctrPct": 2.35,
+          "avgCpcUsd": 0.26,
+          "spendUsd": 20.86
         }
       ],
       "adGroupPerformance": [
@@ -559,7 +575,7 @@
       "negativesAdded": [],
       "placements": {
         "total": 313,
-        "notes": "Nov 6–12 automatic placements with spend (pulled Nov 12 ~2:52 PM ET). Mobile games and junk sites still serve; earlier exclusions (all app categories, solvedlib.com, savenowy.com, mydrawingstar.com) only apply going forward, so these still show cumulative spend. Site exclusions added Nov 12 (bajusgold.com, tipake.com, termo.onl, vdrwopsuxb.xyz, dilkas.online, lakesidemtconstruction.com, plumbertip.com) apply going forward.",
+        "notes": "Nov 6\u201312 automatic placements with spend (pulled Nov 12 ~2:52 PM ET). Mobile games and junk sites still serve; earlier exclusions (all app categories, solvedlib.com, savenowy.com, mydrawingstar.com) only apply going forward, so these still show cumulative spend. Site exclusions added Nov 12 (bajusgold.com, tipake.com, termo.onl, vdrwopsuxb.xyz, dilkas.online, lakesidemtconstruction.com, plumbertip.com) apply going forward.",
         "topByCost": [
           {
             "name": "Mobile App: Solitaire - Card Solitaire (iTunes App Store), by Doodle Mobile Limited",
@@ -731,11 +747,11 @@
     },
     "nationwide": {
       "awaitingData": false,
-      "spendUsd": 263.98,
-      "clicks": 111,
-      "impressions": 526,
-      "ctrPct": 21.1,
-      "avgCpcUsd": 2.38,
+      "spendUsd": 301.94,
+      "clicks": 131,
+      "impressions": 669,
+      "ctrPct": 19.58,
+      "avgCpcUsd": 2.3,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
@@ -791,11 +807,19 @@
         },
         {
           "date": "2026-11-12",
-          "impressions": 41,
-          "clicks": 8,
-          "ctrPct": 19.51,
-          "avgCpcUsd": 1.86,
-          "spendUsd": 14.91
+          "impressions": 69,
+          "clicks": 14,
+          "ctrPct": 20.29,
+          "avgCpcUsd": 1.87,
+          "spendUsd": 26.18
+        },
+        {
+          "date": "2026-11-13",
+          "impressions": 115,
+          "clicks": 14,
+          "ctrPct": 12.17,
+          "avgCpcUsd": 1.91,
+          "spendUsd": 26.69
         }
       ],
       "adGroupPerformance": [
@@ -959,70 +983,70 @@
             "segmentId": "nationwide",
             "clicks": 4,
             "spendUsd": 10.64,
-            "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+            "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
           },
           {
             "term": "free government phones indiana",
             "segmentId": "nationwide",
             "clicks": 4,
             "spendUsd": 9.35,
-            "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+            "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
           },
           {
             "term": "free state phone",
             "segmentId": "nationwide",
             "clicks": 2,
             "spendUsd": 6.78,
-            "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+            "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
           },
           {
             "term": "free government phone",
             "segmentId": "nationwide",
             "clicks": 3,
             "spendUsd": 6.31,
-            "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+            "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
           },
           {
             "term": "airtalk wireless free phone",
             "segmentId": "nationwide",
             "clicks": 3,
             "spendUsd": 5.96,
-            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
           },
           {
             "term": "government phone",
             "segmentId": "nationwide",
             "clicks": 2,
             "spendUsd": 5.37,
-            "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+            "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
           },
           {
             "term": "assurance wireless",
             "segmentId": "nationwide",
             "clicks": 2,
             "spendUsd": 5.32,
-            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
           },
           {
             "term": "free government phone plans with unlimited data",
             "segmentId": "nationwide",
             "clicks": 1,
             "spendUsd": 4.2,
-            "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+            "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
           },
           {
             "term": "medicaid free phone nyc",
             "segmentId": "nationwide",
             "clicks": 1,
             "spendUsd": 4.01,
-            "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+            "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
           },
           {
             "term": "free assurance wireless phones",
             "segmentId": "nationwide",
             "clicks": 2,
             "spendUsd": 4.0,
-            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+            "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
           }
         ]
       },
@@ -1211,12 +1235,12 @@
       "costPerEnrollmentUsd": null,
       "conversions": 0,
       "awaitingData": false,
-      "spendUsd": 47.2,
-      "clicks": 383,
-      "impressions": 18104,
-      "ctrPct": 2.12,
-      "avgCpcUsd": 0.12,
-      "status": "Enabled; Eligible (Learning) — Bid strategy learning",
+      "spendUsd": 78.25,
+      "clicks": 771,
+      "impressions": 35718,
+      "ctrPct": 2.16,
+      "avgCpcUsd": 0.1,
+      "status": "Enabled; Eligible (Learning) \u2014 Bid strategy learning",
       "dailyAds": [
         {
           "date": "2026-11-06",
@@ -1268,11 +1292,19 @@
         },
         {
           "date": "2026-11-12",
-          "impressions": 3023,
-          "clicks": 76,
-          "ctrPct": 2.51,
+          "impressions": 10334,
+          "clicks": 246,
+          "ctrPct": 2.38,
+          "avgCpcUsd": 0.08,
+          "spendUsd": 20.2
+        },
+        {
+          "date": "2026-11-13",
+          "impressions": 10303,
+          "clicks": 218,
+          "ctrPct": 2.12,
           "avgCpcUsd": 0.07,
-          "spendUsd": 5.46
+          "spendUsd": 16.31
         }
       ],
       "adGroupPerformance": [
@@ -1388,7 +1420,7 @@
             "spendUsd": 0.07
           },
           {
-            "name": "사연의 끝",
+            "name": "\uc0ac\uc5f0\uc758 \ub05d",
             "type": "YouTube channel",
             "interactions": 2,
             "spendUsd": 0.07
@@ -1401,12 +1433,12 @@
       "costPerEnrollmentUsd": null,
       "conversions": 0,
       "awaitingData": false,
-      "spendUsd": 15.74,
-      "clicks": 16,
-      "impressions": 223,
-      "ctrPct": 7.17,
+      "spendUsd": 33.39,
+      "clicks": 34,
+      "impressions": 496,
+      "ctrPct": 6.85,
       "avgCpcUsd": 0.98,
-      "status": "Enabled; Eligible (Limited) — Missing enough relevant keywords",
+      "status": "Enabled; Eligible (Limited) \u2014 Missing enough relevant keywords",
       "dailyAds": [
         {
           "date": "2026-11-06",
@@ -1458,11 +1490,19 @@
         },
         {
           "date": "2026-11-12",
-          "impressions": 69,
-          "clicks": 3,
-          "ctrPct": 4.35,
-          "avgCpcUsd": 1.0,
-          "spendUsd": 2.99
+          "impressions": 175,
+          "clicks": 10,
+          "ctrPct": 5.71,
+          "avgCpcUsd": 0.99,
+          "spendUsd": 9.86
+        },
+        {
+          "date": "2026-11-13",
+          "impressions": 167,
+          "clicks": 11,
+          "ctrPct": 6.59,
+          "avgCpcUsd": 0.98,
+          "spendUsd": 10.78
         }
       ],
       "adGroupPerformance": [
@@ -1678,11 +1718,19 @@
     },
     {
       "date": "2026-11-12",
-      "impressions": 4548,
-      "clicks": 126,
-      "ctrPct": 2.77,
-      "avgCpcUsd": 0.45,
-      "spendUsd": 56.95
+      "impressions": 14606,
+      "clicks": 384,
+      "ctrPct": 2.63,
+      "avgCpcUsd": 0.38,
+      "spendUsd": 145.44
+    },
+    {
+      "date": "2026-11-13",
+      "impressions": 14121,
+      "clicks": 349,
+      "ctrPct": 2.47,
+      "avgCpcUsd": 0.36,
+      "spendUsd": 126.58
     }
   ],
   "keywords": [
@@ -1838,7 +1886,7 @@
     }
   ],
   "searchTerms": {
-    "notes": "Wasted = competitor brand leakage, off-target (broadband/internet), or free-phone intent outside CA. Good = intent-aligned. Nov 6–12 Search terms report lists ~$434.31 of $563.17 Search spend; Google hides the rest (low-volume terms). Refreshed Nov 12 2:50 PM ET.",
+    "notes": "Wasted = competitor brand leakage, off-target (broadband/internet), or free-phone intent outside CA. Good = intent-aligned. Nov 6\u201312 Search terms report lists ~$434.31 of $563.17 Search spend; Google hides the rest (low-volume terms). Refreshed Nov 12 2:50 PM ET.",
     "good": [
       {
         "term": "lifeline program",
@@ -1937,49 +1985,49 @@
         "segmentId": "nationwide",
         "clicks": 4,
         "spendUsd": 10.64,
-        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
       },
       {
         "term": "free government phones indiana",
         "segmentId": "nationwide",
         "clicks": 4,
         "spendUsd": 9.35,
-        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
       },
       {
         "term": "free state phone",
         "segmentId": "nationwide",
         "clicks": 2,
         "spendUsd": 6.78,
-        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
       },
       {
         "term": "free government phone",
         "segmentId": "nationwide",
         "clicks": 3,
         "spendUsd": 6.31,
-        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
       },
       {
         "term": "airtalk wireless free phone",
         "segmentId": "nationwide",
         "clicks": 3,
         "spendUsd": 5.96,
-        "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+        "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
       },
       {
         "term": "government phone",
         "segmentId": "nationwide",
         "clicks": 2,
         "spendUsd": 5.37,
-        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
       },
       {
         "term": "assurance wireless",
         "segmentId": "nationwide",
         "clicks": 2,
         "spendUsd": 5.32,
-        "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+        "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
       },
       {
         "term": "airtalk wireless",
@@ -1993,21 +2041,21 @@
         "segmentId": "nationwide",
         "clicks": 1,
         "spendUsd": 4.2,
-        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
       },
       {
         "term": "medicaid free phone nyc",
         "segmentId": "nationwide",
         "clicks": 1,
         "spendUsd": 4.01,
-        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
       },
       {
         "term": "free assurance wireless phones",
         "segmentId": "nationwide",
         "clicks": 2,
         "spendUsd": 4.0,
-        "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+        "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
       },
       {
         "term": "ca lifeline home broadband pilot program",
@@ -2021,91 +2069,91 @@
         "segmentId": "nationwide",
         "clicks": 2,
         "spendUsd": 3.94,
-        "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+        "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
       },
       {
         "term": "government free phone",
         "segmentId": "nationwide",
         "clicks": 2,
         "spendUsd": 3.9,
-        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
       },
       {
         "term": "phones free",
         "segmentId": "nationwide",
         "clicks": 1,
         "spendUsd": 3.5,
-        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
       },
       {
         "term": "airtalk government phone",
         "segmentId": "ca_search",
         "clicks": 1,
         "spendUsd": 3.5,
-        "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+        "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
       },
       {
         "term": "free government esim service",
         "segmentId": "nationwide",
         "clicks": 1,
         "spendUsd": 3.48,
-        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
       },
       {
         "term": "airtalk wireless free phone",
         "segmentId": "ca_search",
         "clicks": 1,
         "spendUsd": 3.47,
-        "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+        "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
       },
       {
         "term": "government phone airtalk",
         "segmentId": "nationwide",
         "clicks": 1,
         "spendUsd": 3.47,
-        "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+        "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
       },
       {
         "term": "airtalk wireless free phones",
         "segmentId": "ca_search",
         "clicks": 1,
         "spendUsd": 3.46,
-        "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+        "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
       },
       {
         "term": "how to get government free phone",
         "segmentId": "nationwide",
         "clicks": 1,
         "spendUsd": 3.45,
-        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
       },
       {
         "term": "assurance wireless phones",
         "segmentId": "nationwide",
         "clicks": 1,
         "spendUsd": 3.44,
-        "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11–12 apply going forward"
+        "reason": "competitor-brand query leaking into non-competitor campaign; negatives added Nov 11\u201312 apply going forward"
       },
       {
         "term": "free government cell phone",
         "segmentId": "nationwide",
         "clicks": 1,
         "spendUsd": 3.44,
-        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
       },
       {
         "term": "free phone government phone with food stamps",
         "segmentId": "nationwide",
         "clicks": 1,
         "spendUsd": 3.44,
-        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
       },
       {
         "term": "free gov phone unlimited data",
         "segmentId": "nationwide",
         "clicks": 1,
         "spendUsd": 3.41,
-        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11–12"
+        "reason": "free-phone query outside CA (free phone is CA only); negatives added Nov 11\u201312"
       }
     ],
     "top": [],
@@ -2199,14 +2247,14 @@
     }
   ],
   "dailyReports": {
-    "notes": "SafeLink daily report rows by promo code. Pre-split (before 2026-11-09 15:40 ET): segmentId \"all\", promoCode ABJ0020 (all campaigns shared one code). Promo-code split went live in Google Ads on 2026-11-09 at about 3:40 PM ET. From that time: one row set per promo — ABJ0020=nationwide, ABJ0021=ca_search, ABJ0022=ca_display, ABJ0023=ca_demand_gen. Nov 9 is a partial split day: before ~3:40 PM ET all clicks went to ABJ0020, so Nov 9 per-code spend is an approximation that attributes each campaign's full-day Google Ads spend to that campaign's code. Do not reassign pre-split rows to Nationwide. Payout confirmed only in biweekly reports. dailyReports.byPromoCode is the cumulative tally from 2026-11-09 on (costPerApplicationUsd = spend / total applications of every status; costPerQualifiedUsd = spend / qualified).",
-    "label": "Initial daily activity (pre-split combined) · payout confirmed only in biweekly reports",
+    "notes": "SafeLink daily report rows by promo code. Pre-split (before 2026-11-09 15:40 ET): segmentId \"all\", promoCode ABJ0020 (all campaigns shared one code). Promo-code split went live in Google Ads on 2026-11-09 at about 3:40 PM ET. From that time: one row set per promo \u2014 ABJ0020=nationwide, ABJ0021=ca_search, ABJ0022=ca_display, ABJ0023=ca_demand_gen. Nov 9 is a partial split day: before ~3:40 PM ET all clicks went to ABJ0020, so Nov 9 per-code spend is an approximation that attributes each campaign's full-day Google Ads spend to that campaign's code. Do not reassign pre-split rows to Nationwide. Payout confirmed only in biweekly reports. dailyReports.byPromoCode is the cumulative tally from 2026-11-09 on (costPerApplicationUsd = spend / total applications of every status; costPerQualifiedUsd = spend / qualified).",
+    "label": "Initial daily activity (pre-split combined) \u00b7 payout confirmed only in biweekly reports",
     "promoCode": "ABJ0020",
     "spendBasis": {
       "from": "2026-11-06",
       "to": "2026-11-08",
       "overviewSpendUsd": 466.12,
-      "overviewWindow": "Nov 4–9, 2026 · all-time totals; daily series from Nov 8",
+      "overviewWindow": "Nov 4\u20139, 2026 \u00b7 all-time totals; daily series from Nov 8",
       "nov9PartialSpendUsd": 111.9,
       "spendUsd": 350.97,
       "method": "sum of per-campaign daily Google Ads spend Nov 6-8 (recomputed from pull 2026-11-12 2:50 PM ET)"
@@ -2222,7 +2270,7 @@
       "costPerEnrollmentUsd": 87.74,
       "promoCode": "ABJ0020",
       "preSplit": true,
-      "label": "Pre-split combined (Nov 6–8 · all campaigns · ABJ0020)"
+      "label": "Pre-split combined (Nov 6\u20138 \u00b7 all campaigns \u00b7 ABJ0020)"
     },
     "rows": [
       {
@@ -2414,7 +2462,7 @@
     },
     {
       "date": "2026-11-09",
-      "summary": "Account review snapshot loaded (Nov 4–9): $364.70 spend, 307 clicks, 7,936 impr. All campaigns Limited by budget. Google identity verification due Dec 9."
+      "summary": "Account review snapshot loaded (Nov 4\u20139): $364.70 spend, 307 clicks, 7,936 impr. All campaigns Limited by budget. Google identity verification due Dec 9."
     },
     {
       "date": "2026-11-09",
@@ -2438,7 +2486,7 @@
     },
     {
       "date": "2026-11-09",
-      "summary": "First SafeLink daily enrollment report loaded (promo ABJ0020, all campaigns combined): 4 enrollments Nov 6–8 (3 qualified, 1 pending). Initial cost/enrollment $88.66 on $354.63 ad spend through Nov 8. Payout confirmed only in biweekly reports."
+      "summary": "First SafeLink daily enrollment report loaded (promo ABJ0020, all campaigns combined): 4 enrollments Nov 6\u20138 (3 qualified, 1 pending). Initial cost/enrollment $88.66 on $354.63 ad spend through Nov 8. Payout confirmed only in biweekly reports."
     },
     {
       "date": "2026-11-09",
@@ -2470,7 +2518,7 @@
     },
     {
       "date": "2026-11-10",
-      "summary": "6:50 PM ET refresh: Google Ads totals re-pulled ($546.11 spend, 489 clicks, 13,368 impr); per-campaign daily series Nov 6–10 updated (Nov 10 partial: $80.57); Nov 6-8 cost per enrollment $87.92 on $351.67 spend; CA Demand Gen learning, no spend yet; state breakdown still unavailable."
+      "summary": "6:50 PM ET refresh: Google Ads totals re-pulled ($546.11 spend, 489 clicks, 13,368 impr); per-campaign daily series Nov 6\u201310 updated (Nov 10 partial: $80.57); Nov 6-8 cost per enrollment $87.92 on $351.67 spend; CA Demand Gen learning, no spend yet; state breakdown still unavailable."
     },
     {
       "date": "2026-11-10",
@@ -2544,7 +2592,7 @@
     "campaignName": "SafeLink - CA Demand Gen",
     "promoCode": "ABJ0023",
     "dailyBudgetUsd": 20,
-    "status": "Enabled; Eligible (Learning) — Bid strategy learning",
+    "status": "Enabled; Eligible (Learning) \u2014 Bid strategy learning",
     "sinceLaunch": {
       "impressions": 17048,
       "clicks": 341,
@@ -2634,7 +2682,7 @@
         "clicks": 6
       }
     ],
-    "competitorSearchTermFlags": "Competitor/brand terms with spend Nov 6–12: $73.66 (29 terms). Leakage into 0021/0020: $59.78; 0024 (intended): $13.88.",
+    "competitorSearchTermFlags": "Competitor/brand terms with spend Nov 6\u201312: $73.66 (29 terms). Leakage into 0021/0020: $59.78; 0024 (intended): $13.88.",
     "displayTopPlacements": [
       {
         "placement": "youtube.com",
@@ -2955,6 +3003,80 @@
     ],
     "pulledAt": "2026-11-12T15:05:00-05:00",
     "identityVerificationDue": "2026-12-09",
-    "conversionNote": "Google Ads conversions = 0 everywhere; tracking is by promo code only."
+    "conversionNote": "Google Ads conversions = 0 everywhere; tracking is by promo code only.",
+    "spendByRegion_last7d_Nov6_12": {
+      "California": {
+        "clicks": 1225,
+        "spendUsd": 600.85
+      },
+      "Texas": {
+        "clicks": 17,
+        "spendUsd": 37.23
+      },
+      "Pennsylvania": {
+        "clicks": 11,
+        "spendUsd": 30.39
+      },
+      "New York": {
+        "clicks": 9,
+        "spendUsd": 22.02
+      },
+      "North Carolina": {
+        "clicks": 9,
+        "spendUsd": 20.75
+      },
+      "allStatesTotal": {
+        "clicks": 1342,
+        "spendUsd": 876.1
+      }
+    },
+    "deviceLast7d": {
+      "ca_search": {
+        "mobile": [
+          126,
+          297.81
+        ],
+        "desktop": [
+          22,
+          48.0
+        ]
+      },
+      "nationwide": {
+        "mobile": [
+          94,
+          218.88
+        ],
+        "desktop": [
+          22,
+          52.97
+        ]
+      },
+      "ca_display": {
+        "mobile": [
+          423,
+          140.51
+        ],
+        "desktop": [
+          23,
+          6.83
+        ],
+        "tablet": [
+          55,
+          19.79
+        ]
+      },
+      "ca_demand_gen": {
+        "mobile": [
+          532,
+          59.34
+        ]
+      },
+      "ca_competitors": {
+        "mobile": [
+          23,
+          22.61
+        ]
+      }
+    }
   }
 }
