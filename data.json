@@ -7,7 +7,7 @@
     "loginEmail": "xavidalmau9@gmail.com",
     "liveSince": "2026-11-06",
     "timezone": "America/New_York",
-    "updatedAt": "2026-11-14T06:58:00-05:00",
+    "updatedAt": "2026-11-14T07:58:00-05:00",
     "dataWindow": {
       "from": "2026-11-04",
       "to": "2026-11-14",
@@ -113,15 +113,15 @@
   ],
   "overview": {
     "awaitingData": false,
-    "spendUsd": 1024.35,
-    "clicks": 1779,
-    "impressions": 64717,
-    "ctrPct": 2.75,
+    "spendUsd": 1022.73,
+    "clicks": 1772,
+    "impressions": 64656,
+    "ctrPct": 2.74,
     "avgCpcUsd": 0.58,
     "enrollments": 4,
     "costPerEnrollmentUsd": 183.78,
     "conversions": 0,
-    "windowLabel": "Nov 6–14, 2026 (Nov 13 final; Nov 14 partial, pulled ~7 AM ET; all 5 campaigns)",
+    "windowLabel": "Nov 4–14, 2026 (Nov 13 final; Nov 14 partial, pulled ~8 AM ET)",
     "enrollmentsNote": "Pre-split combined (Nov 6–8 · ABJ0020 shared by all campaigns); cost/enrollment = Nov 6-8 spend $351.67 / 4 (spend per report date recomputed from real Google Ads daily data Nov 12 1PM ET) (spend per report date recomputed from real Google Ads daily data Nov 12 3PM ET)",
     "enrollmentsScope": "pre_split_all"
   },
@@ -208,7 +208,7 @@
           "clicks": 0,
           "ctrPct": 0,
           "avgCpcUsd": 0,
-          "spendUsd": 0.0
+          "spendUsd": 0
         }
       ],
       "adGroupPerformance": [
@@ -490,10 +490,10 @@
     },
     "ca_display": {
       "awaitingData": false,
-      "spendUsd": 189.45,
-      "clicks": 585,
-      "impressions": 22808,
-      "ctrPct": 2.56,
+      "spendUsd": 187.99,
+      "clicks": 580,
+      "impressions": 22747,
+      "ctrPct": 2.55,
       "avgCpcUsd": 0.32,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
@@ -570,7 +570,7 @@
           "clicks": 0,
           "ctrPct": 0,
           "avgCpcUsd": 0,
-          "spendUsd": 0.0
+          "spendUsd": 0
         }
       ],
       "adGroupPerformance": [
@@ -843,7 +843,7 @@
           "clicks": 0,
           "ctrPct": 0,
           "avgCpcUsd": 0,
-          "spendUsd": 0.0
+          "spendUsd": 0
         }
       ],
       "adGroupPerformance": [
@@ -1259,9 +1259,9 @@
       "costPerEnrollmentUsd": null,
       "conversions": 0,
       "awaitingData": false,
-      "spendUsd": 82.84,
-      "clicks": 841,
-      "impressions": 39833,
+      "spendUsd": 82.69,
+      "clicks": 839,
+      "impressions": 39829,
       "ctrPct": 2.11,
       "avgCpcUsd": 0.1,
       "status": "Enabled; Eligible (Learning) — Bid strategy learning",
@@ -1336,7 +1336,7 @@
           "clicks": 0,
           "ctrPct": 0,
           "avgCpcUsd": 0,
-          "spendUsd": 0.0
+          "spendUsd": 0
         }
       ],
       "adGroupPerformance": [
@@ -1467,8 +1467,8 @@
       "awaitingData": false,
       "spendUsd": 41.11,
       "clicks": 42,
-      "impressions": 555,
-      "ctrPct": 7.57,
+      "impressions": 559,
+      "ctrPct": 7.51,
       "avgCpcUsd": 0.98,
       "status": "Enabled; Eligible (Limited) — Missing enough relevant keywords",
       "dailyAds": [
@@ -1538,9 +1538,9 @@
         },
         {
           "date": "2026-11-14",
-          "impressions": 23,
+          "impressions": 27,
           "clicks": 3,
-          "ctrPct": 13.04,
+          "ctrPct": 11.11,
           "avgCpcUsd": 0.99,
           "spendUsd": 2.98
         }
@@ -1774,9 +1774,9 @@
     },
     {
       "date": "2026-11-14",
-      "impressions": 23,
+      "impressions": 27,
       "clicks": 3,
-      "ctrPct": 13.04,
+      "ctrPct": 11.11,
       "avgCpcUsd": 0.99,
       "spendUsd": 2.98
     }
@@ -2591,6 +2591,10 @@
     {
       "date": "2026-11-12",
       "summary": "Hourly refresh 3:05 PM ET: all 5 campaigns, daily series through Nov 12 (partial), ad groups, keywords, search terms (competitor/off-target flagged), regions, devices, placements. Top CA cities unavailable. Enrollments/reports unchanged; spend per report date recomputed."
+    },
+    {
+      "date": "2026-11-14",
+      "summary": "Hourly refresh 8:00 AM ET: campaign totals, Nov 14 partial (only 0024 served so far), devices, placements checked. Per-campaign state split and disapproval filter not re-pulled; prior values kept. Enrollments/reports unchanged."
     }
   ],
   "displayExclusions": [
@@ -2781,7 +2785,7 @@
         "cost": 1.58
       }
     ],
-    "adStatus": "All ads Eligible; no disapprovals or not-serving campaigns at 10:58 PM ET Nov 13. 0021, 0020, 0022, 0024 limited by budget/keywords; 0023 learning.",
+    "adStatus": "All campaigns Eligible (0021/0020/0022/0024 limited by budget or keywords, 0023 learning); no disapprovals seen in top ad rows at 8 AM",
     "disapprovals": 0,
     "spendByRegion": {
       "SafeLink - CA - 0021": {
@@ -3049,7 +3053,7 @@
       "free assurance wireless phones (0020, $4.00)",
       "ca lifeline home broadband pilot program (0021, $4.00)"
     ],
-    "pulledAt": "2026-11-14T06:58:00-05:00",
+    "pulledAt": "2026-11-14T07:58:00-05:00",
     "identityVerificationDue": "2026-12-09",
     "conversionNote": "Google Ads conversions = 0 everywhere; tracking is by promo code only.",
     "spendByRegion_last7d_Nov6_12": {
