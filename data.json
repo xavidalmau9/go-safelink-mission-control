@@ -7,7 +7,7 @@
   "loginEmail": "xavidalmau9@gmail.com",
   "liveSince": "2026-11-06",
   "timezone": "America/New_York",
-  "updatedAt": "2026-11-15T13:15:00-05:00",
+  "updatedAt": "2026-11-15T15:10:00-05:00",
   "dataWindow": {
    "from": "2026-11-04",
    "to": "2026-11-15",
@@ -113,10 +113,10 @@
  ],
  "overview": {
   "awaitingData": false,
-  "spendUsd": 1180.6,
-  "clicks": 2035,
-  "impressions": 81269,
-  "ctrPct": 2.5,
+  "spendUsd": 1201.24,
+  "clicks": 2086,
+  "impressions": 83849,
+  "ctrPct": 2.49,
   "avgCpcUsd": 0.58,
   "enrollments": 4,
   "costPerEnrollmentUsd": 256.66,
@@ -130,7 +130,7 @@
    "awaitingData": false,
    "spendUsd": 468.96,
    "clicks": 211,
-   "impressions": 1018,
+   "impressions": 1067,
    "ctrPct": 20.73,
    "avgCpcUsd": 2.22,
    "enrollments": 0,
@@ -212,11 +212,11 @@
     },
     {
      "date": "2026-11-15",
-     "impressions": 11,
-     "clicks": 2,
-     "ctrPct": 18.18,
-     "avgCpcUsd": 1.96,
-     "spendUsd": 3.92
+     "impressions": 49,
+     "clicks": 6,
+     "ctrPct": 12.24,
+     "avgCpcUsd": 1.63,
+     "spendUsd": 9.77
     }
    ],
    "adGroupPerformance": [
@@ -500,7 +500,7 @@
    "awaitingData": false,
    "spendUsd": 207.73,
    "clicks": 649,
-   "impressions": 26032,
+   "impressions": 26966,
    "ctrPct": 2.49,
    "avgCpcUsd": 0.32,
    "enrollments": 0,
@@ -582,11 +582,11 @@
     },
     {
      "date": "2026-11-15",
-     "impressions": 239,
-     "clicks": 11,
-     "ctrPct": 4.6,
-     "avgCpcUsd": 0.31,
-     "spendUsd": 3.43
+     "impressions": 934,
+     "clicks": 28,
+     "ctrPct": 3.0,
+     "avgCpcUsd": 0.27,
+     "spendUsd": 7.56
     }
    ],
    "adGroupPerformance": [
@@ -781,7 +781,7 @@
    "awaitingData": false,
    "spendUsd": 333.18,
    "clicks": 148,
-   "impressions": 764,
+   "impressions": 775,
    "ctrPct": 19.37,
    "avgCpcUsd": 2.25,
    "enrollments": 0,
@@ -863,11 +863,11 @@
     },
     {
      "date": "2026-11-15",
-     "impressions": 17,
-     "clicks": 5,
-     "ctrPct": 29.41,
-     "avgCpcUsd": 1.92,
-     "spendUsd": 9.6
+     "impressions": 25,
+     "clicks": 7,
+     "ctrPct": 28.0,
+     "avgCpcUsd": 1.93,
+     "spendUsd": 13.51
     }
    ],
    "adGroupPerformance": [
@@ -1285,7 +1285,7 @@
    "awaitingData": false,
    "spendUsd": 99.92,
    "clicks": 939,
-   "impressions": 51298,
+   "impressions": 54239,
    "ctrPct": 1.83,
    "avgCpcUsd": 0.11,
    "status": "Enabled; Eligible (Learning) - Bid strategy learning",
@@ -1364,11 +1364,11 @@
     },
     {
      "date": "2026-11-15",
-     "impressions": 1114,
-     "clicks": 14,
-     "ctrPct": 1.26,
-     "avgCpcUsd": 0.17,
-     "spendUsd": 2.32
+     "impressions": 2941,
+     "clicks": 38,
+     "ctrPct": 1.29,
+     "avgCpcUsd": 0.13,
+     "spendUsd": 5.12
     }
    ],
    "adGroupPerformance": [
@@ -1499,7 +1499,7 @@
    "awaitingData": false,
    "spendUsd": 57.49,
    "clicks": 59,
-   "impressions": 787,
+   "impressions": 802,
    "ctrPct": 7.5,
    "avgCpcUsd": 0.97,
    "status": "Enabled; Eligible (Limited) - Missing enough relevant keywords",
@@ -1578,11 +1578,11 @@
     },
     {
      "date": "2026-11-15",
-     "impressions": 51,
-     "clicks": 6,
-     "ctrPct": 11.76,
+     "impressions": 63,
+     "clicks": 10,
+     "ctrPct": 15.87,
      "avgCpcUsd": 0.99,
-     "spendUsd": 5.93
+     "spendUsd": 9.88
     }
    ],
    "adGroupPerformance": [
@@ -1822,11 +1822,11 @@
   },
   {
    "date": "2026-11-15",
-   "impressions": 1432,
-   "clicks": 38,
-   "ctrPct": 2.65,
-   "avgCpcUsd": 0.66,
-   "spendUsd": 25.2
+   "impressions": 4012,
+   "clicks": 89,
+   "ctrPct": 2.22,
+   "avgCpcUsd": 0.52,
+   "spendUsd": 45.84
   }
  ],
  "keywords": [
@@ -2696,6 +2696,10 @@
   {
    "date": "2026-11-15",
    "summary": "Hourly refresh 11:05 AM ET: campaign totals and Nov 15 partial updated (only 0024 serving so far). Region split not re-pulled. Enrollments/reports unchanged."
+  },
+  {
+   "date": "2026-11-15",
+   "summary": "Hourly refresh 3:10 PM ET: Nov 15 partial $45.84 / 89 clicks (0021 $9.77, 0020 $13.51, Display $7.56, Demand Gen $5.12, Competitors $9.88). All 5 campaigns eligible, no disapprovals. Search terms flagged: airtalk wireless, tag mobile, assurance wireless (Competitors campaign, expected); free government phones indiana in 0020 and ca lifeline broadband pilot in 0021 (off-target, candidates for negatives). State view returned no rows this pull."
   }
  ],
  "displayExclusions": [
