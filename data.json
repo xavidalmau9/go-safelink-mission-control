@@ -7,7 +7,7 @@
     "loginEmail": "xavidalmau9@gmail.com",
     "liveSince": "2026-11-06",
     "timezone": "America/New_York",
-    "updatedAt": "2026-11-15T17:55:00-05:00",
+    "updatedAt": "2026-11-15T18:59:59-05:00",
     "dataWindow": {
       "from": "2026-11-04",
       "to": "2026-11-15",
@@ -113,26 +113,26 @@
   ],
   "overview": {
     "awaitingData": false,
-    "spendUsd": 1201.24,
-    "clicks": 2086,
-    "impressions": 83849,
-    "ctrPct": 2.49,
+    "spendUsd": 1250.92,
+    "clicks": 2153,
+    "impressions": 87802,
+    "ctrPct": 2.45,
     "avgCpcUsd": 0.58,
     "enrollments": 4,
     "costPerEnrollmentUsd": 256.66,
     "conversions": 0,
-    "windowLabel": "Nov 6-15, 2026 (Nov 14 final; Nov 15 partial, pulled ~1:15 PM ET)",
+    "windowLabel": "Nov 6-15, 2026 (Nov 14 final; Nov 15 partial, pulled ~7 PM ET)",
     "enrollmentsNote": "Pre-split combined (Nov 6\u20138 \u00b7 ABJ0020 shared by all campaigns); cost/enrollment = Nov 6-8 spend $351.67 / 4 (spend per report date recomputed from real Google Ads daily data Nov 12 1PM ET) (spend per report date recomputed from real Google Ads daily data Nov 12 3PM ET)",
     "enrollmentsScope": "pre_split_all"
   },
   "bySegment": {
     "ca_search": {
       "awaitingData": false,
-      "spendUsd": 468.96,
-      "clicks": 211,
-      "impressions": 1067,
-      "ctrPct": 20.73,
-      "avgCpcUsd": 2.22,
+      "spendUsd": 496.04,
+      "clicks": 225,
+      "impressions": 1127,
+      "ctrPct": 19.96,
+      "avgCpcUsd": 2.2,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
@@ -212,11 +212,11 @@
         },
         {
           "date": "2026-11-15",
-          "impressions": 49,
-          "clicks": 6,
-          "ctrPct": 12.24,
-          "avgCpcUsd": 1.63,
-          "spendUsd": 9.77
+          "impressions": 109,
+          "clicks": 20,
+          "ctrPct": 18.35,
+          "avgCpcUsd": 1.84,
+          "spendUsd": 36.85
         }
       ],
       "adGroupPerformance": [
@@ -498,10 +498,10 @@
     },
     "ca_display": {
       "awaitingData": false,
-      "spendUsd": 207.73,
-      "clicks": 649,
-      "impressions": 26966,
-      "ctrPct": 2.49,
+      "spendUsd": 217.59,
+      "clicks": 681,
+      "impressions": 28876,
+      "ctrPct": 2.36,
       "avgCpcUsd": 0.32,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
@@ -582,11 +582,11 @@
         },
         {
           "date": "2026-11-15",
-          "impressions": 934,
-          "clicks": 28,
-          "ctrPct": 3.0,
-          "avgCpcUsd": 0.27,
-          "spendUsd": 7.56
+          "impressions": 2844,
+          "clicks": 60,
+          "ctrPct": 2.11,
+          "avgCpcUsd": 0.29,
+          "spendUsd": 17.42
         }
       ],
       "adGroupPerformance": [
@@ -779,10 +779,10 @@
     },
     "nationwide": {
       "awaitingData": false,
-      "spendUsd": 333.18,
-      "clicks": 148,
-      "impressions": 775,
-      "ctrPct": 19.37,
+      "spendUsd": 339.08,
+      "clicks": 151,
+      "impressions": 797,
+      "ctrPct": 18.95,
       "avgCpcUsd": 2.25,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
@@ -863,11 +863,11 @@
         },
         {
           "date": "2026-11-15",
-          "impressions": 25,
-          "clicks": 7,
-          "ctrPct": 28.0,
-          "avgCpcUsd": 1.93,
-          "spendUsd": 13.51
+          "impressions": 47,
+          "clicks": 10,
+          "ctrPct": 21.28,
+          "avgCpcUsd": 1.94,
+          "spendUsd": 19.41
         }
       ],
       "adGroupPerformance": [
@@ -1283,10 +1283,10 @@
       "costPerEnrollmentUsd": null,
       "conversions": 0,
       "awaitingData": false,
-      "spendUsd": 99.92,
-      "clicks": 939,
-      "impressions": 54239,
-      "ctrPct": 1.83,
+      "spendUsd": 102.8,
+      "clicks": 953,
+      "impressions": 56172,
+      "ctrPct": 1.7,
       "avgCpcUsd": 0.11,
       "status": "Enabled; Eligible (Learning) - Bid strategy learning",
       "dailyAds": [
@@ -1364,11 +1364,11 @@
         },
         {
           "date": "2026-11-15",
-          "impressions": 2941,
-          "clicks": 38,
-          "ctrPct": 1.29,
-          "avgCpcUsd": 0.13,
-          "spendUsd": 5.12
+          "impressions": 4874,
+          "clicks": 52,
+          "ctrPct": 1.07,
+          "avgCpcUsd": 0.15,
+          "spendUsd": 8.0
         }
       ],
       "adGroupPerformance": [
@@ -1497,11 +1497,11 @@
       "costPerEnrollmentUsd": null,
       "conversions": 0,
       "awaitingData": false,
-      "spendUsd": 57.49,
-      "clicks": 59,
-      "impressions": 802,
-      "ctrPct": 7.5,
-      "avgCpcUsd": 0.97,
+      "spendUsd": 61.45,
+      "clicks": 63,
+      "impressions": 830,
+      "ctrPct": 7.59,
+      "avgCpcUsd": 0.98,
       "status": "Enabled; Eligible (Limited) - Missing enough relevant keywords",
       "dailyAds": [
         {
@@ -1578,11 +1578,11 @@
         },
         {
           "date": "2026-11-15",
-          "impressions": 63,
-          "clicks": 10,
-          "ctrPct": 15.87,
+          "impressions": 91,
+          "clicks": 14,
+          "ctrPct": 15.38,
           "avgCpcUsd": 0.99,
-          "spendUsd": 9.88
+          "spendUsd": 13.84
         }
       ],
       "adGroupPerformance": [
@@ -1822,11 +1822,11 @@
     },
     {
       "date": "2026-11-15",
-      "impressions": 4012,
-      "clicks": 89,
-      "ctrPct": 2.22,
-      "avgCpcUsd": 0.52,
-      "spendUsd": 45.84
+      "impressions": 7965,
+      "clicks": 156,
+      "ctrPct": 1.96,
+      "avgCpcUsd": 0.61,
+      "spendUsd": 95.52
     }
   ],
   "keywords": [
@@ -2581,6 +2581,10 @@
     "rows": []
   },
   "changelog": [
+    {
+      "date": "2026-11-15",
+      "summary": "Hourly refresh 7 PM ET: Nov 15 so far $95.52 (0021 $36.85/20 clicks, 0020 $19.41/10, Display $17.42/60, Demand Gen $8.00/52, Competitors $13.84/14). Last 7 days (Nov 8-14): 0021 $383.81, 0020 $236.96, Display $140.27, Demand Gen $99.92, Competitors $51.56, total $912.52. 0020 top states TX $31.65, NY $20.00, PA $17.19, NC $15.23, OH $14.15. Mobile dominates Search cost (0021 $323.71 of $383.81). No disapprovals; 0021/0020/Display limited by budget; Competitors limited (needs more relevant keywords). Watch: free government phones indiana in 0020 ($5.43), videosfortoddlers.com on Display, broadband term in 0021 ($4.00)."
+    },
     {
       "date": "2026-11-15",
       "summary": "Hourly refresh 5:55 PM ET (partial pull, overview level only): Nov 15 so far $88.85 (0021 $32.87/18 clicks, 0020 $19.41/10, Display $15.38/52, Demand Gen $7.35/51, Competitors $13.84/14). Nov 14 by campaign: 0021 $59.95, 0020 $25.29, Display $20.62, Demand Gen $17.23, Competitors $13.43. Mobile ~90% of today cost. No disapprovals seen in overview; state/keyword tables did not load this run."
@@ -3456,6 +3460,44 @@
     ],
     "displayFlags_Nov14_15": "0022 sites all under $1; playgama.com, gamesnacks.com (kids-adjacent gaming), movierulzw.com (piracy) flagged for exclusion review",
     "stateDataNote_Nov15": "State-level report not reachable in this pull; prior state data kept",
-    "hourly_11am_Nov15": "Campaign totals, Nov 14/15 by campaign, devices checked. No disapprovals seen in first 14 ads. Conversions 0 (no tracking). Region/city report unavailable in this pull; prior values kept. Nov 15 so far: only 0024 serving ($5.93)."
+    "hourly_11am_Nov15": "Campaign totals, Nov 14/15 by campaign, devices checked. No disapprovals seen in first 14 ads. Conversions 0 (no tracking). Region/city report unavailable in this pull; prior values kept. Nov 15 so far: only 0024 serving ($5.93).",
+    "last7DayTopKeywordsByClicks_asOf_2026-11-15": [
+      [
+        "\"lifeline cellphones\" (0021)",
+        58.81
+      ],
+      [
+        "[lifeline program] (0021)",
+        56.61
+      ],
+      [
+        "\"lifeline application\" (0021)",
+        36.57
+      ],
+      [
+        "\"lifeline government phone program\" (0021)",
+        36.45
+      ],
+      [
+        "[lifeline program] (0020)",
+        30.66
+      ],
+      [
+        "\"lifeline program\" (0021)",
+        29.53
+      ],
+      [
+        "\"lifeline phone providers\" (0020)",
+        27.35
+      ],
+      [
+        "\"free public assistance phones\" (0021)",
+        21.36
+      ],
+      [
+        "[airtalk wireless] (0024)",
+        20.71
+      ]
+    ]
   }
 }
