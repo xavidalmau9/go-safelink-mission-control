@@ -7,7 +7,7 @@
     "loginEmail": "xavidalmau9@gmail.com",
     "liveSince": "2026-11-06",
     "timezone": "America/New_York",
-    "updatedAt": "2026-11-16T14:05:00-05:00",
+    "updatedAt": "2026-11-16T15:55:00-05:00",
     "dataWindow": {
       "from": "2026-11-04",
       "to": "2026-11-16",
@@ -113,26 +113,26 @@
   ],
   "overview": {
     "awaitingData": false,
-    "spendUsd": 1324.53,
-    "clicks": 2295,
-    "impressions": 99371,
-    "ctrPct": 2.31,
+    "spendUsd": 1360.44,
+    "clicks": 2329,
+    "impressions": 99621,
+    "ctrPct": 2.34,
     "avgCpcUsd": 0.58,
     "enrollments": 4,
     "costPerEnrollmentUsd": 256.66,
     "conversions": 0,
-    "windowLabel": "Nov 4-16, 2026 (Nov 15 final; Nov 16 partial, pulled ~2 PM ET)",
+    "windowLabel": "Nov 4-16, 2026 (Nov 15 final; Nov 16 partial, pulled ~3:50 PM ET)",
     "enrollmentsNote": "Pre-split combined (Nov 6–8 · ABJ0020 shared by all campaigns); cost/enrollment = Nov 6-8 spend $351.67 / 4 (spend per report date recomputed from real Google Ads daily data Nov 12 1PM ET) (spend per report date recomputed from real Google Ads daily data Nov 12 3PM ET)",
     "enrollmentsScope": "pre_split_all"
   },
   "bySegment": {
     "ca_search": {
       "awaitingData": false,
-      "spendUsd": 542.44,
-      "clicks": 253,
-      "impressions": 1229,
-      "ctrPct": 20.54,
-      "avgCpcUsd": 2.15,
+      "spendUsd": 567.64,
+      "clicks": 271,
+      "impressions": 1340,
+      "ctrPct": 20.22,
+      "avgCpcUsd": 2.09,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
@@ -220,11 +220,11 @@
         },
         {
           "date": "2026-11-16",
-          "impressions": 56,
-          "clicks": 9,
-          "ctrPct": 16.07,
-          "avgCpcUsd": 1.38,
-          "spendUsd": 12.39
+          "impressions": 169,
+          "clicks": 28,
+          "ctrPct": 16.57,
+          "avgCpcUsd": 1.4,
+          "spendUsd": 39.06
         }
       ],
       "adGroupPerformance": [
@@ -508,7 +508,7 @@
       "awaitingData": false,
       "spendUsd": 228.11,
       "clicks": 722,
-      "impressions": 29602,
+      "impressions": 29605,
       "ctrPct": 2.44,
       "avgCpcUsd": 0.32,
       "enrollments": 0,
@@ -795,11 +795,11 @@
     },
     "nationwide": {
       "awaitingData": false,
-      "spendUsd": 359.58,
-      "clicks": 170,
-      "impressions": 903,
-      "ctrPct": 18.85,
-      "avgCpcUsd": 2.12,
+      "spendUsd": 368.82,
+      "clicks": 185,
+      "impressions": 1020,
+      "ctrPct": 18.14,
+      "avgCpcUsd": 1.99,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
@@ -887,11 +887,11 @@
         },
         {
           "date": "2026-11-16",
-          "impressions": 86,
-          "clicks": 12,
-          "ctrPct": 13.95,
-          "avgCpcUsd": 0.64,
-          "spendUsd": 7.7
+          "impressions": 204,
+          "clicks": 27,
+          "ctrPct": 13.24,
+          "avgCpcUsd": 0.63,
+          "spendUsd": 16.94
         }
       ],
       "adGroupPerformance": [
@@ -1531,8 +1531,8 @@
       "awaitingData": false,
       "spendUsd": 71.09,
       "clicks": 73,
-      "impressions": 910,
-      "ctrPct": 8.02,
+      "impressions": 926,
+      "ctrPct": 7.88,
       "avgCpcUsd": 0.97,
       "status": "Enabled; Eligible (Limited) - Missing enough relevant keywords; ad strength poor (budget $20/day)",
       "dailyAds": [
@@ -1618,9 +1618,9 @@
         },
         {
           "date": "2026-11-16",
-          "impressions": 33,
+          "impressions": 49,
           "clicks": 1,
-          "ctrPct": 3.03,
+          "ctrPct": 2.04,
           "avgCpcUsd": 0.98,
           "spendUsd": 0.98
         }
@@ -1870,11 +1870,11 @@
     },
     {
       "date": "2026-11-16",
-      "impressions": 175,
-      "clicks": 22,
-      "ctrPct": 12.57,
-      "avgCpcUsd": 0.96,
-      "spendUsd": 21.07
+      "impressions": 422,
+      "clicks": 56,
+      "ctrPct": 13.27,
+      "avgCpcUsd": 1.02,
+      "spendUsd": 56.98
     }
   ],
   "keywords": [
@@ -2629,6 +2629,10 @@
     "rows": []
   },
   "changelog": [
+    {
+      "date": "2026-11-16",
+      "summary": "Hourly refresh 3:50 PM ET: Nov 16 so far $56.98 / 56 clicks (CA Search $39.06, US ex CA $16.94, Competitors $0.98; Display and Demand Gen paused). Totals $1360.44 / 2329 clicks. Search campaigns limited by budget; Competitors limited by missing relevant keywords; Low income ad group (CA) limited by policy. Per-state spend not available in read-only views. No changes made."
+    },
     {
       "date": "2026-11-16",
       "summary": "Hourly refresh 12:50 PM ET: Nov 16 so far $8.89 / 9 clicks (CA Search $5.31, US ex CA $2.60, Competitors $0.98; Display and Demand Gen paused). Totals $1312.35 / 2282 clicks. Search campaigns limited by budget; Competitors limited by missing relevant keywords. No ad disapprovals. Per-state spend not available in read-only views. No changes made."
@@ -4082,6 +4086,47 @@
         ]
       }
     },
-    "displayFlags_Nov16": "Display 0022 now paused. Junk placements seen (solitaire/mahjong apps, .xyz/.top/.biz sites)."
+    "displayFlags_Nov16": "Display 0022 now paused. Junk placements seen (solitaire/mahjong apps, .xyz/.top/.biz sites).",
+    "pulledAt_Nov16_350pm": "2026-11-16T15:55:00-05:00",
+    "topKeywordsByCost_Nov16_350pm": [
+      [
+        "[lifeline program]",
+        "0021",
+        40,
+        78.62
+      ],
+      [
+        "\"lifeline cellphones\"",
+        "0021",
+        33,
+        64.81
+      ],
+      [
+        "\"lifeline government phone program\"",
+        "0021",
+        34,
+        60.24
+      ],
+      [
+        "\"lifeline application\"",
+        "0021",
+        20,
+        56.81
+      ],
+      [
+        "[lifeline program]",
+        "0020",
+        26,
+        44.07
+      ],
+      [
+        "[airtalk wireless]",
+        "0024",
+        32,
+        31.57
+      ]
+    ],
+    "adStatus_Nov16_350pm": "CA Search 0021 and US ex CA 0020 Eligible (Limited by budget); CA Competitors 0024 Eligible (Missing enough relevant keywords); Display/Demand Gen paused; CA Low income ad group limited by policy; no disapprovals. State breakdown unavailable.",
+    "flaggedSearchTerms_Nov16_350pm": "Competitor terms in 0024 as intended: airtalk wireless ($21.75), assurance wireless ($6.91), tag mobile ($6.83). senior lifeline program (0021) possibly off-target ($8.20)."
   }
 }
