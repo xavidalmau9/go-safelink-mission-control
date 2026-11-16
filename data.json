@@ -7,7 +7,7 @@
     "loginEmail": "xavidalmau9@gmail.com",
     "liveSince": "2026-11-06",
     "timezone": "America/New_York",
-    "updatedAt": "2026-11-15T22:03:00-05:00",
+    "updatedAt": "2026-11-15T23:05:00-05:00",
     "dataWindow": {
       "from": "2026-11-04",
       "to": "2026-11-15",
@@ -113,30 +113,30 @@
   ],
   "overview": {
     "awaitingData": false,
-    "spendUsd": 1289.99,
-    "clicks": 2252,
-    "impressions": 97846,
-    "ctrPct": 2.3,
+    "spendUsd": 1297.74,
+    "clicks": 2268,
+    "impressions": 98853,
+    "ctrPct": 2.29,
     "avgCpcUsd": 0.57,
     "enrollments": 4,
     "costPerEnrollmentUsd": 256.66,
     "conversions": 0,
-    "windowLabel": "Nov 6-15, 2026 (Nov 14 final; Nov 15 partial, pulled ~8 PM ET)",
+    "windowLabel": "Nov 6-15, 2026 (Nov 14 final; Nov 15 partial, pulled ~11 PM ET)",
     "enrollmentsNote": "Pre-split combined (Nov 6–8 · ABJ0020 shared by all campaigns); cost/enrollment = Nov 6-8 spend $351.67 / 4 (spend per report date recomputed from real Google Ads daily data Nov 12 1PM ET) (spend per report date recomputed from real Google Ads daily data Nov 12 3PM ET)",
     "enrollmentsScope": "pre_split_all"
   },
   "bySegment": {
     "ca_search": {
       "awaitingData": false,
-      "spendUsd": 510.95,
-      "clicks": 233,
-      "impressions": 1156,
-      "ctrPct": 20.16,
+      "spendUsd": 514.92,
+      "clicks": 235,
+      "impressions": 1168,
+      "ctrPct": 20.12,
       "avgCpcUsd": 2.19,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
-      "status": "Enabled; Eligible (Limited by budget)",
+      "status": "Eligible (Limited) — Limited by budget",
       "dailyAds": [
         {
           "date": "2026-11-06",
@@ -212,11 +212,11 @@
         },
         {
           "date": "2026-11-15",
-          "impressions": 138,
-          "clicks": 28,
-          "ctrPct": 20.29,
-          "avgCpcUsd": 1.85,
-          "spendUsd": 51.76
+          "impressions": 150,
+          "clicks": 30,
+          "ctrPct": 20.0,
+          "avgCpcUsd": 1.86,
+          "spendUsd": 55.73
         }
       ],
       "adGroupPerformance": [
@@ -506,7 +506,7 @@
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
-      "status": "Enabled; Eligible (Limited by budget)",
+      "status": "Eligible (Limited) — Limited by budget",
       "dailyAds": [
         {
           "date": "2026-11-06",
@@ -779,15 +779,15 @@
     },
     "nationwide": {
       "awaitingData": false,
-      "spendUsd": 343.02,
-      "clicks": 153,
-      "impressions": 808,
-      "ctrPct": 18.94,
+      "spendUsd": 344.32,
+      "clicks": 154,
+      "impressions": 816,
+      "ctrPct": 18.87,
       "avgCpcUsd": 2.24,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
-      "status": "Enabled; Eligible (Limited by budget)",
+      "status": "Eligible (Limited) — Limited by budget",
       "dailyAds": [
         {
           "date": "2026-11-06",
@@ -863,11 +863,11 @@
         },
         {
           "date": "2026-11-15",
-          "impressions": 58,
-          "clicks": 12,
-          "ctrPct": 20.69,
-          "avgCpcUsd": 1.95,
-          "spendUsd": 23.35
+          "impressions": 66,
+          "clicks": 13,
+          "ctrPct": 19.7,
+          "avgCpcUsd": 1.9,
+          "spendUsd": 24.65
         }
       ],
       "adGroupPerformance": [
@@ -1283,12 +1283,12 @@
       "costPerEnrollmentUsd": null,
       "conversions": 0,
       "awaitingData": false,
-      "spendUsd": 116.91,
-      "clicks": 1023,
-      "impressions": 65424,
+      "spendUsd": 118.51,
+      "clicks": 1035,
+      "impressions": 66396,
       "ctrPct": 1.56,
       "avgCpcUsd": 0.11,
-      "status": "Enabled; Eligible (Learning) - Bid strategy learning",
+      "status": "Eligible",
       "dailyAds": [
         {
           "date": "2026-11-06",
@@ -1364,11 +1364,11 @@
         },
         {
           "date": "2026-11-15",
-          "impressions": 14126,
-          "clicks": 122,
-          "ctrPct": 0.86,
+          "impressions": 15098,
+          "clicks": 134,
+          "ctrPct": 0.89,
           "avgCpcUsd": 0.18,
-          "spendUsd": 22.11
+          "spendUsd": 23.71
         }
       ],
       "adGroupPerformance": [
@@ -1497,12 +1497,12 @@
       "costPerEnrollmentUsd": null,
       "conversions": 0,
       "awaitingData": false,
-      "spendUsd": 62.43,
-      "clicks": 64,
-      "impressions": 844,
-      "ctrPct": 7.58,
-      "avgCpcUsd": 0.98,
-      "status": "Enabled; Eligible (Limited) - Missing enough relevant keywords",
+      "spendUsd": 63.31,
+      "clicks": 65,
+      "impressions": 859,
+      "ctrPct": 7.57,
+      "avgCpcUsd": 0.97,
+      "status": "Eligible (Limited) — Missing enough relevant keywords",
       "dailyAds": [
         {
           "date": "2026-11-06",
@@ -1578,11 +1578,11 @@
         },
         {
           "date": "2026-11-15",
-          "impressions": 105,
-          "clicks": 15,
-          "ctrPct": 14.29,
-          "avgCpcUsd": 0.99,
-          "spendUsd": 14.82
+          "impressions": 120,
+          "clicks": 16,
+          "ctrPct": 13.33,
+          "avgCpcUsd": 0.98,
+          "spendUsd": 15.7
         }
       ],
       "adGroupPerformance": [
@@ -1822,11 +1822,11 @@
     },
     {
       "date": "2026-11-15",
-      "impressions": 18009,
-      "clicks": 255,
-      "ctrPct": 1.42,
+      "impressions": 19016,
+      "clicks": 271,
+      "ctrPct": 1.43,
       "avgCpcUsd": 0.53,
-      "spendUsd": 134.59
+      "spendUsd": 142.34
     }
   ],
   "keywords": [
@@ -2583,6 +2583,10 @@
   "changelog": [
     {
       "date": "2026-11-15",
+      "summary": "Hourly refresh 11 PM ET: Nov 15 so far $142.34 / 271 clicks (0021 $55.73, 0020 $24.65, Display $22.55, Demand Gen $23.71, Competitors $15.70). Nov 8-14 spend $912.52 / 1,811 clicks. All five campaigns Eligible; 0021/0020/Display limited by budget, 0024 limited by missing relevant keywords. No ad disapprovals (3 image ads show Removed). 17 kids/family/game-coded Display placements ($10.28, 7d) flagged for review. No changes made."
+    },
+    {
+      "date": "2026-11-15",
       "summary": "Hourly refresh 10 PM ET: Nov 15 so far $134.59 / 255 clicks (0021 $51.76, 0020 $23.35, Display $22.55, Demand Gen $22.11, Competitors $14.82). All five campaigns Enabled/Eligible; no ad disapprovals; 0021/0020/Display limited by budget, Competitors limited by 'missing enough relevant keywords' (ad strength Poor). Term to review: 'free government phones indiana' in 0020 ($5.43, free-phone intent outside CA). State breakdown not available this run. No changes made."
     },
     {
@@ -2963,7 +2967,7 @@
         "cost": 1.58
       }
     ],
-    "adStatus": "All 5 campaigns Eligible (0021/0020/0022/0024 limited by budget or keywords, 0023 learning); no disapprovals seen at 8 AM Nov 15",
+    "adStatus": "34 ads total; no Disapproved status text found in either Ads tab. Three image ads had Removed status; two ads were Not eligible because their ad groups were paused; one RSA row was Paused/Pending.",
     "disapprovals": 0,
     "spendByRegion": {
       "SafeLink - CA - 0021": {
@@ -3231,7 +3235,7 @@
       "free assurance wireless phones (0020, $4.00)",
       "ca lifeline home broadband pilot program (0021, $4.00)"
     ],
-    "pulledAt": "2026-11-15T11:00:00-05:00",
+    "pulledAt": "2026-11-15T23:05:00-05:00",
     "identityVerificationDue": "2026-12-09",
     "conversionNote": "Google Ads conversions = 0 everywhere; tracking is by promo code only.",
     "spendByRegion_last7d_Nov6_12": {
@@ -3471,7 +3475,7 @@
       "www californialifeline com espanol (0021, $2.00)"
     ],
     "displayFlags_Nov14_15": "0022 sites all under $1; playgama.com, gamesnacks.com (kids-adjacent gaming), movierulzw.com (piracy) flagged for exclusion review",
-    "stateDataNote_Nov15": "State-level report not reachable in this pull; prior state data kept",
+    "stateDataNote_Nov15": "State breakdown still unavailable (Matched Locations shows only United States at account level).",
     "hourly_11am_Nov15": "Campaign totals, Nov 14/15 by campaign, devices checked. No disapprovals seen in first 14 ads. Conversions 0 (no tracking). Region/city report unavailable in this pull; prior values kept. Nov 15 so far: only 0024 serving ($5.93).",
     "last7DayTopKeywordsByClicks_asOf_2026-11-15": [
       [
@@ -3510,6 +3514,320 @@
         "[airtalk wireless] (0024)",
         20.71
       ]
-    ]
+    ],
+    "last7d_Nov8_14": {
+      "account": {
+        "impressions": 75365,
+        "clicks": 1811,
+        "ctr_pct": 2.4,
+        "avg_cpc_usd": 0.5,
+        "cost_usd": 912.52
+      },
+      "campaigns": {
+        "SafeLink - CA - 0021": {
+          "impressions": 898,
+          "clicks": 186,
+          "ctr_pct": 20.71,
+          "avg_cpc_usd": 2.06,
+          "cost_usd": 383.81
+        },
+        "SafeLink - US ex CA - 0020": {
+          "impressions": 624,
+          "clicks": 117,
+          "ctr_pct": 18.75,
+          "avg_cpc_usd": 2.03,
+          "cost_usd": 236.96
+        },
+        "SafeLink - CA Display - 0022": {
+          "impressions": 21806,
+          "clicks": 516,
+          "ctr_pct": 2.37,
+          "avg_cpc_usd": 0.27,
+          "cost_usd": 140.27
+        },
+        "SafeLink - CA Demand Gen - 0023": {
+          "impressions": 51298,
+          "clicks": 939,
+          "ctr_pct": 1.83,
+          "avg_cpc_usd": 0.11,
+          "cost_usd": 99.92
+        },
+        "SafeLink - CA Competitors - 0024": {
+          "impressions": 739,
+          "clicks": 53,
+          "ctr_pct": 7.17,
+          "avg_cpc_usd": 0.97,
+          "cost_usd": 51.56
+        }
+      }
+    },
+    "topKeywordsByCost_last7d_Nov8_14": {
+      "selection": "Top 5 per Search campaign among the first 50 cost-sorted keyword rows visible in Google Ads; no keywords for Display/Demand Gen.",
+      "by_campaign_id": {
+        "24426532464": [
+          {
+            "keyword": "\"lifeline cellphones\"",
+            "match_type": "Phrase match",
+            "impressions": 101,
+            "clicks": 30,
+            "ctr_pct": 29.7,
+            "avg_cpc_usd": 1.96,
+            "cost_usd": 58.81
+          },
+          {
+            "keyword": "[lifeline program]",
+            "match_type": "Exact match",
+            "impressions": 89,
+            "clicks": 28,
+            "ctr_pct": 31.46,
+            "avg_cpc_usd": 2.02,
+            "cost_usd": 56.61,
+            "status": "Eligible (Limited), Below first page bid ($3.63)"
+          },
+          {
+            "keyword": "\"lifeline application\"",
+            "match_type": "Phrase match",
+            "impressions": 58,
+            "clicks": 14,
+            "ctr_pct": 24.14,
+            "avg_cpc_usd": 2.61,
+            "cost_usd": 36.57,
+            "status": "Eligible (Limited), Below first page bid ($2.48)"
+          },
+          {
+            "keyword": "\"lifeline government phone program\"",
+            "match_type": "Phrase match",
+            "impressions": 87,
+            "clicks": 19,
+            "ctr_pct": 21.84,
+            "avg_cpc_usd": 1.92,
+            "cost_usd": 36.45
+          },
+          {
+            "keyword": "\"lifeline program\"",
+            "match_type": "Phrase match",
+            "impressions": 43,
+            "clicks": 15,
+            "ctr_pct": 34.88,
+            "avg_cpc_usd": 1.97,
+            "cost_usd": 29.53,
+            "status": "Eligible (Limited), Below first page bid ($3.63)"
+          }
+        ],
+        "24431672876": [
+          {
+            "keyword": "[lifeline program]",
+            "match_type": "Exact match",
+            "impressions": 42,
+            "clicks": 16,
+            "ctr_pct": 38.1,
+            "avg_cpc_usd": 1.92,
+            "cost_usd": 30.66,
+            "status": "Eligible (Limited), Below first page bid ($3.63)"
+          },
+          {
+            "keyword": "\"lifeline phone providers\"",
+            "match_type": "Phrase match",
+            "impressions": 81,
+            "clicks": 14,
+            "ctr_pct": 17.28,
+            "avg_cpc_usd": 1.95,
+            "cost_usd": 27.35
+          },
+          {
+            "keyword": "\"lifeline free phone application\"",
+            "match_type": "Phrase match",
+            "impressions": 22,
+            "clicks": 9,
+            "ctr_pct": 40.91,
+            "avg_cpc_usd": 2.26,
+            "cost_usd": 20.35,
+            "status": "Paused"
+          },
+          {
+            "keyword": "[lifeline phone service program]",
+            "match_type": "Exact match",
+            "impressions": 35,
+            "clicks": 11,
+            "ctr_pct": 31.43,
+            "avg_cpc_usd": 1.78,
+            "cost_usd": 19.57
+          },
+          {
+            "keyword": "\"gov lifeline program\"",
+            "match_type": "Phrase match",
+            "impressions": 51,
+            "clicks": 9,
+            "ctr_pct": 17.65,
+            "avg_cpc_usd": 1.81,
+            "cost_usd": 16.27
+          }
+        ],
+        "24455566316": [
+          {
+            "keyword": "[airtalk wireless]",
+            "match_type": "Exact match",
+            "impressions": 305,
+            "clicks": 21,
+            "ctr_pct": 6.89,
+            "avg_cpc_usd": 0.99,
+            "cost_usd": 20.71
+          },
+          {
+            "keyword": "\"airtalk wireless\"",
+            "match_type": "Phrase match",
+            "impressions": 114,
+            "clicks": 10,
+            "ctr_pct": 8.77,
+            "avg_cpc_usd": 0.98,
+            "cost_usd": 9.8
+          },
+          {
+            "keyword": "[assurance wireless]",
+            "match_type": "Exact match",
+            "impressions": 97,
+            "clicks": 7,
+            "ctr_pct": 7.22,
+            "avg_cpc_usd": 0.99,
+            "cost_usd": 6.91
+          },
+          {
+            "keyword": "\"assurance wireless\"",
+            "match_type": "Phrase match",
+            "impressions": 101,
+            "clicks": 7,
+            "ctr_pct": 6.93,
+            "avg_cpc_usd": 0.9,
+            "cost_usd": 6.33
+          },
+          {
+            "keyword": "[tag mobile]",
+            "match_type": "Exact match",
+            "impressions": 88,
+            "clicks": 6,
+            "ctr_pct": 6.82,
+            "avg_cpc_usd": 0.99,
+            "cost_usd": 5.95
+          }
+        ],
+        "24440250130": [],
+        "24458579422": []
+      }
+    },
+    "deviceLast7d_Nov8_14": {
+      "24458579422": [
+        {
+          "device": "Mobile phones",
+          "impressions": 48529,
+          "clicks": 910,
+          "cost_usd": 96.64
+        },
+        {
+          "device": "Tablets",
+          "impressions": 2451,
+          "clicks": 24,
+          "cost_usd": 2.94
+        },
+        {
+          "device": "Computers",
+          "impressions": 313,
+          "clicks": 5,
+          "cost_usd": 0.34
+        },
+        {
+          "device": "TV screens",
+          "impressions": 5,
+          "clicks": 0,
+          "cost_usd": 0.0
+        }
+      ],
+      "24440250130": [
+        {
+          "device": "Mobile phones",
+          "impressions": 14621,
+          "clicks": 434,
+          "cost_usd": 118.14
+        },
+        {
+          "device": "Tablets",
+          "impressions": 2774,
+          "clicks": 50,
+          "cost_usd": 12.44
+        },
+        {
+          "device": "Computers",
+          "impressions": 4394,
+          "clicks": 32,
+          "cost_usd": 9.69
+        },
+        {
+          "device": "TV screens",
+          "impressions": 17,
+          "clicks": 0,
+          "cost_usd": 0.0
+        }
+      ],
+      "24426532464": [
+        {
+          "device": "Mobile phones",
+          "impressions": 724,
+          "clicks": 156,
+          "cost_usd": 323.71
+        },
+        {
+          "device": "Computers",
+          "impressions": 153,
+          "clicks": 29,
+          "cost_usd": 56.63
+        },
+        {
+          "device": "Tablets",
+          "impressions": 21,
+          "clicks": 1,
+          "cost_usd": 3.47
+        }
+      ],
+      "24431672876": [
+        {
+          "device": "Mobile phones",
+          "impressions": 497,
+          "clicks": 95,
+          "cost_usd": 189.8
+        },
+        {
+          "device": "Computers",
+          "impressions": 114,
+          "clicks": 21,
+          "cost_usd": 45.16
+        },
+        {
+          "device": "Tablets",
+          "impressions": 13,
+          "clicks": 1,
+          "cost_usd": 2.0
+        }
+      ],
+      "24455566316": [
+        {
+          "device": "Mobile phones",
+          "impressions": 678,
+          "clicks": 49,
+          "cost_usd": 47.62
+        },
+        {
+          "device": "Computers",
+          "impressions": 47,
+          "clicks": 3,
+          "cost_usd": 2.94
+        },
+        {
+          "device": "Tablets",
+          "impressions": 14,
+          "clicks": 1,
+          "cost_usd": 1.0
+        }
+      ]
+    },
+    "displayFlags_Nov15_11pm": "17 child/family/game-coded Display placements ($10.28 over last 7 days) to review against the no-kids rule."
   }
 }
