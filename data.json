@@ -7,7 +7,7 @@
     "loginEmail": "xavidalmau9@gmail.com",
     "liveSince": "2026-11-06",
     "timezone": "America/New_York",
-    "updatedAt": "2026-11-16T18:58:00-05:00",
+    "updatedAt": "2026-11-16T19:58:00-05:00",
     "dataWindow": {
       "from": "2026-11-04",
       "to": "2026-11-16",
@@ -113,26 +113,26 @@
   ],
   "overview": {
     "awaitingData": false,
-    "spendUsd": 1447.25,
-    "clicks": 2410,
-    "impressions": 100135,
-    "ctrPct": 2.41,
+    "spendUsd": 1465.0,
+    "clicks": 2424,
+    "impressions": 100245,
+    "ctrPct": 2.42,
     "avgCpcUsd": 0.6,
     "enrollments": 4,
     "costPerEnrollmentUsd": 256.66,
     "conversions": 0,
-    "windowLabel": "Nov 4-16, 2026 (Nov 15 final; Nov 16 partial, pulled ~6:55 PM ET)",
+    "windowLabel": "Nov 4-16, 2026 (Nov 15 final; Nov 16 partial, pulled ~7:55 PM ET)",
     "enrollmentsNote": "Pre-split combined (Nov 6\u20138 \u00b7 ABJ0020 shared by all campaigns); cost/enrollment = Nov 6-8 spend $351.67 / 4 (spend per report date recomputed from real Google Ads daily data Nov 12 1PM ET) (spend per report date recomputed from real Google Ads daily data Nov 12 3PM ET)",
     "enrollmentsScope": "pre_split_all"
   },
   "bySegment": {
     "ca_search": {
       "awaitingData": false,
-      "spendUsd": 629.74,
-      "clicks": 315,
-      "impressions": 1569,
-      "ctrPct": 20.08,
-      "avgCpcUsd": 2.0,
+      "spendUsd": 644.88,
+      "clicks": 326,
+      "impressions": 1619,
+      "ctrPct": 20.14,
+      "avgCpcUsd": 1.98,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
@@ -220,11 +220,11 @@
         },
         {
           "date": "2026-11-16",
-          "impressions": 398,
-          "clicks": 72,
-          "ctrPct": 18.09,
-          "avgCpcUsd": 1.41,
-          "spendUsd": 101.16
+          "impressions": 448,
+          "clicks": 83,
+          "ctrPct": 18.53,
+          "avgCpcUsd": 1.4,
+          "spendUsd": 116.3
         }
       ],
       "adGroupPerformance": [
@@ -506,10 +506,10 @@
     },
     "ca_display": {
       "awaitingData": false,
-      "spendUsd": 228.11,
-      "clicks": 722,
-      "impressions": 29602,
-      "ctrPct": 2.44,
+      "spendUsd": 226.7,
+      "clicks": 718,
+      "impressions": 29559,
+      "ctrPct": 2.43,
       "avgCpcUsd": 0.32,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
@@ -795,11 +795,11 @@
     },
     "nationwide": {
       "awaitingData": false,
-      "spendUsd": 390.59,
-      "clicks": 219,
-      "impressions": 1262,
-      "ctrPct": 17.35,
-      "avgCpcUsd": 1.78,
+      "spendUsd": 394.6,
+      "clicks": 226,
+      "impressions": 1346,
+      "ctrPct": 16.79,
+      "avgCpcUsd": 1.75,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
@@ -887,11 +887,11 @@
         },
         {
           "date": "2026-11-16",
-          "impressions": 444,
-          "clicks": 60,
-          "ctrPct": 13.51,
-          "avgCpcUsd": 0.64,
-          "spendUsd": 38.16
+          "impressions": 530,
+          "clicks": 68,
+          "ctrPct": 12.83,
+          "avgCpcUsd": 0.63,
+          "spendUsd": 42.72
         }
       ],
       "adGroupPerformance": [
@@ -1531,8 +1531,8 @@
       "awaitingData": false,
       "spendUsd": 74.03,
       "clicks": 76,
-      "impressions": 972,
-      "ctrPct": 7.82,
+      "impressions": 991,
+      "ctrPct": 7.67,
       "avgCpcUsd": 0.97,
       "status": "Enabled; Eligible (Limited) - Missing enough relevant keywords; ad strength poor (budget $20/day)",
       "dailyAds": [
@@ -1618,9 +1618,9 @@
         },
         {
           "date": "2026-11-16",
-          "impressions": 95,
+          "impressions": 114,
           "clicks": 4,
-          "ctrPct": 4.21,
+          "ctrPct": 3.51,
           "avgCpcUsd": 0.98,
           "spendUsd": 3.92
         }
@@ -1870,11 +1870,11 @@
     },
     {
       "date": "2026-11-16",
-      "impressions": 937,
-      "clicks": 136,
-      "ctrPct": 14.51,
+      "impressions": 1092,
+      "clicks": 155,
+      "ctrPct": 14.19,
       "avgCpcUsd": 1.05,
-      "spendUsd": 143.24
+      "spendUsd": 162.94
     }
   ],
   "keywords": [
@@ -2629,6 +2629,10 @@
     "rows": []
   },
   "changelog": [
+    {
+      "date": "2026-11-16",
+      "summary": "Hourly refresh 7:55 PM ET: Nov 16 so far $162.94 / 155 clicks (sum of campaign rows: CA Search 0021 $116.30, US ex CA 0020 $42.72, Competitors $3.92; Display and Demand Gen paused). Ads account-total row lagged at $144.42, so campaign sums are used. Totals $1465.00 / 2424 clicks. No disapprovals. No changes made."
+    },
     {
       "date": "2026-11-16",
       "summary": "Hourly refresh 6:55 PM ET: Nov 16 so far $143.24 / 136 clicks (CA Search 0021 $101.16, US ex CA 0020 $38.16, Competitors $3.92; Display and Demand Gen paused). Totals $1447.25 / 2410 clicks. No disapprovals. Note: CA Search spent $28.87 in the last hour. No changes made."
