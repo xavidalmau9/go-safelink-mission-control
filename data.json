@@ -7,7 +7,7 @@
     "loginEmail": "xavidalmau9@gmail.com",
     "liveSince": "2026-11-06",
     "timezone": "America/New_York",
-    "updatedAt": "2026-11-16T21:05:32-05:00",
+    "updatedAt": "2026-11-16T21:51:02-05:00",
     "dataWindow": {
       "from": "2026-11-04",
       "to": "2026-11-16",
@@ -113,26 +113,26 @@
   ],
   "overview": {
     "awaitingData": false,
-    "spendUsd": 1481.71,
-    "clicks": 2442,
-    "impressions": 100389,
-    "ctrPct": 2.43,
+    "spendUsd": 1496.71,
+    "clicks": 2457,
+    "impressions": 100478,
+    "ctrPct": 2.45,
     "avgCpcUsd": 0.61,
     "enrollments": 4,
-    "costPerEnrollmentUsd": 370.43,
+    "costPerEnrollmentUsd": 374.18,
     "conversions": 0,
-    "windowLabel": "Nov 4-16, 2026 (Nov 15 final; Nov 16 partial, pulled ~9:05 PM ET)",
+    "windowLabel": "Nov 4-16, 2026 (Nov 15 final; Nov 16 partial, pulled ~10:00 PM ET)",
     "enrollmentsNote": "Pre-split combined (Nov 6–8 · ABJ0020 shared by all campaigns); cost/enrollment = Nov 6-8 spend $351.67 / 4 (spend per report date recomputed from real Google Ads daily data Nov 12 1PM ET) (spend per report date recomputed from real Google Ads daily data Nov 12 3PM ET)",
     "enrollmentsScope": "pre_split_all"
   },
   "bySegment": {
     "ca_search": {
       "awaitingData": false,
-      "spendUsd": 653.85,
-      "clicks": 332,
-      "impressions": 1657,
-      "ctrPct": 20.04,
-      "avgCpcUsd": 1.97,
+      "spendUsd": 661.77,
+      "clicks": 338,
+      "impressions": 1682,
+      "ctrPct": 20.1,
+      "avgCpcUsd": 1.96,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
@@ -220,11 +220,11 @@
         },
         {
           "date": "2026-11-16",
-          "impressions": 486,
-          "clicks": 89,
-          "ctrPct": 18.31,
-          "avgCpcUsd": 1.41,
-          "spendUsd": 125.27
+          "impressions": 511,
+          "clicks": 95,
+          "ctrPct": 18.59,
+          "avgCpcUsd": 1.4,
+          "spendUsd": 133.19
         }
       ],
       "adGroupPerformance": [
@@ -795,11 +795,11 @@
     },
     "nationwide": {
       "awaitingData": false,
-      "spendUsd": 402.34,
-      "clicks": 238,
-      "impressions": 1438,
-      "ctrPct": 16.55,
-      "avgCpcUsd": 1.69,
+      "spendUsd": 408.42,
+      "clicks": 246,
+      "impressions": 1491,
+      "ctrPct": 16.5,
+      "avgCpcUsd": 1.66,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
@@ -887,11 +887,11 @@
         },
         {
           "date": "2026-11-16",
-          "impressions": 622,
-          "clicks": 80,
-          "ctrPct": 12.86,
-          "avgCpcUsd": 0.63,
-          "spendUsd": 50.46
+          "impressions": 675,
+          "clicks": 88,
+          "ctrPct": 13.04,
+          "avgCpcUsd": 0.64,
+          "spendUsd": 56.54
         }
       ],
       "adGroupPerformance": [
@@ -1529,10 +1529,10 @@
       "costPerEnrollmentUsd": null,
       "conversions": 0,
       "awaitingData": false,
-      "spendUsd": 74.03,
-      "clicks": 76,
-      "impressions": 1005,
-      "ctrPct": 7.56,
+      "spendUsd": 75.03,
+      "clicks": 77,
+      "impressions": 1016,
+      "ctrPct": 7.58,
       "avgCpcUsd": 0.97,
       "status": "Enabled; Eligible (Limited) - Missing enough relevant keywords; ad strength poor (budget $20/day)",
       "dailyAds": [
@@ -1618,11 +1618,11 @@
         },
         {
           "date": "2026-11-16",
-          "impressions": 128,
-          "clicks": 4,
-          "ctrPct": 3.12,
+          "impressions": 139,
+          "clicks": 5,
+          "ctrPct": 3.6,
           "avgCpcUsd": 0.98,
-          "spendUsd": 3.92
+          "spendUsd": 4.92
         }
       ],
       "adGroupPerformance": [
