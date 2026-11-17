@@ -7,11 +7,11 @@
     "loginEmail": "xavidalmau9@gmail.com",
     "liveSince": "2026-11-06",
     "timezone": "America/New_York",
-    "updatedAt": "2026-11-17T08:12:00-05:00",
+    "updatedAt": "2026-11-17T11:15:00-05:00",
     "dataWindow": {
       "from": "2026-11-04",
       "to": "2026-11-17",
-      "label": "Nov 4-16, 2026 - all-time totals; daily series from Nov 6",
+      "label": "Nov 4-17, 2026 - all-time totals (Nov 17 partial, pulled ~11 AM ET); daily series from Nov 6",
       "granularity": "daily"
     },
     "identityVerificationDue": "2026-12-09",
@@ -113,15 +113,15 @@
   ],
   "overview": {
     "awaitingData": false,
-    "spendUsd": 1498.54,
-    "clicks": 2454,
-    "impressions": 100509,
-    "ctrPct": 2.44,
+    "spendUsd": 1506.19,
+    "clicks": 2464,
+    "impressions": 100595,
+    "ctrPct": 2.45,
     "avgCpcUsd": 0.61,
     "enrollments": 4,
     "costPerEnrollmentUsd": 374.63,
     "conversions": 0,
-    "windowLabel": "Nov 4-17, 2026 (Nov 16 final; Nov 17 partial, pulled ~8:10 AM ET)",
+    "windowLabel": "Nov 4-17, 2026 (Nov 16 final; Nov 17 partial, pulled ~11 AM ET)",
     "enrollmentsNote": "Pre-split combined (Nov 6\u20138 \u00b7 ABJ0020 shared by all campaigns); cost/enrollment = Nov 6-8 spend $351.67 / 4 (spend per report date recomputed from real Google Ads daily data Nov 12 1PM ET) (spend per report date recomputed from real Google Ads daily data Nov 12 3PM ET)",
     "enrollmentsScope": "pre_split_all"
   },
@@ -514,9 +514,9 @@
     },
     "ca_display": {
       "awaitingData": false,
-      "spendUsd": 224.63,
-      "clicks": 712,
-      "impressions": 29516,
+      "spendUsd": 224.52,
+      "clicks": 711,
+      "impressions": 29511,
       "ctrPct": 2.41,
       "avgCpcUsd": 0.32,
       "enrollments": 0,
@@ -811,11 +811,11 @@
     },
     "nationwide": {
       "awaitingData": false,
-      "spendUsd": 409.07,
-      "clicks": 247,
-      "impressions": 1490,
-      "ctrPct": 16.58,
-      "avgCpcUsd": 1.66,
+      "spendUsd": 416.58,
+      "clicks": 257,
+      "impressions": 1571,
+      "ctrPct": 16.38,
+      "avgCpcUsd": 1.62,
       "enrollments": 0,
       "costPerEnrollmentUsd": null,
       "conversions": 0,
@@ -911,11 +911,11 @@
         },
         {
           "date": "2026-11-17",
-          "impressions": 0,
-          "clicks": 0,
-          "ctrPct": 0,
-          "avgCpcUsd": 0,
-          "spendUsd": 0
+          "impressions": 81,
+          "clicks": 10,
+          "ctrPct": 12.35,
+          "avgCpcUsd": 0.75,
+          "spendUsd": 7.51
         }
       ],
       "adGroupPerformance": [
@@ -1333,7 +1333,7 @@
       "awaitingData": false,
       "spendUsd": 124.73,
       "clicks": 1078,
-      "impressions": 66728,
+      "impressions": 66726,
       "ctrPct": 1.62,
       "avgCpcUsd": 0.12,
       "status": "PAUSED (budget $20/day)",
@@ -1563,8 +1563,8 @@
       "awaitingData": false,
       "spendUsd": 75.03,
       "clicks": 77,
-      "impressions": 1090,
-      "ctrPct": 7.06,
+      "impressions": 1095,
+      "ctrPct": 7.03,
       "avgCpcUsd": 0.97,
       "status": "Enabled; Eligible (Limited) - Missing enough relevant keywords; ad strength poor (budget $20/day)",
       "dailyAds": [
@@ -1658,7 +1658,7 @@
         },
         {
           "date": "2026-11-17",
-          "impressions": 43,
+          "impressions": 48,
           "clicks": 0,
           "ctrPct": 0.0,
           "avgCpcUsd": 0,
@@ -1918,11 +1918,11 @@
     },
     {
       "date": "2026-11-17",
-      "impressions": 43,
-      "clicks": 0,
-      "ctrPct": 0.0,
-      "avgCpcUsd": 0,
-      "spendUsd": 0
+      "impressions": 129,
+      "clicks": 10,
+      "ctrPct": 7.75,
+      "avgCpcUsd": 0.75,
+      "spendUsd": 7.51
     }
   ],
   "keywords": [
@@ -4269,6 +4269,20 @@
       "0021": "Mobile $447.78/205 clicks; Computers $77.33/37; Tablets $3.47/1",
       "0020": "Mobile $287.60/131; Computers $58.88/25; Tablets $5.40/2",
       "0024": "Mobile $63.20/65; Computers $4.93/5; Tablets $1.98/2"
-    }
+    },
+    "pulledAt_Nov17_11am": "2026-11-17T11:15:00-05:00",
+    "adStatus_Nov17_11am": "No disapprovals. 0021 and 0020 Eligible (Limited) by budget; 0024 Eligible (Limited): bid setting limited, missing enough relevant keywords; 0022 and 0023 paused. Conversion tracking column shows 0 (not set up in account).",
+    "topKeywordsByCost_Nov17_11am": [
+      "\"lifeline government phone program\" 0021 $104.52",
+      "[lifeline program] 0021 $94.93",
+      "\"lifeline cellphones\" 0021 $66.31",
+      "\"lifeline application\" 0021 $56.81",
+      "\"lifeline program\" 0021 $47.95",
+      "[lifeline program] 0020 $47.28",
+      "\"lifeline phone providers\" 0020 $43.83",
+      "[airtalk wireless] 0024 $31.57"
+    ],
+    "flaggedSearchTerms_Nov17_11am": "Competitor terms only in 0024 (airtalk wireless $21.75, tag mobile $7.83, assurance wireless $6.91); none leaking into 0021/0020 in top 20. Display 0022 (paused) low-quality placements: uspaydayclub.com, bettergames.top, mobile game apps.",
+    "stateDataNote_Nov17": "State-level spend not available in this pull (Matched locations shows country only); prior state data retained."
   }
 }
