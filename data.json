@@ -7,11 +7,11 @@
   "loginEmail": "xavidalmau9@gmail.com",
   "liveSince": "2026-11-06",
   "timezone": "America/New_York",
-  "updatedAt": "2026-11-25T08:50:00-05:00",
+  "updatedAt": "2026-11-25T09:29:06-05:00",
   "dataWindow": {
    "from": "2026-11-04",
-   "to": "2026-11-24",
-   "label": "Nov 4-24, 2026 (Nov 23 final; Nov 24 partial, pulled ~9:40 AM ET; Nov 21 daily row not pulled)",
+   "to": "2026-11-25",
+   "label": "Nov 4-25, 2026 (Nov 24 final; Nov 25 partial, pulled ~9:35 AM ET; Nov 20\u201321 spend corrected, clicks/impressions not in this pull)",
    "granularity": "daily"
   },
   "identityVerificationDue": "2026-12-09",
@@ -35,7 +35,7 @@
    "type": "Search",
    "dailyBudgetUsd": 80,
    "targeting": "California only",
-   "status": "Eligible (Limited by budget)",
+   "status": "Eligible (Limited) - limited by budget",
    "maxCpcUsd": 2,
    "colorKey": "accent",
    "hex": "#38bdf8",
@@ -67,7 +67,7 @@
    "type": "Search",
    "dailyBudgetUsd": 20,
    "targeting": "All US except CA, NE, OR, SD",
-   "status": "Eligible (Limited by budget)",
+   "status": "Eligible (Limited) - limited by budget",
    "maxCpcUsd": 2,
    "colorKey": "green",
    "hex": "#34d399",
@@ -118,7 +118,7 @@
    "type": "Search",
    "dailyBudgetUsd": 50,
    "targeting": "Tribal areas excluding California",
-   "status": "Enabled; Eligible (Limited) - Limited by budget (budget $20/day)",
+   "status": "Eligible",
    "maxCpcUsd": 2,
    "colorKey": "amber",
    "hex": "#f59e0b",
@@ -135,7 +135,7 @@
   "enrollments": 4,
   "costPerEnrollmentUsd": 374.63,
   "conversions": 0,
-  "windowLabel": "Nov 4-24, 2026 (Nov 23 final; Nov 24 partial, pulled ~9:40 AM ET; Nov 21 daily row not pulled)",
+  "windowLabel": "Nov 4-25, 2026 (Nov 24 final; Nov 25 partial, pulled ~9:35 AM ET; Nov 20\u201321 spend corrected, clicks/impressions not in this pull)",
   "enrollmentsNote": "Pre-split combined (Nov 6\u20138 \u00b7 ABJ0020 shared by all campaigns); cost/enrollment = Nov 6-8 spend $351.67 / 4 (spend per report date recomputed from real Google Ads daily data Nov 12 1PM ET) (spend per report date recomputed from real Google Ads daily data Nov 12 3PM ET)",
   "enrollmentsScope": "pre_split_all"
  },
@@ -150,7 +150,7 @@
    "enrollments": 20,
    "costPerEnrollmentUsd": 73.91,
    "conversions": 0,
-   "status": "Enabled; Eligible (Limited) - Limited by budget (budget $80/day)",
+   "status": "Eligible (Limited) - limited by budget",
    "dailyAds": [
     {
      "date": "2026-11-06",
@@ -266,11 +266,13 @@
     },
     {
      "date": "2026-11-20",
-     "impressions": 0,
-     "clicks": 0,
-     "ctrPct": 0,
-     "avgCpcUsd": 0,
-     "spendUsd": 0
+     "spendUsd": 133.96,
+     "note": "Spend only; clicks and impressions were not in this pull."
+    },
+    {
+     "date": "2026-11-21",
+     "spendUsd": 135.67,
+     "note": "Spend only; clicks and impressions were not in this pull."
     },
     {
      "date": "2026-11-22",
@@ -290,11 +292,18 @@
     },
     {
      "date": "2026-11-24",
+     "impressions": 481,
+     "clicks": 76,
+     "ctrPct": 15.8,
+     "avgCpcUsd": 1.32,
+     "spendUsd": 100.65
+    },
+    {
+     "date": "2026-11-25",
      "impressions": 0,
      "clicks": 0,
-     "ctrPct": 0,
-     "avgCpcUsd": 0,
-     "spendUsd": 0
+     "spendUsd": 0.0,
+     "note": "Partial, as of ~9:30 AM ET; showed 0 impressions while limited by budget (may be data lag or ad schedule; not verified)."
     }
    ],
    "adGroupPerformance": [
@@ -487,40 +496,40 @@
    "devices": [
     {
      "device": "Mobile",
-     "clicks": 786,
-     "spendUsd": 1241.85
+     "clicks": 67,
+     "spendUsd": 88.36
     },
     {
      "device": "Computer",
-     "clicks": 133,
-     "spendUsd": 214.75
+     "clicks": 8,
+     "spendUsd": 10.56
     },
     {
      "device": "Tablet",
-     "clicks": 13,
-     "spendUsd": 21.39
+     "clicks": 1,
+     "spendUsd": 1.73
     }
    ],
    "statePerformance": [
     {
      "state": "California (incl. Bay Area/Silicon Valley regions)",
-     "clicks": 931,
-     "spendUsd": 1475.63,
+     "clicks": 677,
+     "spendUsd": 909.59,
      "regions": [
       {
        "state": "California",
-       "clicks": 810,
-       "spendUsd": 1287.12
+       "clicks": 585,
+       "spendUsd": 782.69
       },
       {
        "state": "San Francisco Bay Area",
-       "clicks": 97,
-       "spendUsd": 151.19
+       "clicks": 74,
+       "spendUsd": 102.08
       },
       {
        "state": "Silicon Valley",
-       "clicks": 24,
-       "spendUsd": 37.32
+       "clicks": 18,
+       "spendUsd": 24.82
       }
      ]
     }
@@ -578,7 +587,8 @@
      "spendUsd": 17.22
     }
    ],
-   "topCitiesNote": "All-time Nov 4-23 pull, ~9:30 AM ET Nov 23 (list mixes campaigns for 0021 city rows only as shown)."
+   "topCitiesNote": "All-time Nov 4-23 pull, ~9:30 AM ET Nov 23 (list mixes campaigns for 0021 city rows only as shown).",
+   "statePerformanceNote": "Last 7 days (Nov 18-24), Report editor, Region (User location). Total across the four live campaigns: 1,155 clicks, $1,447.72. CA campaigns resolve to CA metro-style regions (California / San Francisco Bay Area / Silicon Valley), not other states. SafeLink - CA Display - 0022 and SafeLink - CA Demand Gen - 0023 were paused and were not in this region report; prior rows kept."
   },
   "ca_display": {
    "awaitingData": false,
@@ -719,6 +729,20 @@
      "ctrPct": 0,
      "avgCpcUsd": 0,
      "spendUsd": 0
+    },
+    {
+     "date": "2026-11-24",
+     "impressions": 0,
+     "clicks": 0,
+     "spendUsd": 0.0,
+     "note": "Campaign paused."
+    },
+    {
+     "date": "2026-11-25",
+     "impressions": 0,
+     "clicks": 0,
+     "spendUsd": 0.0,
+     "note": "Partial, as of ~9:30 AM ET. Campaign paused."
     }
    ],
    "adGroupPerformance": [
@@ -919,7 +943,7 @@
    "enrollments": 20,
    "costPerEnrollmentUsd": 32.19,
    "conversions": 0,
-   "status": "Enabled; Eligible (Limited) - Limited by budget (budget $20/day)",
+   "status": "Eligible (Limited) - limited by budget",
    "dailyAds": [
     {
      "date": "2026-11-06",
@@ -1035,11 +1059,13 @@
     },
     {
      "date": "2026-11-20",
-     "impressions": 0,
-     "clicks": 0,
-     "ctrPct": 0,
-     "avgCpcUsd": 0,
-     "spendUsd": 0
+     "spendUsd": 51.11,
+     "note": "Spend only; clicks and impressions were not in this pull."
+    },
+    {
+     "date": "2026-11-21",
+     "spendUsd": 51.26,
+     "note": "Spend only; clicks and impressions were not in this pull."
     },
     {
      "date": "2026-11-22",
@@ -1059,11 +1085,18 @@
     },
     {
      "date": "2026-11-24",
+     "impressions": 221,
+     "clicks": 32,
+     "ctrPct": 14.48,
+     "avgCpcUsd": 0.78,
+     "spendUsd": 24.95
+    },
+    {
+     "date": "2026-11-25",
      "impressions": 0,
      "clicks": 0,
-     "ctrPct": 0,
-     "avgCpcUsd": 0,
-     "spendUsd": 0
+     "spendUsd": 0.0,
+     "note": "Partial, as of ~9:30 AM ET; showed 0 impressions while limited by budget (may be data lag or ad schedule; not verified)."
     }
    ],
    "adGroupPerformance": [
@@ -1229,124 +1262,259 @@
    "devices": [
     {
      "device": "Mobile",
-     "clicks": 422,
-     "spendUsd": 598.19
+     "clicks": 28,
+     "spendUsd": 21.5
     },
     {
      "device": "Computer",
-     "clicks": 74,
-     "spendUsd": 117.5
+     "clicks": 3,
+     "spendUsd": 2.89
     },
     {
      "device": "Tablet",
-     "clicks": 7,
-     "spendUsd": 9.69
+     "clicks": 1,
+     "spendUsd": 0.56
     }
    ],
    "statePerformance": [
     {
      "state": "Texas",
-     "clicks": 57,
-     "spendUsd": 74.91
-    },
-    {
-     "state": "Pennsylvania",
-     "clicks": 28,
-     "spendUsd": 51.02
+     "clicks": 29,
+     "spendUsd": 30.91
     },
     {
      "state": "New York",
-     "clicks": 34,
-     "spendUsd": 49.66
-    },
-    {
-     "state": "North Carolina",
-     "clicks": 28,
-     "spendUsd": 39.88
+     "clicks": 21,
+     "spendUsd": 23.64
     },
     {
      "state": "Florida",
-     "clicks": 29,
-     "spendUsd": 37.09
+     "clicks": 20,
+     "spendUsd": 19.82
     },
     {
-     "state": "Ohio",
-     "clicks": 24,
-     "spendUsd": 34.47
-    },
-    {
-     "state": "Kentucky",
-     "clicks": 15,
-     "spendUsd": 23.72
-    },
-    {
-     "state": "Missouri",
-     "clicks": 15,
-     "spendUsd": 23.48
-    },
-    {
-     "state": "Colorado",
-     "clicks": 13,
-     "spendUsd": 21.37
+     "state": "North Carolina",
+     "clicks": 16,
+     "spendUsd": 18.46
     },
     {
      "state": "Illinois",
-     "clicks": 17,
-     "spendUsd": 20.03
-    },
-    {
-     "state": "Virginia",
-     "clicks": 16,
-     "spendUsd": 19.37
-    },
-    {
-     "state": "Louisiana",
-     "clicks": 11,
-     "spendUsd": 18.91
-    },
-    {
-     "state": "Tennessee",
      "clicks": 14,
-     "spendUsd": 18.65
-    },
-    {
-     "state": "Michigan",
-     "clicks": 12,
-     "spendUsd": 18.55
-    },
-    {
-     "state": "Mississippi",
-     "clicks": 11,
-     "spendUsd": 18.05
-    },
-    {
-     "state": "Indiana",
-     "clicks": 10,
-     "spendUsd": 16.93
-    },
-    {
-     "state": "South Carolina",
-     "clicks": 12,
-     "spendUsd": 16.81
-    },
-    {
-     "state": "Washington",
-     "clicks": 13,
-     "spendUsd": 16.64
-    },
-    {
-     "state": "Georgia",
-     "clicks": 12,
-     "spendUsd": 15.97
+     "spendUsd": 17.04
     },
     {
      "state": "Wisconsin",
      "clicks": 12,
-     "spendUsd": 15.27
+     "spendUsd": 16.23
+    },
+    {
+     "state": "Ohio",
+     "clicks": 10,
+     "spendUsd": 11.62
+    },
+    {
+     "state": "Colorado",
+     "clicks": 7,
+     "spendUsd": 11.01
+    },
+    {
+     "state": "Virginia",
+     "clicks": 7,
+     "spendUsd": 10.89
+    },
+    {
+     "state": "Kentucky",
+     "clicks": 7,
+     "spendUsd": 10.59
+    },
+    {
+     "state": "Tennessee",
+     "clicks": 8,
+     "spendUsd": 10.52
+    },
+    {
+     "state": "Louisiana",
+     "clicks": 7,
+     "spendUsd": 9.7
+    },
+    {
+     "state": "Pennsylvania",
+     "clicks": 8,
+     "spendUsd": 9.55
+    },
+    {
+     "state": "Missouri",
+     "clicks": 6,
+     "spendUsd": 9.28
+    },
+    {
+     "state": "Arizona",
+     "clicks": 7,
+     "spendUsd": 8.94
+    },
+    {
+     "state": "Alabama",
+     "clicks": 6,
+     "spendUsd": 8.1
+    },
+    {
+     "state": "Mississippi",
+     "clicks": 6,
+     "spendUsd": 8.07
+    },
+    {
+     "state": "South Carolina",
+     "clicks": 9,
+     "spendUsd": 7.7
+    },
+    {
+     "state": "Washington",
+     "clicks": 7,
+     "spendUsd": 7.66
+    },
+    {
+     "state": "New Jersey",
+     "clicks": 8,
+     "spendUsd": 7.31
+    },
+    {
+     "state": "Georgia",
+     "clicks": 7,
+     "spendUsd": 6.69
+    },
+    {
+     "state": "Kansas",
+     "clicks": 7,
+     "spendUsd": 6.65
+    },
+    {
+     "state": "Iowa",
+     "clicks": 4,
+     "spendUsd": 6.24
+    },
+    {
+     "state": "Maryland",
+     "clicks": 7,
+     "spendUsd": 6.18
+    },
+    {
+     "state": "Oklahoma",
+     "clicks": 4,
+     "spendUsd": 5.8
+    },
+    {
+     "state": "Massachusetts",
+     "clicks": 5,
+     "spendUsd": 5.35
+    },
+    {
+     "state": "Utah",
+     "clicks": 3,
+     "spendUsd": 5.24
+    },
+    {
+     "state": "Arkansas",
+     "clicks": 3,
+     "spendUsd": 5.09
+    },
+    {
+     "state": "Michigan",
+     "clicks": 4,
+     "spendUsd": 4.58
+    },
+    {
+     "state": "Idaho",
+     "clicks": 3,
+     "spendUsd": 4.11
+    },
+    {
+     "state": "District of Columbia",
+     "clicks": 2,
+     "spendUsd": 3.42
+    },
+    {
+     "state": "Nevada",
+     "clicks": 2,
+     "spendUsd": 2.39
+    },
+    {
+     "state": "Wyoming",
+     "clicks": 2,
+     "spendUsd": 2.39
+    },
+    {
+     "state": "Indiana",
+     "clicks": 2,
+     "spendUsd": 2.37
+    },
+    {
+     "state": "West Virginia",
+     "clicks": 2,
+     "spendUsd": 2.34
+    },
+    {
+     "state": "Minnesota",
+     "clicks": 2,
+     "spendUsd": 2.33
+    },
+    {
+     "state": "Connecticut",
+     "clicks": 1,
+     "spendUsd": 1.74
+    },
+    {
+     "state": "Vermont",
+     "clicks": 1,
+     "spendUsd": 1.72
+    },
+    {
+     "state": "Delaware",
+     "clicks": 1,
+     "spendUsd": 1.12
+    },
+    {
+     "state": "New Hampshire",
+     "clicks": 1,
+     "spendUsd": 0.65
+    },
+    {
+     "state": "North Dakota",
+     "clicks": 1,
+     "spendUsd": 0.64
+    },
+    {
+     "state": "New Mexico",
+     "clicks": 1,
+     "spendUsd": 0.62
+    },
+    {
+     "state": "Montana",
+     "clicks": 1,
+     "spendUsd": 0.53
+    },
+    {
+     "state": "Alaska",
+     "clicks": 0,
+     "spendUsd": 0
+    },
+    {
+     "state": "Hawaii",
+     "clicks": 0,
+     "spendUsd": 0
+    },
+    {
+     "state": "Maine",
+     "clicks": 0,
+     "spendUsd": 0
+    },
+    {
+     "state": "Rhode Island",
+     "clicks": 0,
+     "spendUsd": 0
     }
    ],
    "enrollmentsNote": "Post-split promo enrollments only (from 2026-11-09). No rows yet.",
-   "statePerformanceNote": "All-time Nov 4-23 top 20 states by cost (Nov 23 ~9:30 AM ET pull)."
+   "statePerformanceNote": "Last 7 days (Nov 18-24), Report editor, Region (User location). Total across the four live campaigns: 1,155 clicks, $1,447.72. CA campaigns resolve to CA metro-style regions (California / San Francisco Bay Area / Silicon Valley), not other states. SafeLink - CA Display - 0022 and SafeLink - CA Demand Gen - 0023 were paused and were not in this region report; prior rows kept."
   },
   "ca_demand_gen": {
    "enrollments": 0,
@@ -1487,6 +1655,20 @@
      "ctrPct": 0,
      "avgCpcUsd": 0,
      "spendUsd": 0
+    },
+    {
+     "date": "2026-11-24",
+     "impressions": 0,
+     "clicks": 0,
+     "spendUsd": 0.0,
+     "note": "Campaign paused."
+    },
+    {
+     "date": "2026-11-25",
+     "impressions": 0,
+     "clicks": 0,
+     "spendUsd": 0.0,
+     "note": "Partial, as of ~9:30 AM ET. Campaign paused."
     }
    ],
    "adGroupPerformance": [
@@ -1620,7 +1802,7 @@
    "impressions": 2963,
    "ctrPct": 5.53,
    "avgCpcUsd": 0.99,
-   "status": "Enabled; Eligible (budget $20/day)",
+   "status": "Eligible",
    "dailyAds": [
     {
      "date": "2026-11-06",
@@ -1736,11 +1918,13 @@
     },
     {
      "date": "2026-11-20",
-     "impressions": 28,
-     "clicks": 1,
-     "ctrPct": 3.57,
-     "avgCpcUsd": 0.97,
-     "spendUsd": 0.97
+     "spendUsd": 19.69,
+     "note": "Spend only; clicks and impressions were not in this pull. Previous $0.97 / 1 click / 28 impressions row was incorrect."
+    },
+    {
+     "date": "2026-11-21",
+     "spendUsd": 19.6,
+     "note": "Spend only; clicks and impressions were not in this pull."
     },
     {
      "date": "2026-11-22",
@@ -1760,11 +1944,19 @@
     },
     {
      "date": "2026-11-24",
-     "impressions": 20,
-     "clicks": 2,
-     "ctrPct": 10,
-     "avgCpcUsd": 1,
-     "spendUsd": 1.99
+     "impressions": 159,
+     "clicks": 5,
+     "ctrPct": 3.14,
+     "avgCpcUsd": 0.98,
+     "spendUsd": 4.9
+    },
+    {
+     "date": "2026-11-25",
+     "impressions": 38,
+     "clicks": 0,
+     "ctrPct": 0.0,
+     "spendUsd": 0.0,
+     "note": "Partial, as of ~9:30 AM ET."
     }
    ],
    "adGroupPerformance": [
@@ -1781,40 +1973,30 @@
    "devices": [
     {
      "device": "Mobile",
-     "clicks": 125,
-     "spendUsd": 122.19
-    },
-    {
-     "device": "Computer",
-     "clicks": 16,
-     "spendUsd": 16.79
-    },
-    {
-     "device": "Tablet",
-     "clicks": 7,
-     "spendUsd": 6.75
+     "clicks": 5,
+     "spendUsd": 4.9
     }
    ],
    "statePerformance": [
     {
      "state": "California (incl. Bay Area/Silicon Valley regions)",
-     "clicks": 148,
-     "spendUsd": 145.73,
+     "clicks": 85,
+     "spendUsd": 84.57,
      "regions": [
       {
        "state": "California",
-       "clicks": 126,
-       "spendUsd": 122.99
+       "clicks": 69,
+       "spendUsd": 67.74
       },
       {
        "state": "San Francisco Bay Area",
-       "clicks": 13,
-       "spendUsd": 12.84
+       "clicks": 8,
+       "spendUsd": 7.93
       },
       {
        "state": "Silicon Valley",
-       "clicks": 9,
-       "spendUsd": 9.9
+       "clicks": 8,
+       "spendUsd": 8.9
       }
      ]
     }
@@ -1859,7 +2041,8 @@
      }
     ],
     "wasted": []
-   }
+   },
+   "statePerformanceNote": "Last 7 days (Nov 18-24), Report editor, Region (User location). Total across the four live campaigns: 1,155 clicks, $1,447.72. CA campaigns resolve to CA metro-style regions (California / San Francisco Bay Area / Silicon Valley), not other states. SafeLink - CA Display - 0022 and SafeLink - CA Demand Gen - 0023 were paused and were not in this region report; prior rows kept."
   },
   "tribal": {
    "enrollments": 8,
@@ -1900,11 +2083,20 @@
     },
     {
      "date": "2026-11-24",
-     "impressions": 71,
-     "clicks": 9,
-     "ctrPct": 12.68,
-     "avgCpcUsd": 1.12,
-     "spendUsd": 10.04
+     "impressions": 329,
+     "clicks": 26,
+     "ctrPct": 7.9,
+     "avgCpcUsd": 1.07,
+     "spendUsd": 27.94
+    },
+    {
+     "date": "2026-11-25",
+     "impressions": 64,
+     "clicks": 6,
+     "ctrPct": 9.38,
+     "avgCpcUsd": 1.1,
+     "spendUsd": 6.62,
+     "note": "Partial, as of ~9:30 AM ET."
     }
    ],
    "awaitingData": false,
@@ -1913,7 +2105,7 @@
    "impressions": 816,
    "ctrPct": 11.64,
    "avgCpcUsd": 1.06,
-   "status": "Enabled; Eligible (budget $50/day)",
+   "status": "Eligible",
    "adGroupPerformance": [
     {
      "name": "Apply / Qualify",
@@ -1943,13 +2135,13 @@
    "statePerformance": [
     {
      "state": "Oklahoma",
-     "clicks": 35,
-     "spendUsd": 37.23
+     "clicks": 71,
+     "spendUsd": 76.75
     },
     {
      "state": "New Mexico",
-     "clicks": 11,
-     "spendUsd": 11.93
+     "clicks": 14,
+     "spendUsd": 14.77
     },
     {
      "state": "Washington",
@@ -1958,18 +2150,28 @@
     },
     {
      "state": "Alaska",
-     "clicks": 4,
-     "spendUsd": 4.42
+     "clicks": 5,
+     "spendUsd": 5.39
     },
     {
      "state": "Minnesota",
-     "clicks": 3,
-     "spendUsd": 3.17
+     "clicks": 5,
+     "spendUsd": 4.85
     },
     {
      "state": "Montana",
-     "clicks": 2,
-     "spendUsd": 2
+     "clicks": 4,
+     "spendUsd": 4.25
+    },
+    {
+     "state": "South Dakota",
+     "clicks": 3,
+     "spendUsd": 3.21
+    },
+    {
+     "state": "Michigan",
+     "clicks": 3,
+     "spendUsd": 2.19
     },
     {
      "state": "North Dakota",
@@ -1977,11 +2179,44 @@
      "spendUsd": 1.15
     },
     {
-     "state": "South Dakota",
-     "clicks": 1,
-     "spendUsd": 1.09
+     "state": "Nebraska",
+     "clicks": 0,
+     "spendUsd": 0
+    },
+    {
+     "state": "Utah",
+     "clicks": 0,
+     "spendUsd": 0
+    },
+    {
+     "state": "Wisconsin",
+     "clicks": 0,
+     "spendUsd": 0
+    },
+    {
+     "state": "Wyoming",
+     "clicks": 0,
+     "spendUsd": 0
     }
-   ]
+   ],
+   "devices": [
+    {
+     "device": "Mobile",
+     "clicks": 21,
+     "spendUsd": 22.93
+    },
+    {
+     "device": "Computer",
+     "clicks": 3,
+     "spendUsd": 2.84
+    },
+    {
+     "device": "Tablet",
+     "clicks": 2,
+     "spendUsd": 2.17
+    }
+   ],
+   "statePerformanceNote": "Last 7 days (Nov 18-24), Report editor, Region (User location). Total across the four live campaigns: 1,155 clicks, $1,447.72. CA campaigns resolve to CA metro-style regions (California / San Francisco Bay Area / Silicon Valley), not other states. SafeLink - CA Display - 0022 and SafeLink - CA Demand Gen - 0023 were paused and were not in this region report; prior rows kept."
   }
  },
  "dailyAds": [
@@ -2099,11 +2334,13 @@
   },
   {
    "date": "2026-11-20",
-   "impressions": 28,
-   "clicks": 1,
-   "ctrPct": 3.57,
-   "avgCpcUsd": 0.97,
-   "spendUsd": 0.97
+   "spendUsd": 226.85,
+   "note": "Spend only; clicks and impressions were not in this pull. Campaign spend: SafeLink - CA - 0021 $133.96, SafeLink - US ex CA - 0020 $51.11, SafeLink - CA Competitors - 0024 $19.69, SafeLink - Tribal ex CA - 0017 $22.09."
+  },
+  {
+   "date": "2026-11-21",
+   "spendUsd": 225.88,
+   "note": "Spend only; clicks and impressions were not in this pull. Campaign spend: SafeLink - CA - 0021 $135.67, SafeLink - US ex CA - 0020 $51.26, SafeLink - CA Competitors - 0024 $19.60, SafeLink - Tribal ex CA - 0017 $19.35."
   },
   {
    "date": "2026-11-22",
@@ -2123,11 +2360,20 @@
   },
   {
    "date": "2026-11-24",
-   "impressions": 91,
-   "clicks": 11,
-   "spendUsd": 12.03,
-   "ctrPct": 12.09,
-   "avgCpcUsd": 1.09
+   "impressions": 1190,
+   "clicks": 139,
+   "ctrPct": 11.68,
+   "avgCpcUsd": 1.14,
+   "spendUsd": 158.44
+  },
+  {
+   "date": "2026-11-25",
+   "impressions": 102,
+   "clicks": 6,
+   "ctrPct": 5.88,
+   "avgCpcUsd": 1.1,
+   "spendUsd": 6.62,
+   "note": "Partial, as of ~9:30 AM ET; reporting not real-time. SafeLink - CA - 0021 and SafeLink - US ex CA - 0020 showed 0 impressions while limited by budget (may be data lag or ad schedule; not verified)."
   }
  ],
  "keywords": [
@@ -3885,6 +4131,10 @@
   {
    "date": "2026-11-24",
    "summary": "2:18 PM ET SafeLink promo-code report (Nov 6-23): 59 enrollments, 32 qualified, 25 pending, 2 unqualified, 9 first calls. New since Nov 23 report: 6 signups (all created Nov 23) and 1 new first call (ABJ0020 NY, created Nov 16, called Nov 23). Enrollment tallies by promo code refreshed Nov 9-23. Read-only; nothing changed in Google Ads."
+  },
+  {
+   "date": "2026-11-25",
+   "summary": "Dashboard refresh ~9:35 AM ET (read-only): Nov 24 final $158.44 (SafeLink - CA - 0021 $100.65, SafeLink - US ex CA - 0020 $24.95, SafeLink - CA Competitors - 0024 $4.90, SafeLink - Tribal ex CA - 0017 $27.94); Nov 25 partial $6.62; Nov 20\u201321 spend corrected to $226.85 and $225.88; last-7-day state/region data (Nov 18-24, 1,155 clicks / $1,447.72); Nov 24 device split; one limited ad in SafeLink - CA - 0021 Seniors / disabled (Government Documents and Official Services). Nothing changed in the account."
   }
  ],
  "displayExclusions": [
@@ -6041,6 +6291,775 @@
    "format": "[cost,impr,clicks]"
   },
   "adGroups_Nov17_23": "Lifeline program-0021 (PAUSED) $585.32/455cl/2676impr; Near me-0020 $300.38/187; Near me-0021 $268.85/159 (CPC 1.69); Lifeline program-0020 $60.33/98; Competitors-0024 $84.61/85; Tribal Apply/Qualify $41.96, General Lifeline $42.19; SNAP-0021 $21.24; Apply high intent-0021 $22.67; Medicaid-0021 $18.15; Low income-0021 $13.23; Apply high intent-0020 $6.15; Seniors/disabled-0021 $9.49 (Eligible Limited: all ads limited by policy); Free gov phone-0021 $6.41; Tribal Lifeline $6.24; rest paused/~0.",
-  "stateDataNote_Nov24": "Region/state and city data not available in Insights this pull (Matched locations country-level only; Report editor not used). Previous state data in spendByRegion remains. Display paused, no placements."
+  "stateDataNote_Nov24": "Region/state and city data not available in Insights this pull (Matched locations country-level only; Report editor not used). Previous state data in spendByRegion remains. Display paused, no placements.",
+  "pulledAt_Nov25_935am": "2026-11-25T09:35:00-05:00",
+  "nov24Final": {
+   "window": "2026-11-24",
+   "impressions": 1190,
+   "clicks": 139,
+   "ctrPct": 11.68,
+   "avgCpcUsd": 1.14,
+   "spendUsd": 158.44,
+   "campaigns": {
+    "SafeLink - CA - 0021": {
+     "impressions": 481,
+     "clicks": 76,
+     "ctrPct": 15.8,
+     "avgCpcUsd": 1.32,
+     "spendUsd": 100.65
+    },
+    "SafeLink - US ex CA - 0020": {
+     "impressions": 221,
+     "clicks": 32,
+     "ctrPct": 14.48,
+     "avgCpcUsd": 0.78,
+     "spendUsd": 24.95
+    },
+    "SafeLink - CA Competitors - 0024": {
+     "impressions": 159,
+     "clicks": 5,
+     "ctrPct": 3.14,
+     "avgCpcUsd": 0.98,
+     "spendUsd": 4.9
+    },
+    "SafeLink - Tribal ex CA - 0017": {
+     "impressions": 329,
+     "clicks": 26,
+     "ctrPct": 7.9,
+     "avgCpcUsd": 1.07,
+     "spendUsd": 27.94
+    },
+    "SafeLink - CA Display - 0022": {
+     "impressions": 0,
+     "clicks": 0,
+     "spendUsd": 0.0,
+     "status": "Paused"
+    },
+    "SafeLink - CA Demand Gen - 0023": {
+     "impressions": 0,
+     "clicks": 0,
+     "spendUsd": 0.0,
+     "status": "Paused"
+    }
+   }
+  },
+  "nov25Partial_930am": {
+   "asOf": "~9:30 AM ET",
+   "impressions": 102,
+   "clicks": 6,
+   "ctrPct": 5.88,
+   "avgCpcUsd": 1.1,
+   "spendUsd": 6.62,
+   "campaigns": {
+    "SafeLink - CA - 0021": {
+     "status": "Eligible (Limited) - limited by budget",
+     "impressions": 0,
+     "clicks": 0,
+     "spendUsd": 0.0
+    },
+    "SafeLink - US ex CA - 0020": {
+     "status": "Eligible (Limited) - limited by budget",
+     "impressions": 0,
+     "clicks": 0,
+     "spendUsd": 0.0
+    },
+    "SafeLink - CA Competitors - 0024": {
+     "status": "Eligible",
+     "impressions": 38,
+     "clicks": 0,
+     "ctrPct": 0.0,
+     "spendUsd": 0.0
+    },
+    "SafeLink - Tribal ex CA - 0017": {
+     "status": "Eligible",
+     "impressions": 64,
+     "clicks": 6,
+     "ctrPct": 9.38,
+     "avgCpcUsd": 1.1,
+     "spendUsd": 6.62
+    },
+    "SafeLink - CA Display - 0022": {
+     "status": "Paused",
+     "impressions": 0,
+     "clicks": 0,
+     "spendUsd": 0.0
+    },
+    "SafeLink - CA Demand Gen - 0023": {
+     "status": "Paused",
+     "impressions": 0,
+     "clicks": 0,
+     "spendUsd": 0.0
+    }
+   },
+   "note": "Reporting not real-time. SafeLink - CA - 0021 and SafeLink - US ex CA - 0020 showed 0 impressions while limited by budget (may be data lag or ad schedule; not verified)."
+  },
+  "adStatus_Nov25_935am": "No disapproved ads among the enabled ads (15 shown). ONE limited ad: Responsive search ad \"SNAP & SSI May Qualify | Veterans Pension May Qualify | Income-Based Eligibility...\" in SafeLink - CA - 0021, Seniors / disabled - 0021 \u2014 Eligible (Limited), Policy: \"Government Documents and Official Services\". Ad group status: all ads limited by policy; 3 impressions yesterday. Overview says SafeLink - CA - 0021: 1 of 12 ads limited by policy. Ad \"CA LifeLine Program | California LifeLine Program...\" in SafeLink - CA - 0021 / Lifeline program - 0021: Not eligible \u2014 ad group paused (not a disapproval). Keywords: no disapproved keywords seen in yesterday's top 15; several are \"Eligible (Limited): below first page bid\" (bid limited, not policy). Campaigns SafeLink - CA - 0021 and SafeLink - US ex CA - 0020: Limited by budget. SafeLink - CA Competitors - 0024 and SafeLink - Tribal ex CA - 0017: Eligible. SafeLink - CA Display - 0022 and SafeLink - CA Demand Gen - 0023: Paused.",
+  "stateDataNote_Nov25": "Last 7 days (Nov 18-24), Report editor, Region (User location). Total across the four live campaigns: 1,155 clicks, $1,447.72. CA campaigns resolve to CA metro-style regions (California / San Francisco Bay Area / Silicon Valley), not other states. SafeLink - CA Display - 0022 and SafeLink - CA Demand Gen - 0023 were paused and were not in this region report; prior rows kept.",
+  "spendByRegion_Nov18_24": {
+   "window": "2026-11-18 to 2026-11-24",
+   "source": "Report editor, Region (User location)",
+   "totalClicks": 1155,
+   "totalSpendUsd": 1447.72,
+   "SafeLink - CA - 0021": {
+    "California": {
+     "clicks": 585,
+     "spendUsd": 782.69
+    },
+    "San Francisco Bay Area": {
+     "clicks": 74,
+     "spendUsd": 102.08
+    },
+    "Silicon Valley": {
+     "clicks": 18,
+     "spendUsd": 24.82
+    }
+   },
+   "SafeLink - CA Competitors - 0024": {
+    "California": {
+     "clicks": 69,
+     "spendUsd": 67.74
+    },
+    "San Francisco Bay Area": {
+     "clicks": 8,
+     "spendUsd": 7.93
+    },
+    "Silicon Valley": {
+     "clicks": 8,
+     "spendUsd": 8.9
+    }
+   },
+   "SafeLink - Tribal ex CA - 0017": {
+    "Oklahoma": {
+     "clicks": 71,
+     "spendUsd": 76.75
+    },
+    "New Mexico": {
+     "clicks": 14,
+     "spendUsd": 14.77
+    },
+    "Washington": {
+     "clicks": 6,
+     "spendUsd": 5.77
+    },
+    "Alaska": {
+     "clicks": 5,
+     "spendUsd": 5.39
+    },
+    "Minnesota": {
+     "clicks": 5,
+     "spendUsd": 4.85
+    },
+    "Montana": {
+     "clicks": 4,
+     "spendUsd": 4.25
+    },
+    "South Dakota": {
+     "clicks": 3,
+     "spendUsd": 3.21
+    },
+    "Michigan": {
+     "clicks": 3,
+     "spendUsd": 2.19
+    },
+    "North Dakota": {
+     "clicks": 1,
+     "spendUsd": 1.15
+    },
+    "Nebraska": {
+     "clicks": 0,
+     "spendUsd": 0
+    },
+    "Utah": {
+     "clicks": 0,
+     "spendUsd": 0
+    },
+    "Wisconsin": {
+     "clicks": 0,
+     "spendUsd": 0
+    },
+    "Wyoming": {
+     "clicks": 0,
+     "spendUsd": 0
+    }
+   },
+   "SafeLink - US ex CA - 0020": {
+    "Texas": {
+     "clicks": 29,
+     "spendUsd": 30.91
+    },
+    "New York": {
+     "clicks": 21,
+     "spendUsd": 23.64
+    },
+    "Florida": {
+     "clicks": 20,
+     "spendUsd": 19.82
+    },
+    "North Carolina": {
+     "clicks": 16,
+     "spendUsd": 18.46
+    },
+    "Illinois": {
+     "clicks": 14,
+     "spendUsd": 17.04
+    },
+    "Wisconsin": {
+     "clicks": 12,
+     "spendUsd": 16.23
+    },
+    "Ohio": {
+     "clicks": 10,
+     "spendUsd": 11.62
+    },
+    "Colorado": {
+     "clicks": 7,
+     "spendUsd": 11.01
+    },
+    "Virginia": {
+     "clicks": 7,
+     "spendUsd": 10.89
+    },
+    "Kentucky": {
+     "clicks": 7,
+     "spendUsd": 10.59
+    },
+    "Tennessee": {
+     "clicks": 8,
+     "spendUsd": 10.52
+    },
+    "Louisiana": {
+     "clicks": 7,
+     "spendUsd": 9.7
+    },
+    "Pennsylvania": {
+     "clicks": 8,
+     "spendUsd": 9.55
+    },
+    "Missouri": {
+     "clicks": 6,
+     "spendUsd": 9.28
+    },
+    "Arizona": {
+     "clicks": 7,
+     "spendUsd": 8.94
+    },
+    "Alabama": {
+     "clicks": 6,
+     "spendUsd": 8.1
+    },
+    "Mississippi": {
+     "clicks": 6,
+     "spendUsd": 8.07
+    },
+    "South Carolina": {
+     "clicks": 9,
+     "spendUsd": 7.7
+    },
+    "Washington": {
+     "clicks": 7,
+     "spendUsd": 7.66
+    },
+    "New Jersey": {
+     "clicks": 8,
+     "spendUsd": 7.31
+    },
+    "Georgia": {
+     "clicks": 7,
+     "spendUsd": 6.69
+    },
+    "Kansas": {
+     "clicks": 7,
+     "spendUsd": 6.65
+    },
+    "Iowa": {
+     "clicks": 4,
+     "spendUsd": 6.24
+    },
+    "Maryland": {
+     "clicks": 7,
+     "spendUsd": 6.18
+    },
+    "Oklahoma": {
+     "clicks": 4,
+     "spendUsd": 5.8
+    },
+    "Massachusetts": {
+     "clicks": 5,
+     "spendUsd": 5.35
+    },
+    "Utah": {
+     "clicks": 3,
+     "spendUsd": 5.24
+    },
+    "Arkansas": {
+     "clicks": 3,
+     "spendUsd": 5.09
+    },
+    "Michigan": {
+     "clicks": 4,
+     "spendUsd": 4.58
+    },
+    "Idaho": {
+     "clicks": 3,
+     "spendUsd": 4.11
+    },
+    "District of Columbia": {
+     "clicks": 2,
+     "spendUsd": 3.42
+    },
+    "Nevada": {
+     "clicks": 2,
+     "spendUsd": 2.39
+    },
+    "Wyoming": {
+     "clicks": 2,
+     "spendUsd": 2.39
+    },
+    "Indiana": {
+     "clicks": 2,
+     "spendUsd": 2.37
+    },
+    "West Virginia": {
+     "clicks": 2,
+     "spendUsd": 2.34
+    },
+    "Minnesota": {
+     "clicks": 2,
+     "spendUsd": 2.33
+    },
+    "Connecticut": {
+     "clicks": 1,
+     "spendUsd": 1.74
+    },
+    "Vermont": {
+     "clicks": 1,
+     "spendUsd": 1.72
+    },
+    "Delaware": {
+     "clicks": 1,
+     "spendUsd": 1.12
+    },
+    "New Hampshire": {
+     "clicks": 1,
+     "spendUsd": 0.65
+    },
+    "North Dakota": {
+     "clicks": 1,
+     "spendUsd": 0.64
+    },
+    "New Mexico": {
+     "clicks": 1,
+     "spendUsd": 0.62
+    },
+    "Montana": {
+     "clicks": 1,
+     "spendUsd": 0.53
+    },
+    "Alaska": {
+     "clicks": 0,
+     "spendUsd": 0
+    },
+    "Hawaii": {
+     "clicks": 0,
+     "spendUsd": 0
+    },
+    "Maine": {
+     "clicks": 0,
+     "spendUsd": 0
+    },
+    "Rhode Island": {
+     "clicks": 0,
+     "spendUsd": 0
+    }
+   },
+   "note": "CA metro-style region rows are additive (sum matches the report total). Oregon and Nebraska were not listed for SafeLink - US ex CA - 0020. Display and Demand Gen were paused and not in this report."
+  },
+  "deviceSplit_Nov24": {
+   "window": "2026-11-24 (yesterday)",
+   "format": "clicks/spendUsd",
+   "SafeLink - CA - 0021": {
+    "Mobile": {
+     "clicks": 67,
+     "spendUsd": 88.36
+    },
+    "Computer": {
+     "clicks": 8,
+     "spendUsd": 10.56
+    },
+    "Tablet": {
+     "clicks": 1,
+     "spendUsd": 1.73
+    }
+   },
+   "SafeLink - US ex CA - 0020": {
+    "Mobile": {
+     "clicks": 28,
+     "spendUsd": 21.5
+    },
+    "Computer": {
+     "clicks": 3,
+     "spendUsd": 2.89
+    },
+    "Tablet": {
+     "clicks": 1,
+     "spendUsd": 0.56
+    }
+   },
+   "SafeLink - Tribal ex CA - 0017": {
+    "Mobile": {
+     "clicks": 21,
+     "spendUsd": 22.93
+    },
+    "Computer": {
+     "clicks": 3,
+     "spendUsd": 2.84
+    },
+    "Tablet": {
+     "clicks": 2,
+     "spendUsd": 2.17
+    }
+   },
+   "SafeLink - CA Competitors - 0024": {
+    "Mobile": {
+     "clicks": 5,
+     "spendUsd": 4.9
+    }
+   },
+   "SafeLink - CA Display - 0022": {
+    "allDevices": {
+     "clicks": 0,
+     "spendUsd": 0.0
+    }
+   },
+   "totals": {
+    "Mobile": {
+     "clicks": 121,
+     "spendUsd": 137.69,
+     "shareOfClicksPct": 87
+    },
+    "Computer": {
+     "clicks": 14,
+     "spendUsd": 16.29
+    },
+    "Tablet": {
+     "clicks": 4,
+     "spendUsd": 4.46
+    }
+   }
+  },
+  "topKeywordsByCost_Nov24": [
+   {
+    "rank": 1,
+    "keyword": "\"list of lifeline providers\"",
+    "match": "Phrase",
+    "campaign": "SafeLink - CA - 0021",
+    "adGroup": "Near me / providers - 0021",
+    "impressions": 82,
+    "clicks": 12,
+    "avgCpcUsd": 1.68,
+    "spendUsd": 20.14
+   },
+   {
+    "rank": 2,
+    "keyword": "\"list of free government cell phones\"",
+    "match": "Phrase",
+    "campaign": "SafeLink - CA - 0021",
+    "adGroup": "Near me / providers - 0021",
+    "impressions": 67,
+    "clicks": 10,
+    "avgCpcUsd": 1.72,
+    "spendUsd": 17.2
+   },
+   {
+    "rank": 3,
+    "keyword": "\"free phone through welfare\"",
+    "match": "Phrase",
+    "campaign": "SafeLink - CA - 0021",
+    "adGroup": "SNAP / EBT / Food stamps - 0021",
+    "impressions": 55,
+    "clicks": 16,
+    "avgCpcUsd": 1.01,
+    "spendUsd": 16.2
+   },
+   {
+    "rank": 4,
+    "keyword": "\"lifeline application\"",
+    "match": "Phrase",
+    "campaign": "SafeLink - CA - 0021",
+    "adGroup": "Apply / sign up (high intent) - 0021",
+    "impressions": 121,
+    "clicks": 9,
+    "avgCpcUsd": 1.39,
+    "spendUsd": 12.5,
+    "status": "Eligible (Limited): below first page bid $2.48"
+   },
+   {
+    "rank": 5,
+    "keyword": "\"free cell phone program for low income\"",
+    "match": "Phrase",
+    "campaign": "SafeLink - CA - 0021",
+    "adGroup": "Low income - 0021",
+    "impressions": 28,
+    "clicks": 9,
+    "avgCpcUsd": 1.18,
+    "spendUsd": 10.59
+   },
+   {
+    "rank": 6,
+    "keyword": "\"public assistance cell phone\"",
+    "match": "Phrase",
+    "campaign": "SafeLink - CA - 0021",
+    "adGroup": "SNAP / EBT / Food stamps - 0021",
+    "impressions": 14,
+    "clicks": 6,
+    "avgCpcUsd": 1.19,
+    "spendUsd": 7.11
+   },
+   {
+    "rank": 7,
+    "keyword": "\"lifeline application\"",
+    "match": "Phrase",
+    "campaign": "SafeLink - Tribal ex CA - 0017",
+    "adGroup": "Apply / Qualify",
+    "impressions": 81,
+    "clicks": 6,
+    "avgCpcUsd": 1.09,
+    "spendUsd": 6.56,
+    "status": "Eligible (Limited): below first page bid $2.48"
+   },
+   {
+    "rank": 8,
+    "keyword": "\"lifeline medicaid phone\"",
+    "match": "Phrase",
+    "campaign": "SafeLink - CA - 0021",
+    "adGroup": "Medicaid / SSI - 0021",
+    "impressions": 21,
+    "clicks": 4,
+    "avgCpcUsd": 1.5,
+    "spendUsd": 5.98
+   },
+   {
+    "rank": 9,
+    "keyword": "\"lifeline eligibility\"",
+    "match": "Phrase",
+    "campaign": "SafeLink - Tribal ex CA - 0017",
+    "adGroup": "Apply / Qualify",
+    "impressions": 32,
+    "clicks": 5,
+    "avgCpcUsd": 1.09,
+    "spendUsd": 5.44,
+    "status": "Eligible (Limited): below first page bid $1.89"
+   },
+   {
+    "rank": 10,
+    "keyword": "[lifeline program]",
+    "match": "Exact",
+    "campaign": "SafeLink - US ex CA - 0020",
+    "adGroup": "Lifeline program - 0020",
+    "impressions": 34,
+    "clicks": 8,
+    "avgCpcUsd": 0.63,
+    "spendUsd": 5.04,
+    "status": "Eligible (Limited): below first page bid $3.06"
+   },
+   {
+    "rank": 11,
+    "keyword": "\"lifeline government phone program\"",
+    "match": "Phrase",
+    "campaign": "SafeLink - US ex CA - 0020",
+    "adGroup": "Lifeline program - 0020",
+    "impressions": 37,
+    "clicks": 6,
+    "avgCpcUsd": 0.64,
+    "spendUsd": 3.82
+   },
+   {
+    "rank": 12,
+    "keyword": "[lifeline application]",
+    "match": "Exact",
+    "campaign": "SafeLink - Tribal ex CA - 0017",
+    "adGroup": "Apply / Qualify",
+    "impressions": 14,
+    "clicks": 3,
+    "avgCpcUsd": 1.15,
+    "spendUsd": 3.46,
+    "status": "Eligible (Limited): below first page bid $2.48"
+   },
+   {
+    "rank": 13,
+    "keyword": "\"lifeline phone providers\"",
+    "match": "Phrase",
+    "campaign": "SafeLink - US ex CA - 0020",
+    "adGroup": "Near me / providers - 0020",
+    "impressions": 41,
+    "clicks": 5,
+    "avgCpcUsd": 0.6,
+    "spendUsd": 3.02,
+    "status": "Eligible (Limited): below first page bid $1.08"
+   },
+   {
+    "rank": 14,
+    "keyword": "\"public assistance free cell phone\"",
+    "match": "Phrase",
+    "campaign": "SafeLink - CA - 0021",
+    "adGroup": "SNAP / EBT / Food stamps - 0021",
+    "impressions": 7,
+    "clicks": 2,
+    "avgCpcUsd": 1.19,
+    "spendUsd": 2.38
+   },
+   {
+    "rank": 15,
+    "keyword": "\"government issued phones for low income\"",
+    "match": "Phrase",
+    "campaign": "SafeLink - CA - 0021",
+    "adGroup": "Low income - 0021",
+    "impressions": 17,
+    "clicks": 3,
+    "avgCpcUsd": 0.79,
+    "spendUsd": 2.38
+   }
+  ],
+  "topKeywordsByCost_Nov24_note": "Yesterday (Nov 24) keyword view total: 1,156 impressions, 134 clicks, $150.24. Top 15 listed.",
+  "adGroups_Nov24": [
+   {
+    "name": "SNAP / EBT / Food stamps - 0021",
+    "campaign": "SafeLink - CA - 0021",
+    "impressions": 89,
+    "clicks": 26,
+    "ctrPct": 29.21,
+    "avgCpcUsd": 1.08,
+    "spendUsd": 28.04
+   },
+   {
+    "name": "Near me / providers - 0021",
+    "campaign": "SafeLink - CA - 0021",
+    "impressions": 176,
+    "clicks": 23,
+    "ctrPct": 13.07,
+    "avgCpcUsd": 1.68,
+    "spendUsd": 38.53
+   },
+   {
+    "name": "Lifeline program - 0020",
+    "campaign": "SafeLink - US ex CA - 0020",
+    "impressions": 114,
+    "clicks": 18,
+    "ctrPct": 15.79,
+    "avgCpcUsd": 0.64,
+    "spendUsd": 11.46
+   },
+   {
+    "name": "Apply / Qualify",
+    "campaign": "SafeLink - Tribal ex CA - 0017",
+    "impressions": 210,
+    "clicks": 17,
+    "ctrPct": 8.1,
+    "avgCpcUsd": 1.1,
+    "spendUsd": 18.65
+   },
+   {
+    "name": "Low income - 0021",
+    "campaign": "SafeLink - CA - 0021",
+    "impressions": 50,
+    "clicks": 12,
+    "ctrPct": 24.0,
+    "avgCpcUsd": 1.08,
+    "spendUsd": 12.97
+   },
+   {
+    "name": "Apply / sign up (high intent) - 0021",
+    "campaign": "SafeLink - CA - 0021",
+    "impressions": 137,
+    "clicks": 11,
+    "ctrPct": 8.03,
+    "avgCpcUsd": 1.38,
+    "spendUsd": 15.13
+   },
+   {
+    "name": "Near me / providers - 0020",
+    "campaign": "SafeLink - US ex CA - 0020",
+    "impressions": 80,
+    "clicks": 10,
+    "ctrPct": 12.5,
+    "avgCpcUsd": 1.12,
+    "spendUsd": 11.22
+   },
+   {
+    "name": "General Lifeline",
+    "campaign": "SafeLink - Tribal ex CA - 0017",
+    "impressions": 112,
+    "clicks": 8,
+    "ctrPct": 7.14,
+    "avgCpcUsd": 1.01,
+    "spendUsd": 8.05
+   },
+   {
+    "name": "Competitors - 0024",
+    "campaign": "SafeLink - CA Competitors - 0024",
+    "impressions": 159,
+    "clicks": 5,
+    "ctrPct": 3.14,
+    "avgCpcUsd": 0.98,
+    "spendUsd": 4.9
+   },
+   {
+    "name": "Medicaid / SSI - 0021",
+    "campaign": "SafeLink - CA - 0021",
+    "impressions": 25,
+    "clicks": 4,
+    "ctrPct": 16.0,
+    "avgCpcUsd": 1.5,
+    "spendUsd": 5.98
+   },
+   {
+    "name": "Apply / sign up (high intent) - 0020",
+    "campaign": "SafeLink - US ex CA - 0020",
+    "impressions": 23,
+    "clicks": 2,
+    "ctrPct": 8.7,
+    "avgCpcUsd": 0.64,
+    "spendUsd": 1.27
+   },
+   {
+    "name": "Tribal Lifeline",
+    "campaign": "SafeLink - Tribal ex CA - 0017",
+    "impressions": 7,
+    "clicks": 1,
+    "ctrPct": 14.29,
+    "avgCpcUsd": 1.24,
+    "spendUsd": 1.24
+   },
+   {
+    "name": "SNAP / EBT / Food stamps - 0020",
+    "campaign": "SafeLink - US ex CA - 0020",
+    "impressions": 1,
+    "clicks": 1,
+    "ctrPct": 100,
+    "avgCpcUsd": 0.5,
+    "spendUsd": 0.5
+   },
+   {
+    "name": "Medicaid / SSI - 0020",
+    "campaign": "SafeLink - US ex CA - 0020",
+    "impressions": 2,
+    "clicks": 1,
+    "ctrPct": 50,
+    "avgCpcUsd": 0.5,
+    "spendUsd": 0.5
+   },
+   {
+    "name": "Seniors / disabled - 0021",
+    "campaign": "SafeLink - CA - 0021",
+    "impressions": 3,
+    "clicks": 0,
+    "ctrPct": 0,
+    "spendUsd": 0.0,
+    "status": "all ads limited by policy"
+   }
+  ],
+  "adGroups_Nov24_note": "Yesterday (Nov 24). Ads UI said 1-26 of 26 but 20 rows were rendered; all rendered rows listed. Sum of rows = $158.44. Competitor terms - 0021 and Competitor terms - 0020: 0 / paused. CA Banners - 0022 and CA Demand Gen - Apply - 0023: 0 / campaign paused.",
+  "dailyAdsCorrection_Nov20_21": "Nov 20 account daily spend was wrongly $0.97 (that was a SafeLink - CA Competitors - 0024 fragment) and is now $226.85. Nov 21 account daily row was missing and is now $225.88. Campaign spend only; clicks and impressions for those days were not in this pull, except SafeLink - Tribal ex CA - 0017 which already had complete Nov 20\u201321 rows matching those spends.",
+  "overviewTotalsNote_Nov25": "Overview spend/clicks/impressions were not recomputed. This pull has no all-time account totals, and Nov 20\u201321 account/campaign rows (except Tribal) are spend-only. Enrollments and costPerEnrollmentUsd left unchanged."
  }
 }
