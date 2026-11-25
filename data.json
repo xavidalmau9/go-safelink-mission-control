@@ -7,7 +7,7 @@
   "loginEmail": "xavidalmau9@gmail.com",
   "liveSince": "2026-11-06",
   "timezone": "America/New_York",
-  "updatedAt": "2026-11-25T09:29:06-05:00",
+  "updatedAt": "2026-11-25T09:33:04-05:00",
   "dataWindow": {
    "from": "2026-11-04",
    "to": "2026-11-25",
@@ -18,12 +18,12 @@
   "notes": "No Google Ads conversion tracking (conversions always 0). Enrollments come from SafeLink reports by promo code from 2026-11-09: ABJ0020=Nationwide, ABJ0021=CA Search, ABJ0022=CA Display, ABJ0023=CA Demand Gen. Promo-code split went live about 3:40 PM ET on 2026-11-09 (Nov 9 per-code spend is a full-day approximation). Pre-split Nov 6\u20138 rows used shared ABJ0020 and stay segment \"all\". Daily trend charts start from this snapshot until a daily series is pasted. State/region spend comes from the User locations report (see pullNotes.spendByRegion). Identity verification due 2026-12-09."
  },
  "budgets": {
-  "dailyTotalUsd": 135,
+  "dailyTotalUsd": 260,
   "searchMaxCpcUsd": 2,
   "applySnapMaxCpcUsd": 2,
   "displayMaxCpcUsd": 1,
   "mobileBidAdjustmentPct": 0,
-  "notes": "As of 2026-11-09: all Search ad group max CPCs $2.00; Competitor terms ad groups $1.00; keyword-level bid overrides cleared. As of 2026-11-12 pull: CA Search $56, US ex CA $24, CA Display $20, Demand Gen $20, CA Competitors $15 = $135/day."
+  "notes": "As of 2026-11-09: all Search ad group max CPCs $2.00; Competitor terms ad groups $1.00; keyword-level bid overrides cleared. As of 2026-11-12 pull: CA Search $56, US ex CA $24, CA Display $20, Demand Gen $20, CA Competitors $15 = $135/day. As of 2026-11-24 (set by Javier): SafeLink - CA - 0021 $80, SafeLink - US ex CA - 0020 $20, SafeLink - CA Competitors - 0024 $40, SafeLink - Tribal ex CA - 0017 $80. Paused SafeLink - CA Display - 0022 and SafeLink - CA Demand Gen - 0023 remain $20. Listed total $260/day."
  },
  "segments": [
   {
@@ -107,7 +107,7 @@
    "notes": "",
    "campaignName": "SafeLink - CA Competitors - 0024",
    "promoCode": "ABJ0024",
-   "dailyBudgetUsd": 20,
+   "dailyBudgetUsd": 40,
    "status": "Eligible"
   },
   {
@@ -116,7 +116,7 @@
    "shortLabel": "TRIBAL",
    "campaignName": "SafeLink - Tribal ex CA - 0017",
    "type": "Search",
-   "dailyBudgetUsd": 50,
+   "dailyBudgetUsd": 80,
    "targeting": "Tribal areas excluding California",
    "status": "Eligible",
    "maxCpcUsd": 2,
