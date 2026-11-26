@@ -7,7 +7,7 @@
   "loginEmail": "xavidalmau9@gmail.com",
   "liveSince": "2026-11-06",
   "timezone": "America/New_York",
-  "updatedAt": "2026-11-25T09:33:04-05:00",
+  "updatedAt": "2026-11-26T08:55:00-05:00",
   "dataWindow": {
    "from": "2026-11-04",
    "to": "2026-11-25",
@@ -3244,6 +3244,14 @@
      ]
     }
    ]
+  },
+  {
+   "id": "daily_2026-11-26",
+   "date": "2026-11-26",
+   "priority": "high",
+   "status": "awaiting yesterday's report",
+   "summary": "Daily review (Nov 25 vs Nov 24): total $138.71 vs $160.42. SafeLink - CA - 0021 (CA only) $95.24 vs $100.65; SafeLink - US ex CA - 0020 (nationwide ex CA) $16.51 vs $24.95 (budget now $10); SafeLink - CA Competitors - 0024 (CA only) $0.99 vs $6.88; SafeLink - Tribal ex CA - 0017 (Tribal ex CA) $25.97 vs $27.94. Display/Demand Gen paused. Control audit clean. Candidates to finalize after the Nov 25 promo-code report: (1) confirm Oklahoma $0 in 0017 (spent $13.66 Nov 25 before the 6:01 PM exclusion) and the newly excluded states $0 in 0020; (2) 0017 ad strength Poor on all 5 ads, review copy options once report is in; (3) 0020 free-phone search terms ($23.94, 63 terms) as phrase negatives; 0021 Near me ad strength Poor. Nothing applied.",
+   "items": []
   }
  ],
  "dailyReports": {
@@ -3912,6 +3920,10 @@
   "rows": []
  },
  "changelog": [
+  {
+   "date": "2026-11-26",
+   "summary": "8:30 AM review. Control audit clean: 41 advertiser assets, 0 Google AI/auto-created; AI Max, text customization, URL expansion, auto-created assets, broad match off; auto-apply off; change history only ours (Nov 25 evening state exclusions, bid cuts, 0020 budget to $10). Nov 25 spend $138.71 (0021 $95.24, 0020 $16.51, 0024 $0.99, 0017 $25.97). No account changes."
+  },
   {
    "date": "2026-11-25",
    "summary": "8:30 AM review. Control audit clean: 0 Google AI/auto-created assets (41 advertiser assets), auto-created assets/text customization/URL expansion/broad match/AI Max off, auto-apply off, change history only ours (0020 negatives and keyword tweak, 0024 and 0017 budget increases, all Nov 24). Nov 24 spend $158.44 (0021 $100.65, 0020 $24.95, 0024 $4.90, 0017 $27.94). No account changes."
