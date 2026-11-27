@@ -7,11 +7,11 @@
     "loginEmail": "xavidalmau9@gmail.com",
     "liveSince": "2026-11-06",
     "timezone": "America/New_York",
-    "updatedAt": "2026-11-26T09:21:32-05:00",
+    "updatedAt": "2026-11-27T09:21:01-05:00",
     "dataWindow": {
       "from": "2026-11-04",
-      "to": "2026-11-26",
-      "label": "Nov 4-26, 2026 (Nov 25 final; Nov 26 partial, pulled ~9:15 AM ET)",
+      "to": "2026-11-27",
+      "label": "Nov 4-27, 2026 (Nov 26 final; Nov 27 partial, pulled ~9:20 AM ET)",
       "granularity": "daily"
     },
     "identityVerificationDue": "2026-12-09",
@@ -127,25 +127,25 @@
   ],
   "overview": {
     "awaitingData": false,
-    "spendUsd": 3129.26,
-    "clicks": 4042,
-    "impressions": 113673,
-    "ctrPct": 3.56,
-    "avgCpcUsd": 0.77,
+    "spendUsd": 3218.62,
+    "clicks": 4114,
+    "impressions": 114517,
+    "ctrPct": 3.59,
+    "avgCpcUsd": 0.78,
     "enrollments": 4,
     "costPerEnrollmentUsd": 374.63,
     "conversions": 0,
-    "windowLabel": "Nov 4-26, 2026 (Nov 25 final; Nov 26 partial, pulled ~9:15 AM ET)",
+    "windowLabel": "Nov 4-27, 2026 (Nov 26 final; Nov 27 partial, pulled ~9:20 AM ET)",
     "enrollmentsNote": "Pre-split combined (Nov 6–8 · ABJ0020 shared by all campaigns); cost/enrollment = Nov 6-8 spend $351.67 / 4 (spend per report date recomputed from real Google Ads daily data Nov 12 1PM ET) (spend per report date recomputed from real Google Ads daily data Nov 12 3PM ET)",
     "enrollmentsScope": "pre_split_all"
   },
   "bySegment": {
     "ca_search": {
       "awaitingData": false,
-      "spendUsd": 1705.68,
-      "clicks": 1306,
-      "impressions": 8569,
-      "ctrPct": 15.24,
+      "spendUsd": 1773.4,
+      "clicks": 1350,
+      "impressions": 8996,
+      "ctrPct": 15.01,
       "avgCpcUsd": 1.31,
       "enrollments": 20,
       "costPerEnrollmentUsd": 73.91,
@@ -314,12 +314,20 @@
         },
         {
           "date": "2026-11-26",
+          "impressions": 427,
+          "clicks": 44,
+          "ctrPct": 10.3,
+          "avgCpcUsd": 1.54,
+          "spendUsd": 67.72
+        },
+        {
+          "date": "2026-11-27",
           "impressions": 0,
           "clicks": 0,
           "ctrPct": 0,
           "avgCpcUsd": 0,
-          "spendUsd": 0.0,
-          "note": "Partial, as of ~9:15 AM ET Nov 26; reporting not real-time."
+          "spendUsd": 0,
+          "note": "Partial, as of ~9:20 AM ET Nov 27; reporting not real-time."
         }
       ],
       "adGroupPerformance": [
@@ -951,11 +959,11 @@
     },
     "nationwide": {
       "awaitingData": false,
-      "spendUsd": 792.97,
-      "clicks": 647,
-      "impressions": 4431,
-      "ctrPct": 14.6,
-      "avgCpcUsd": 1.23,
+      "spendUsd": 806.33,
+      "clicks": 668,
+      "impressions": 4661,
+      "ctrPct": 14.33,
+      "avgCpcUsd": 1.21,
       "enrollments": 20,
       "costPerEnrollmentUsd": 32.19,
       "conversions": 0,
@@ -1123,12 +1131,20 @@
         },
         {
           "date": "2026-11-26",
+          "impressions": 230,
+          "clicks": 21,
+          "ctrPct": 9.13,
+          "avgCpcUsd": 0.64,
+          "spendUsd": 13.36
+        },
+        {
+          "date": "2026-11-27",
           "impressions": 0,
           "clicks": 0,
           "ctrPct": 0,
           "avgCpcUsd": 0,
-          "spendUsd": 0.0,
-          "note": "Partial, as of ~9:15 AM ET Nov 26; reporting not real-time."
+          "spendUsd": 0,
+          "note": "Partial, as of ~9:20 AM ET Nov 27; reporting not real-time."
         }
       ],
       "adGroupPerformance": [
@@ -1829,10 +1845,10 @@
       "costPerEnrollmentUsd": 22.81,
       "conversions": 0,
       "awaitingData": false,
-      "spendUsd": 164.6,
-      "clicks": 207,
-      "impressions": 3688,
-      "ctrPct": 5.61,
+      "spendUsd": 165.6,
+      "clicks": 208,
+      "impressions": 3776,
+      "ctrPct": 5.51,
       "avgCpcUsd": 0.8,
       "status": "Enabled; Eligible (budget $40/day)",
       "dailyAds": [
@@ -1998,12 +2014,20 @@
         },
         {
           "date": "2026-11-26",
-          "impressions": 24,
+          "impressions": 81,
+          "clicks": 1,
+          "ctrPct": 1.23,
+          "avgCpcUsd": 1.0,
+          "spendUsd": 1.0
+        },
+        {
+          "date": "2026-11-27",
+          "impressions": 31,
           "clicks": 0,
           "ctrPct": 0.0,
           "avgCpcUsd": 0,
-          "spendUsd": 0.0,
-          "note": "Partial, as of ~9:15 AM ET Nov 26; reporting not real-time."
+          "spendUsd": 0,
+          "note": "Partial, as of ~9:20 AM ET Nov 27; reporting not real-time."
         }
       ],
       "adGroupPerformance": [
@@ -2146,20 +2170,28 @@
         },
         {
           "date": "2026-11-26",
-          "impressions": 24,
+          "impressions": 97,
+          "clicks": 6,
+          "ctrPct": 6.19,
+          "avgCpcUsd": 1.18,
+          "spendUsd": 7.09
+        },
+        {
+          "date": "2026-11-27",
+          "impressions": 26,
           "clicks": 1,
-          "ctrPct": 4.17,
-          "avgCpcUsd": 1.01,
-          "spendUsd": 1.01,
-          "note": "Partial, as of ~9:15 AM ET Nov 26; reporting not real-time."
+          "ctrPct": 3.85,
+          "avgCpcUsd": 1.2,
+          "spendUsd": 1.2,
+          "note": "Partial, as of ~9:20 AM ET Nov 27; reporting not real-time."
         }
       ],
       "awaitingData": false,
-      "spendUsd": 120.79,
-      "clicks": 113,
-      "impressions": 1039,
-      "ctrPct": 10.88,
-      "avgCpcUsd": 1.07,
+      "spendUsd": 128.07,
+      "clicks": 119,
+      "impressions": 1138,
+      "ctrPct": 10.46,
+      "avgCpcUsd": 1.08,
       "status": "Enabled; Eligible (budget $80/day)",
       "adGroupPerformance": [
         {
@@ -2437,12 +2469,20 @@
     },
     {
       "date": "2026-11-26",
-      "impressions": 48,
+      "impressions": 835,
+      "clicks": 72,
+      "spendUsd": 89.17,
+      "ctrPct": 8.62,
+      "avgCpcUsd": 1.24
+    },
+    {
+      "date": "2026-11-27",
+      "impressions": 57,
       "clicks": 1,
-      "spendUsd": 1.01,
-      "ctrPct": 2.08,
-      "avgCpcUsd": 1.01,
-      "note": "Partial, as of ~9:15 AM ET; 0021 and 0020 showed 0 impressions so far (same early-morning pattern as Nov 25; reporting lag or ad schedule, not verified)."
+      "spendUsd": 1.2,
+      "ctrPct": 1.75,
+      "avgCpcUsd": 1.2,
+      "note": "Partial, as of ~9:20 AM ET; 0021 and 0020 showed 0 impressions so far (same early-morning pattern as prior days; not verified)."
     }
   ],
   "keywords": [
@@ -4220,6 +4260,10 @@
     {
       "date": "2026-11-26",
       "summary": "Dashboard refresh 9:15 AM ET (read-only): Nov 20-25 daily rows finalized and Nov 26 partial row added for 0021, 0020, 0017 Tribal and 0024; budgets now 0020 $10 (set by Javier). Nov 20-26 ad groups, keywords, search terms, regions and devices added to pull notes. Nothing changed in the account."
+    },
+    {
+      "date": "2026-11-27",
+      "summary": "Dashboard refresh 9:20 AM ET (read-only): Nov 21-26 daily rows finalized and Nov 27 partial row added for 0021, 0020, 0017 Tribal and 0024. Nov 21-27 campaigns, keywords, devices and flags added to pull notes. Nothing changed in the account."
     }
   ],
   "displayExclusions": [
@@ -8796,6 +8840,156 @@
         "cost": "$0.00"
       }
     ],
-    "stateDataNote_Nov26": "State data Nov 20-26 from Report editor (Region, user location), per campaign. CA campaigns resolve to California and SF Bay Area/Silicon Valley metros. City data not pulled. Display placements: none (Display paused, $0 spend)."
+    "stateDataNote_Nov26": "State data Nov 20-26 from Report editor (Region, user location), per campaign. CA campaigns resolve to California and SF Bay Area/Silicon Valley metros. City data not pulled. Display placements: none (Display paused, $0 spend).",
+    "pulledAt_Nov27_920am": "2026-11-27T09:21:01-05:00",
+    "adStatus_Nov27_920am": "No fully disapproved ads. 0021 and 0020 Eligible (Limited by budget); 0017 Tribal and 0024 Competitors Eligible; 0022 and 0023 paused. Ad group Seniors / disabled - 0021: all ads limited by policy (Government Documents and Official Services), $10.68 Nov 21-27. Ad group Lifeline program - 0021 is paused. Ad strength Poor: Tribal ads, 0021 Near me / providers, 0024 Competitors.",
+    "flaggedSearchTerms_Nov27_920am": "Nov 21-27: competitor terms only in 0024 as intended (airtalk wireless $15.72, airtalk $6.92). No Assurance/TracFone/Q Link term in top 20 by cost. Already-excluded term still logged in 0020: government phone $8.61. Close variants without keyword: lifeline $18.35 (0021), life line $6.23. Nothing new off-target of note.",
+    "campaigns_Nov21_27": [
+      {
+        "campaign": "SafeLink - CA - 0021 (CA only)",
+        "budget": 80,
+        "cost": 666.46,
+        "impr": 3635,
+        "clicks": 488,
+        "cpc": 1.37
+      },
+      {
+        "campaign": "SafeLink - US ex CA - 0020 (nationwide ex CA)",
+        "budget": 10,
+        "cost": 208.05,
+        "impr": 1541,
+        "clicks": 200,
+        "cpc": 1.04
+      },
+      {
+        "campaign": "SafeLink - Tribal ex CA - 0017",
+        "budget": 80,
+        "cost": 130.5,
+        "impr": 1240,
+        "clicks": 122,
+        "cpc": 1.07
+      },
+      {
+        "campaign": "SafeLink - CA Competitors - 0024 (CA only)",
+        "budget": 40,
+        "cost": 53.12,
+        "impr": 1279,
+        "clicks": 54,
+        "cpc": 0.98
+      },
+      {
+        "campaign": "SafeLink - CA Display - 0022 (paused)",
+        "budget": 20,
+        "cost": 0,
+        "impr": 0,
+        "clicks": 0
+      },
+      {
+        "campaign": "SafeLink - CA Demand Gen - 0023 (paused)",
+        "budget": 20,
+        "cost": 0,
+        "impr": 0,
+        "clicks": 0
+      }
+    ],
+    "deviceSplit_Nov21_27": [
+      {
+        "campaign": "0021 CA",
+        "computers": 61.08,
+        "mobile": 588.37,
+        "tablets": 17.01
+      },
+      {
+        "campaign": "0020 US ex CA",
+        "computers": 28.1,
+        "mobile": 178.15,
+        "tablets": 1.8
+      },
+      {
+        "campaign": "0017 Tribal ex CA",
+        "computers": 11.31,
+        "mobile": 113.73,
+        "tablets": 5.46
+      },
+      {
+        "campaign": "0024 CA Competitors",
+        "computers": 1.95,
+        "mobile": 44.42,
+        "tablets": 6.75
+      }
+    ],
+    "topKeywordsByCost_Nov21_27": [
+      {
+        "keyword": "\"list of free government cell phones\"",
+        "match": "Phrase",
+        "campaign": "0021 / Near me",
+        "clicks": 77,
+        "cost": 130.76
+      },
+      {
+        "keyword": "\"list of lifeline providers\"",
+        "match": "Phrase",
+        "campaign": "0021 / Near me",
+        "clicks": 57,
+        "cost": 95.01
+      },
+      {
+        "keyword": "[lifeline program]",
+        "match": "Exact",
+        "campaign": "0021 / Lifeline program (paused group)",
+        "clicks": 44,
+        "cost": 54.1
+      },
+      {
+        "keyword": "\"lifeline application\"",
+        "match": "Phrase",
+        "campaign": "0021 / Apply",
+        "clicks": 35,
+        "cost": 50.93
+      },
+      {
+        "keyword": "[california lifeline]",
+        "match": "Exact",
+        "campaign": "0021 / Lifeline program (paused group)",
+        "clicks": 40,
+        "cost": 47.09
+      },
+      {
+        "keyword": "\"lifeline application\"",
+        "match": "Phrase",
+        "campaign": "0017 / Apply/Qualify",
+        "clicks": 35,
+        "cost": 36.14
+      },
+      {
+        "keyword": "[lifeline program]",
+        "match": "Exact",
+        "campaign": "0020 / Lifeline program",
+        "clicks": 49,
+        "cost": 30.41
+      },
+      {
+        "keyword": "\"lifeline medicaid phone\"",
+        "match": "Phrase",
+        "campaign": "0021 / Medicaid/SSI",
+        "clicks": 19,
+        "cost": 28.18
+      },
+      {
+        "keyword": "\"list of free government phones\"",
+        "match": "Phrase",
+        "campaign": "0021 / Near me",
+        "clicks": 16,
+        "cost": 27.33
+      },
+      {
+        "keyword": "[airtalk wireless]",
+        "match": "Exact",
+        "campaign": "0024 Competitors",
+        "clicks": 22,
+        "cost": 21.69
+      }
+    ],
+    "stateDataNote_Nov27": "Nov 27 pull: Google Ads offered no user-location (state/region) segment for the nationwide campaign this run; 0020 is a single United States target, so per-state split not available. CA campaigns = California only. 0017 Tribal serves ZIP/Alaska targets (top: NM 87121 $9.51, Alaska $6.63, OK ZIPs). Regional table from Nov 26 pull kept. Display placements: none (paused, $0)."
   }
 }
